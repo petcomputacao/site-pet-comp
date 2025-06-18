@@ -1,4 +1,45 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header  */
+.header {
+  width: 100%;
+  background: transparent;
+  position: relative;
+}
+
+.logoUFCG{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginaInicial{
   background: linear-gradient(135deg, #3100D1 0%, #150350 100%);
-  background-attachment: fixed; /* Efeito parallax */
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ajeitaLogo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.About {
+  height: 100vh; /* Faz a seção ocupar uma tela inteira */
+  background-color: white; /* Ou qualquer outra cor pra testar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

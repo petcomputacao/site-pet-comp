@@ -1,7 +1,7 @@
 .logo-container {
-  position: fixed;
-  top: 46%;
-  left: 50%;
+  position: relative;
+  top: 15%;
+  left: 38%;
   transform: translate(-50%, -50%);
   z-index: 10;
   width: fit-content;
@@ -11,7 +11,7 @@
 }
 
 .logo-image {
-  width: 45%; 
+  width: 25%; 
   height: auto;
   display: block; 
   margin: 0 auto; 
