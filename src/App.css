@@ -1,0 +1,4 @@
+body {
+  background: linear-gradient(135deg, #3100D1 0%, #150350 100%);
+  background-attachment: fixed; /* Efeito parallax */
+}
