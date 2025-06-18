@@ -32,6 +32,6 @@
 .navbar-link:hover {
   background-color: #ffffff;
   color: #220779;
-  font-size: 1.8rem; 
-  transform: scale(1.10);
+  font-size: 1.6rem; 
+  transform: scale(1.12);
 }
