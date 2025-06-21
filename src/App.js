@@ -1,8 +1,8 @@
-import './App.css';
-import Aurora from './Aurora';
-import Navbar from './Navbar';
-import Logo from './Logo';
-import Logo_UFCG from './Logo_UFCG';
+import './styles/App.css';
+import Aurora from './components/Aurora';
+import Navbar from './components/Navbar';
+import Logo from './components/Logo';
+import LogoUFCG from './components/LogoUFCG';
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <section className="paginaInicial">
         <div className="header">
           <div className="logoUFCG">
-            <Logo_UFCG/>
+            <LogoUFCG/>
           </div>
           <Navbar/>
       </div>

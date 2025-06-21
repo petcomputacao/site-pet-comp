@@ -1,6 +1,6 @@
-import './Logo_UFCG.css';
+import '../styles/LogoUFCG.css';
 
-function Logo_UFCG(){
+function LogoUFCG(){
     return(
         <div className="logo2-container">
             <img
@@ -12,4 +12,4 @@ function Logo_UFCG(){
     );
 }
 
-export default Logo_UFCG;
+export default LogoUFCG;
