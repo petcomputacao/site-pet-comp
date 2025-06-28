@@ -1,0 +1,12 @@
+.logo-container {
+  width: 50%; 
+  margin-left: 5%;
+}
+
+.logo-image {
+  position:relative;
+  z-index: 10;
+  width: 300px; 
+  margin-left: 25%;
+  margin-top: 30%;
+}
