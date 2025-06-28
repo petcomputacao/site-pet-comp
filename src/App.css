@@ -65,7 +65,7 @@ html, body {
 /* Pagina do Tutor */
 .PaginaTutor{
   height: 100vh; 
-  background-color: rgb(255, 0, 0); 
+  background-color: #3100D1; 
   display: flex;
   justify-content: center;
   align-items: center;

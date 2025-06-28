@@ -1,11 +1,12 @@
 import './App.css';
 
-import Aurora from './components/pagina-inicial/Aurora';
-import Logo from './components/pagina-inicial/Logo';
-import LogoUFCG from './components/header-static/LogoPET';
-import Navbar from './components/header-static/Navbar';
-import Footer from './components/Footer';
-import TextoPET from './components/pagina-inicial/TextoPET';
+import Aurora     from './components/pagina-inicial/Aurora';
+import Logo       from './components/pagina-inicial/Logo';
+import LogoUFCG   from './components/header-static/LogoPET';
+import Navbar     from './components/header-static/Navbar';
+import Footer     from './components/Footer';
+import TextoPET   from './components/pagina-inicial/TextoPET';
+import SecaoTutor from './components/members/SecaoTutor';
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
         </section>
         {/* Pagina dedicada ao Tutor(a) */}
         <section id="Membros" className="PaginaTutor">
-          <h1>Pagina Tutora</h1>
+            <SecaoTutor />
         </section>
         {/* Pagina dedicada aos membros ativos */}
         <section className ="PaginaMembros">
