@@ -65,7 +65,7 @@ html, body {
 /* Pagina do Tutor */
 .PaginaTutor{
   height: 100vh; 
-  background-color: #3100D1; 
+  background-color: #2d02ba; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@ html, body {
 /* Pagina dos Membros */
 .PaginaMembros{
   height: 100vh; 
-  background-color: green; 
+  background-color: #2700a8; 
   display: flex;
   justify-content: center;
   align-items: center;
