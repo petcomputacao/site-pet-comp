@@ -1,0 +1,45 @@
+.slider{
+    margin: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(800px * 12); 
+  animation: scroll 90s linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateX(calc(-800px * 6)); 
+  }
+}
+
+.imagesblog {
+  width: 800px; 
+  padding: 3rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  perspective: 100px;
+}
+
+img{
+    width: 100%;
+    transition: transform 1%;
+}
+
+img:hover {
+  transform: scale(1.05); 
+}
+

@@ -6,6 +6,8 @@ import LogoUFCG from './components/header-static/LogoPET';
 import Navbar from './components/header-static/Navbar';
 import Footer from './components/Footer';
 import TextoPET from './components/pagina-inicial/TextoPET';
+import AutoPlay from './components/projectspage/InfiteAutoplay';
+import TextoProjects from './components/projectspage/TextoProjects';
 
 function App() {
   return (
@@ -31,10 +33,19 @@ function App() {
         <section id="Sobre" className="Sobre">
           <h1>PET COMPUTAÇÃO</h1>
         </section>
+
         {/* Projetos */}
         <section id="Projetos" className="Projetos">
-          <h1>Projetos</h1>
+
+          <div className='textosProjects'>
+            <TextoProjects />
+          </div>
+
+          <div className="content-projects"> 
+             <AutoPlay/>
+          </div>
         </section>
+
         {/* Pagina dedicada ao Tutor(a) */}
         <section id="Membros" className="PaginaTutor">
           <h1>Pagina Tutora</h1>
