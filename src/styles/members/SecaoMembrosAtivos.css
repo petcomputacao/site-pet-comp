@@ -1,37 +1,43 @@
-.secao-tutor {
-    display: flex;
-    justify-content: center; /* centraliza a coluna */
-    padding: 2rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 1.1rem;
-    color: aliceblue;
-}
-
-.coluna {
-    max-width: 800px;
+.secao-membros-ativos {
+    height: 92%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    padding: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+
+.topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
+    padding: 1rem;
+    justify-items: flex-start;
 }
 
 .item-galeria {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    gap: 3px;
 }
 
-.item-galeria img {
-    width: 100%;
-    height: auto;
+.item-galeria .foto-membro-ativo {
+    width: 110px;
+    height: 110px;
     border-radius: 8px;
     object-fit: cover;
 }
