@@ -47,7 +47,7 @@ html, body {
 /* Sobre o PET */
 .Sobre {
   height: 100vh; 
-  background-color: white; 
+  background-color: #1e158f; 
   display: flex;
   justify-content: center;
   align-items: center;
