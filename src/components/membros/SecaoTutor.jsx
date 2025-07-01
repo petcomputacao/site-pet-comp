@@ -1,6 +1,6 @@
 import TextoTutor from "./TextoTutor";
 import FotoTutor from "./FotoTutor";
-import "../../styles/members/SecaoTutor.css"
+import "../../styles/membros/SecaoTutor.css"
 
 export default function SecaoTutor() {
     return (
