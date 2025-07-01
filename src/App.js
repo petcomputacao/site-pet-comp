@@ -24,39 +24,47 @@ function App() {
       {/* Sessão das "partes" da pagina */}
       <main>
         {/* Pagina Inicial */}
-        <section id="paginaInicial" className="paginaInicial">
-          <div className="content-wrapper"> 
-            <TextoPET />
-            <Logo/>
-          </div>
-          <Aurora/>
-        </section>
+          <section id="paginaInicial" className="paginaInicial">
+            <div className="content-wrapper"> 
+              <TextoPET />
+              <Logo/>
+            </div>
+            <Aurora/>
+          </section>
 
         {/* Sobre */}
-        <section id="Sobre" className="Sobre">
-          <SecaoSobre />
-        </section>
+        <div className='blockpage'>
+          <section id="Sobre" className="Sobre">
+            <SecaoSobre />
+          </section>
+        </div>
 
         {/* Projetos */}
-        <section id="Projetos" className="Projetos">
-
-          <div className='textosProjects'>
-            <TextoProjects />
-          </div>
-
-          <div className="content-projects"> 
-             <AutoPlay/>
-          </div>
-        </section>
+        <div className='blockpage'>
+          <section id="Projetos" className="Projetos">
+            <div className='textosProjects'>
+              <TextoProjects />
+            </div>
+            <div className="content-projects"> 
+              <AutoPlay/>
+            </div>
+          </section>
+        </div>
 
         {/* Pagina dedicada ao Tutor(a) */}
-        <section id="Tutor" className="PaginaTutor">
-          <SecaoTutor />
-        </section>
+        <div className='blockpage'>
+          <section id="Tutor" className="PaginaTutor">
+            <SecaoTutor />
+          </section>
+        </div>
+
         {/* Pagina dedicada aos membros ativos */}
+        <div className='blockpage'>
         <section id="Membros" className ="PaginaMembros">
           <SecaoMembrosAtivos />
         </section>
+        </div>
+        
     </main>
     {/* Rodapé da pagina */}
     <footer>

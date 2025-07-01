@@ -11,7 +11,7 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 1.6rem;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 0.8rem; /* Espaço entre título e primeiro parágrafo */
   text-align: left;
   max-width: 80%;
@@ -21,15 +21,14 @@
 /* Estilo dos parágrafos */
 .corpo-texto, .corpo-texto2 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.1rem;
-  color: #ffffff;
+  color: #000000;
   text-align: left;
   max-width: 70%;
   line-height: 1.6;
   margin-bottom: 0.1rem; 
-    margin-left: 25%;
-
+  margin-left: 25%;
 }
 
 .corpo-texto2:last-child {

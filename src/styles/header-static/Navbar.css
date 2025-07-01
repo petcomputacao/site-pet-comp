@@ -1,6 +1,6 @@
 .navbar-container {  
   margin-left: auto;
-  padding-right: 50px;
+  padding-right: 60px;
 }
 
 .navbar-list {
@@ -29,10 +29,46 @@
 
 .navbar-link:hover {
   font-size: 1.4rem;
-  transform: scale(1.10);
+  transform: scale(1.05);
   color: #ffffff;
 }
 
 .navbar-link:active {
-  transform: scale(0.98);
+  transform: scale(1.10);
+}
+
+@media (max-width: 1200px) {
+  .navbar-container {
+    padding-right: 30px;
+  }
+  
+  .navbar-list {
+    gap: 30px; 
+  }
+  
+  .navbar-link {
+    font-size: 1.2rem; 
+  }
+  
+  .navbar-link:hover {
+    font-size: 1.4rem; 
+  }
+}
+
+/* Versão mobile  */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding-right: 20px;
+  }
+  
+  .navbar-list {
+    flex-wrap: wrap; 
+    justify-content: flex-end;
+    gap: 15px 25px; 
+  }
+  
+  .navbar-link {
+    font-size: 0.9rem; 
+    padding: 5px 0; 
+  }
 }
