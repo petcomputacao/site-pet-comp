@@ -1,0 +1,73 @@
+.secao-sobre {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+}
+
+.container-aurora {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    top: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.container-texto {
+    width: 30%;
+    text-align: start;
+    margin-bottom: 40px;
+    padding-left: 80px;
+}
+
+.container-texto h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: aliceblue;
+}
+
+.container-vertentes {
+    display: flex;
+    margin-right: 60px;
+}
+
+.container-pesquisa,
+.container-extensao,
+.container-tutoria {
+    height: 450px;
+    width: 300px;
+    padding: 20px;
+    background-color: #180870;
+    border: 1px solid #1a097d;
+    color: #ffffff;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    transition: transform 0.3s, box-shadow 0.4s, background-color 0.3s;
+}
+
+/* vai da esquerda pra direita*/
+.container-pesquisa:hover {
+    transform: translate(20px, -8px) scale(1.15);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
+    background-color: #ffffff;
+    color: #101012;
+}
+
+/*vai pra cima*/
+.container-extensao:hover {
+    transform: translateY(-8px) scale(1.15);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
+    background-color: #ffffff;
+    color: #101012;
+}
+
+/*vai da direita pra esqierda*/
+.container-tutoria:hover {
+    transform: translate(-20px, -8px) scale(1.15);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
+    background-color: #ffffff;
+    color: #101012;
+}
