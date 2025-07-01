@@ -6,8 +6,9 @@ import LogoUFCG   from './components/header-static/LogoPET';
 import Navbar     from './components/header-static/Navbar';
 import Footer     from './components/Footer';
 import TextoPET   from './components/pagina-inicial/TextoPET';
-import SecaoTutor         from './components/members/SecaoTutor';
-import SecaoMembrosAtivos from './components/members/SecaoMembrosAtivos';
+import SecaoTutor         from './components/membros/SecaoTutor';
+import SecaoMembrosAtivos from './components/membros/SecaoMembrosAtivos';
+import SecaoSobre         from './components/sobre/SecaoSobre';
 
 function App() {
   return (
@@ -31,18 +32,18 @@ function App() {
 
         {/* Sobre */}
         <section id="Sobre" className="Sobre">
-          <h1>PET COMPUTAÇÃO</h1>
+          <SecaoSobre />
         </section>
         {/* Projetos */}
         <section id="Projetos" className="Projetos">
           <h1>Projetos</h1>
         </section>
         {/* Pagina dedicada ao Tutor(a) */}
-        <section id="Membros" className="PaginaTutor">
+        <section id="Tutor" className="PaginaTutor">
           <SecaoTutor />
         </section>
         {/* Pagina dedicada aos membros ativos */}
-        <section className ="PaginaMembros">
+        <section id="Membros" className ="PaginaMembros">
           <SecaoMembrosAtivos />
         </section>
     </main>
