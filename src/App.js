@@ -9,6 +9,8 @@ import TextoPET   from './components/pagina-inicial/TextoPET';
 import SecaoTutor         from './components/membros/SecaoTutor';
 import SecaoMembrosAtivos from './components/membros/SecaoMembrosAtivos';
 import SecaoSobre         from './components/sobre/SecaoSobre';
+import AutoPlay from './components/projectspage/InfiteAutoplay';
+import TextoProjects from './components/projectspage/TextoProjects';
 
 function App() {
   return (
@@ -34,10 +36,19 @@ function App() {
         <section id="Sobre" className="Sobre">
           <SecaoSobre />
         </section>
+
         {/* Projetos */}
         <section id="Projetos" className="Projetos">
-          <h1>Projetos</h1>
+
+          <div className='textosProjects'>
+            <TextoProjects />
+          </div>
+
+          <div className="content-projects"> 
+             <AutoPlay/>
+          </div>
         </section>
+
         {/* Pagina dedicada ao Tutor(a) */}
         <section id="Tutor" className="PaginaTutor">
           <SecaoTutor />
