@@ -8,7 +8,7 @@ export default function SecaoSobre() {
                 <Aurora />
             </div>
             <div className="container-texto">
-                <h1>NOSSAS VERTENTES</h1>
+                <h1>NOSSOS PILARES</h1>
             </div>
             <div className="container-vertentes">
                 <div className="container-pesquisa">

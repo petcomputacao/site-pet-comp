@@ -47,7 +47,7 @@ html, body {
 /* Sobre o PET */
 .Sobre {
   height: 100vh; 
-  background-color: #1e158f; 
+  /* background-color: #1e158f;  */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,11 +77,11 @@ html, body {
 /* Pagina do Tutor */
 .PaginaTutor{
   height: 100vh; 
-  background-color: #2d02ba; 
+  /* background-color: #2d02ba;  */
 }
 
 /* Pagina dos Membros */
 .PaginaMembros{
   height: 100vh; 
-  background-color: #2700a8;
+  /* background-color: #2700a8; */
 }

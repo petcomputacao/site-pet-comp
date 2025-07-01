@@ -15,6 +15,7 @@
     top: 0;
     right: 0;
     transform: rotate(180deg);
+    transform: rotateX(180deg);
 }
 
 .container-texto {
@@ -33,12 +34,13 @@
 .container-vertentes {
     display: flex;
     margin-right: 60px;
+    gap: 8px;
 }
 
 .container-pesquisa,
 .container-extensao,
 .container-tutoria {
-    height: 450px;
+    height: 350px;
     width: 300px;
     padding: 20px;
     background-color: #180870;
