@@ -1,26 +1,23 @@
-/* Container principal */
+/* BASE (SEU CÓDIGO ORIGINAL - MANTIDO PARA MOBILE) */
 .texto-PET {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin-top: 12%;
+  margin-top: 9%;
 }
 
-/* Estilo do título */
 .titulo-texto {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
-  font-size: 1.6rem;
-  color: #000000;
-  margin-bottom: 0.8rem; /* Espaço entre título e primeiro parágrafo */
+  font-size: 1.4rem;
+  color: #2a1769;
+  margin-bottom: 0.8rem;
   text-align: left;
-  max-width: 80%;
-  margin-left: 40%;
+  margin-left: 38%;
 }
 
-/* Estilo dos parágrafos */
-.corpo-texto, .corpo-texto2 {
-  font-family: 'Raleway', sans-serif;
+.corpo-texto {
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1.1rem;
   color: #000000;
@@ -29,8 +26,63 @@
   line-height: 1.6;
   margin-bottom: 0.1rem; 
   margin-left: 25%;
+  text-align: justify;
 }
 
-.corpo-texto2:last-child {
-  margin-bottom: 0;
+.localBotao {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  padding-top: 40px;
+}
+
+.botaoSaibaMais {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 1.0rem;
+  background: linear-gradient(40deg, #3100D1 0%, #150350 100%);
+  padding: 15px 20px;
+  width: 150px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.botaoSaibaMais:hover {
+  transform: scale(1.15);
+}
+
+/* ADAPTAÇÃO PARA DESKTOP (MESMA PROPORÇÃO, VALORES EM VW) */
+@media (max-width: 1400px) {
+  .texto-PET {
+    width: 50vw; /* Mantém a proporção da largura */
+    margin-top: 30vh; /* Relativo à altura da tela */
+  }
+
+  .titulo-texto {
+    font-size: 1.8vw; /* Escala com a largura */
+    margin-left: 30%; /* Mantém % original */
+    margin-bottom: 0.5vh;
+  }
+
+  .corpo-texto {
+    font-size: 1.2vw; /* Texto responsivo */
+    max-width: 70%;
+    margin-left: 25%;
+    line-height: 1.6;
+  }
+
+  .localBotao {
+    margin-left: 10vw; /* Adapta margem */
+    padding-top: 2vh;
+  }
+
+  .botaoSaibaMais {
+    font-size: 1.1vw;
+    padding: 1.5vh 2vw;
+    width: 12vw;
+    border-radius: 2vw;
+  }
 }

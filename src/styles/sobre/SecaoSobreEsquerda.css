@@ -1,0 +1,102 @@
+.container-esquerda{
+    display: flex;             
+    align-items: center;       
+    justify-content: center;   
+    gap: 40px;                
+}
+
+.container-texto-esquerda{
+    width: 50%;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    margin-left: 80px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.container-foto-esquerda{
+    width: 50%; 
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;     
+    align-items: center;   
+}
+
+.container-foto{
+    width: 100px;
+}
+
+.aboutPET{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.container-ABOUT{
+    background-color: transparent;
+    color: #000000;
+    max-width: 600px;
+    margin: 0 auto;  
+}
+
+.texto-hiperlink {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000000; 
+  text-align: center; 
+  margin-top: 0px;
+}
+
+.link-pet {
+  color: rgb(30, 0, 199);
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.link-pet:hover {
+  color: rgb(9, 0, 59);
+}
+
+/* responsividade telas grandes (monitor)*/
+@media screen and (min-width: 1600px) {
+    .container-esquerda {
+        gap: 60px; 
+    }
+
+    .container-texto-esquerda {
+        margin-left: 120px;
+        margin-top: 70px;
+        max-width: 700px; 
+    }
+
+    .container-foto-esquerda {
+        margin-right: 80px; 
+        margin-top: 60px;
+    }
+
+    .container-foto {
+        width: 110px; /* Larger photo */
+    }
+
+    .aboutPET {
+      margin-top: 60px;
+        font-size: 1.3rem; 
+        line-height: 1.6; 
+    }
+
+    .container-ABOUT {
+        max-width: 800px; 
+    }
+
+    .texto-hiperlink {
+        font-size: 1.2rem;
+        margin-top: 30px;
+    }
+}
+

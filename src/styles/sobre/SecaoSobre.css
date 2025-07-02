@@ -1,64 +1,74 @@
-.secao-sobre {
+.functionPAI{
     position: relative;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-family: sans-serif;
-
 }
 
 .container-aurora {
-    position: absolute;
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     top: 0;
     right: 0;
     transform: rotate(180deg);
-
+    z-index: 10;
 }
 
-.container-texto {
-    width: 30%;
-    text-align: left;
-    margin-bottom: 40px;
-    padding-left: 80px;
+.tela-sobre {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/*seção destinada a parte esquerda da pagina SOBRE*/
+.secao-esquerda {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/*seção destinada a parte direita da pagina SOBRE*/
+.secao-direita {
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .container-texto h1 {
-    font-size: 3rem;
-    font-weight: 800;
+    font-size: 2.5rem;
+    font-weight: 700;
     color: rgb(0, 0, 0);
-    max-width: 10%;
-    font-family: 'Raleway';
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 50px;
 }
 
 .container-vertentes {
     display: flex;
-    margin-right: 60px;
-    gap: 35px;
-    font-family: 'Raleway';
+    gap: 25px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    margin-top: 20px;
 }
 
 .container-pesquisa,
 .container-extensao,
 .container-tutoria {
-    height: 430px;
-    width: 330px;
-    padding: 25px;
-    background-color: #180870;
-    border: 10px solid #1a097d;
+    padding: 20px 25px;
+    background-color: rgb(24, 8, 112,0.85);
+    border: 1px solid #1a097d;
     color: #ffffff;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
     transition: transform 0.3s, box-shadow 0.4s, background-color 0.3s;
+    border-radius: 30px; 
+
 }
 
 /* vai da esquerda pra direita*/
 .container-pesquisa:hover {
-    transform: translate(20px, -8px) scale(1.05);
+    transform: translate(20px, -8px) scale(1.02);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
     background-color: #ffffff;
     color: #101012;
@@ -66,7 +76,7 @@
 
 /*vai pra cima*/
 .container-extensao:hover {
-    transform: translateY(-8px) scale(1.05);
+    transform: translateY(-8px) scale(1.02);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
     background-color: #ffffff;
     color: #101012;
@@ -74,8 +84,50 @@
 
 /*vai da direita pra esqierda*/
 .container-tutoria:hover {
-    transform: translate(-20px, -8px) scale(1.05);
+    transform: translate(-20px, -8px) scale(1.02);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
     background-color: #ffffff;
     color: #101012;
+}
+
+
+
+
+
+
+
+/*responsivo*/
+
+@media screen and (max-width: 1400px) {
+    /* Ajustes na seção direita */
+    .secao-direita {
+        padding: 20px; /* Reduz o padding */
+    }
+
+    .container-texto h1 {
+        font-size: 1.8rem; /* Reduz o tamanho da fonte */
+        margin-top: 20px; /* Reduz a margem superior */
+        padding-bottom: 0px; /* Reduz o padding inferior */
+    }
+
+    .container-vertentes {
+        gap: 10px; /* Reduz o espaçamento entre cards */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */    
+        margin-top: 5px;
+    }
+
+    .container-pesquisa,
+    .container-extensao,
+    .container-tutoria {
+        padding: 5px 15px; /* Reduz o padding interno */
+    }
+
+    /* Ajusta os efeitos hover para deslocamento menor */
+    .container-pesquisa:hover {
+        transform: translate(10px, -5px) scale(1.02);
+    }
+
+    .container-tutoria:hover {
+        transform: translate(-10px, -5px) scale(1.02);
+    }
 }

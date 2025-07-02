@@ -33,11 +33,9 @@ function App() {
           </section>
 
         {/* Sobre */}
-        <div className='blockpage'>
           <section id="Sobre" className="Sobre">
             <SecaoSobre />
           </section>
-        </div>
 
         {/* Projetos */}
         <div className='blockpage'>
