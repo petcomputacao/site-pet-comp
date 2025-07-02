@@ -1,8 +1,7 @@
 import './App.css';
 
 import Aurora     from './components/pagina-inicial/Aurora';
-import Logo       from './components/pagina-inicial/Logo';
-import LogoUFCG   from './components/header-static/LogoPET';
+import LogoPET   from './components/header-static/LogoPET';
 import Navbar     from './components/header-static/Navbar';
 import Footer     from './components/Footer';
 import TextoPET   from './components/pagina-inicial/TextoPET';
@@ -11,13 +10,15 @@ import SecaoMembrosAtivos from './components/membros/SecaoMembrosAtivos';
 import SecaoSobre         from './components/sobre/SecaoSobre';
 import AutoPlay from './components/projectspage/InfiteAutoplay';
 import TextoProjects from './components/projectspage/TextoProjects';
+import SliderImages from './components/pagina-inicial/Slider';
+import LogoPETpaginaInicial from './components/pagina-inicial/LogoPETpaginaInicial';
 
 function App() {
   return (
     <div className="App">
       {/* Header da Pagina */}
       <div className="header">
-          <LogoUFCG />
+          <LogoPET />
           <Navbar />
       </div>
 
@@ -26,8 +27,17 @@ function App() {
         {/* Pagina Inicial */}
           <section id="paginaInicial" className="paginaInicial">
             <div className="content-wrapper"> 
-              <TextoPET />
-              <Logo/>
+              <section className='esquerda-pagina-inicial'>
+                <TextoPET />
+              </section>
+              <section className='direita-pagina-inicial'>
+                <div className='slider-Section'>
+                  <SliderImages/>
+                </div>
+                <div className='logo-Section'>
+                    <LogoPETpaginaInicial />
+                </div>
+              </section>
             </div>
             <Aurora/>
           </section>

@@ -1,25 +1,24 @@
-/* BASE (SEU CÓDIGO ORIGINAL - MANTIDO PARA MOBILE) */
 .texto-PET {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-top: 9%;
+  width: 100%;
+  margin-top: 25%; 
 }
 
 .titulo-texto {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #2a1769;
   margin-bottom: 0.8rem;
   text-align: left;
-  margin-left: 38%;
+  margin-left: 35%;
 }
 
 .corpo-texto {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #000000;
   text-align: left;
   max-width: 70%;
@@ -32,8 +31,8 @@
 .localBotao {
   display: flex;
   justify-content: center;
-  margin-left: 100px;
-  padding-top: 40px;
+  margin-left: 5%;
+  padding-top: 30px;
 }
 
 .botaoSaibaMais {
@@ -57,8 +56,7 @@
 /* ADAPTAÇÃO PARA DESKTOP (MESMA PROPORÇÃO, VALORES EM VW) */
 @media (max-width: 1400px) {
   .texto-PET {
-    width: 50vw; /* Mantém a proporção da largura */
-    margin-top: 30vh; /* Relativo à altura da tela */
+    margin-top: 17vh; /* Relativo à altura da tela */
   }
 
   .titulo-texto {

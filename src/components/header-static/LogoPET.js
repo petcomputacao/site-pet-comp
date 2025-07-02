@@ -1,6 +1,6 @@
 import '../../styles/header-static/LogoPET.css'; 
 
-function LogoUFCG() {
+function LogoPET() {
     return(
         <div className="logo2-container">
             <img
@@ -12,4 +12,4 @@ function LogoUFCG() {
     );
 }
 
-export default LogoUFCG;
+export default LogoPET;

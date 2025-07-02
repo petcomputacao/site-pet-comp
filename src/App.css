@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
-
 html, body {
   background: #dcdae4;
   margin: 0;
@@ -54,11 +52,30 @@ html, body {
 
 .content-wrapper{
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  min-height: 100vh; 
   width: 100%;
-  position: relative;
+  height: 100%;
+}
+
+.esquerda-pagina-inicial{
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.direita-pagina-inicial{
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-Section{
+  margin-top: 10%;
+}
+
+.logo-Section{
+  margin: auto;
 }
 
 /* Sobre o PET */

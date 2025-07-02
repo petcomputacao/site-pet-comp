@@ -1,0 +1,88 @@
+/* Container principal */
+.slider-container {
+  position: relative;
+  width: 50%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+/* Faixa de slides */
+.slides-track {
+  display: flex;
+  width: 100%;
+  height: 180px;
+}
+
+/* Slide individual */
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Imagem dentro do slide */
+.slide-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background-color: rgb(0, 0, 0,0.5);
+}
+
+/* Controles de navegação */
+.slider-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-control.prev {
+  left: 10px;
+}
+
+.slider-control.next {
+  right: 10px;
+}
+
+/* Indicadores */
+.slider-indicators {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 10;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease;
+}
+
+.indicator.active {
+  background: white;
+}
