@@ -18,10 +18,16 @@ html, body {
     }
 }
 
-.blockpage {
+.block {
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 30%;
+}
+
+.block-inferior {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 8%;
 }
 
 /* Header*/
@@ -117,5 +123,5 @@ html, body {
 /* Pagina dos Membros */
 .PaginaMembros{
   height: 100vh; 
-  background-color: #dcdae4;
+  background-color: #ff0000;
 }

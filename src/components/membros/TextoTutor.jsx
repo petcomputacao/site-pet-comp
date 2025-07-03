@@ -1,5 +1,0 @@
-export default function TextoTutor() {
-    return (
-        <p className="paragrafo-tutor">Possui doutorado em Engenharia Elétrica pela Universidade Federal de Campina Grande (2007), com pesquisa em sistemas distribuídos. Graduação em Bacharelado em Ciência da Computação (1998) e Mestrado em Informática (2000), ambos pela Universidade Federal da Paraíba/C. Grande. Tem experiência na área de Ciência da Computação, com ênfase em Sistemas Distribuídos, atuando principalmente nos seguintes temas: IoT aplicada, com ênfase em gerência inteligente e eficiente de recursos (água, energia, etc.) para sustentabilidade, além de educação em computação, estudando aspectos práticos e teóricos de pensamento computacional aplicado. Também é uma área de interesse aspectos relacionados à participação de mulheres nas exatas.</p>
-    );
-}

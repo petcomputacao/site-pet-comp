@@ -1,3 +1,8 @@
+.functionPAISobreDireita{
+    height: 100%;
+    width: 100%;
+}
+
 .container-texto h1 {
     font-size: 2.2rem;
     font-weight: 700;
@@ -10,7 +15,7 @@
     display: flex;
     gap: 15px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 0.9rem;
 }
 
@@ -56,7 +61,7 @@
     text-align: center;
     font-size: 1.2rem;
     margin-top: 40px;
-
+    font-weight: 400;
 }
 
 .social-links-about {
@@ -70,6 +75,8 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   color: rgb(0, 0, 0);
   text-decoration: none;
   transition: opacity 0.3s;
@@ -141,5 +148,41 @@
     .social-link-about {
         font-size: 1.1rem;
         gap: 10px;
+    }
+}
+
+/*responsivo*/
+
+@media screen and (max-width: 1400px) {
+    /* Ajustes na seção direita */
+    .secao-direita {
+        padding: 20px; /* Reduz o padding */
+    }
+
+    .container-texto h1 {
+        font-size: 1.8rem; /* Reduz o tamanho da fonte */
+        margin-top: 20px; /* Reduz a margem superior */
+        padding-bottom: 0px; /* Reduz o padding inferior */
+    }
+
+    .container-vertentes {
+        gap: 10px; /* Reduz o espaçamento entre cards */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */    
+        margin-top: 5px;
+    }
+
+    .container-pesquisa,
+    .container-extensao,
+    .container-tutoria {
+        padding: 5px 15px; /* Reduz o padding interno */
+    }
+
+    /* Ajusta os efeitos hover para deslocamento menor */
+    .container-pesquisa:hover {
+        transform: translate(10px, -5px) scale(1.02);
+    }
+
+    .container-tutoria:hover {
+        transform: translate(-10px, -5px) scale(1.02);
     }
 }

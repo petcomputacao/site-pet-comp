@@ -16,9 +16,9 @@
 }
 
 .corpo-texto {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto';
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #000000;
   text-align: left;
   max-width: 70%;
@@ -37,7 +37,7 @@
 
 .botaoSaibaMais {
   font-family: 'Poppins', sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 1.0rem;
   background: linear-gradient(40deg, #3100D1 0%, #150350 100%);
   padding: 15px 20px;
@@ -66,10 +66,10 @@
   }
 
   .corpo-texto {
-    font-size: 1.2vw; /* Texto responsivo */
+    font-size: 1.4vw; /* Texto responsivo */
     max-width: 70%;
     margin-left: 25%;
-    line-height: 1.6;
+    line-height: 1.5;
   }
 
   .localBotao {

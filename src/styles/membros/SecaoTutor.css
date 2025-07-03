@@ -1,28 +1,175 @@
 .secao-tutor {
-    height: 95%;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0 8vw;
-    gap: 6vw;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 1.25rem;
     color: rgb(0, 0, 0);
 }
 
-.foto-tutor-container .foto-tutor-image {
-    width: 300px; 
-    object-fit: cover; 
+/*aba da esquerda da pagina*/
+.foto-nome-container{
+    width: 25%;
+    height: 100vh;
+    margin: 20px;
 }
 
-.secao-tutor .coluna-esquerda {
+.nomeTutora-container{
+    margin-top: 40px;
     display: flex;
-    flex-direction: column;
+    justify-content: center; 
     align-items: center;
 }
 
-.secao-tutor .coluna-direita {
-    text-align: justify;
-    max-width: 70ch;
+.name-box{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-weight: 600;
+
 }
+
+.foto-perfil-tutora-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.foto-tutor-image{
+    width: 75%;
+    height: 100%;
+}
+
+.descricao-tutora-PET-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.description-PET{
+    font-family: 'Poppins', sans-serif;;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.logos-tutora-container{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 40px;
+}
+
+.picture1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.picture-description{
+    width: 30%;
+    margin: auto;
+}
+
+.picture2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/*aba CENTRO da pagina*/
+.carreira-descricao-links{
+    width: 55%;
+    height: 100%;
+}
+
+.titulo-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+}
+
+.titulo-descricao-tutora{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 2.0rem;
+    font-weight: 600;
+}
+
+.corpo-texto-descricao-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+    background: rgb(0, 0, 0,0.05);
+    padding: 5px;
+    border-radius: 16px;
+}
+
+.corpo-texto-descricao{
+    font-family: 'Roboto';
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.hiperLink-professora-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+}
+
+.botaoHiperLink-professora{
+    margin-top: 15px;
+}
+
+.texto-hiperlink-professora{
+    font-family: 'Roboto';
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.link-professora{
+    color: blue;
+}
+
+
+/*aba DIREITA da pagina*/
+.fotos-tutora {
+  height: 100vh;
+  padding: 10px 0px;
+  box-sizing: border-box; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+}
+
+.fotos-tutora-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.foto-container {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-tutor {
+  max-width: 70%;
+  object-fit: cover;
+}
+
+
+
+
