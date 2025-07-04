@@ -4,19 +4,23 @@
 }
 
 .container-texto h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    margin-top: 80px; 
+
 }
 
 .container-vertentes {
     display: flex;
-    gap: 15px;
+    gap: 35px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 0.9rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: 80px;
 }
 
 .container-pesquisa,
@@ -60,14 +64,14 @@
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 1.2rem;
-    margin-top: 40px;
+    margin-top: 60px;
     font-weight: 400;
 }
 
 .social-links-about {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 25px;
   margin-top: 20px;
 }
 
@@ -91,93 +95,32 @@
   height: 24px;
 }
 
-/* responsividade telas grandes (monitor)*/
-@media screen and (min-width: 1600px) {
-    .container-texto h1 {
-        margin-top: 60px;
-        font-size: 2.8rem; /* Larger heading */
-        margin-bottom: 2rem;
-        letter-spacing: 0.5px;
-    }
-
-    .container-vertentes {
-        gap: 30px; 
-        font-size: 1.1rem; 
-        justify-content: center; 
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-
-    .container-pesquisa,
-    .container-extensao,
-    .container-tutoria {
-        padding: 25px 30px; /* More spacious */
-        flex: 1; /* Equal width */
-        max-width: 380px; /* Limits card width */
-    }
-
-    /* Enhanced hover effects */
-    .container-pesquisa:hover {
-        transform: translate(15px, -5px) scale(1.03);
-    }
-
-    .container-extensao:hover {
-        transform: translateY(-12px) scale(1.03);
-    }
-
-    .container-tutoria:hover {
-        transform: translate(-15px, -5px) scale(1.03);
-    }
-
-    .redes-sociais-frase {
-        font-size: 1.5rem;
-        margin-top: 60px;
-        margin-bottom: 10px;
-    }
-
-    .social-links-about {
-        gap: 24px;
-        margin-top: 30px;
-    }
-
-    .social-icon {
-        width: 28px;
-        height: 28px;
-    }
-
-    .social-link-about {
-        font-size: 1.1rem;
-        gap: 10px;
-    }
-}
-
-/*responsivo*/
-
+/*responsivo para tela de computador */
 @media screen and (max-width: 1400px) {
-    /* Ajustes na seção direita */
     .secao-direita {
-        padding: 20px; /* Reduz o padding */
+        padding: 20px; 
     }
 
     .container-texto h1 {
-        font-size: 1.8rem; /* Reduz o tamanho da fonte */
-        margin-top: 20px; /* Reduz a margem superior */
-        padding-bottom: 0px; /* Reduz o padding inferior */
+        font-size: 1.5rem; 
+        margin-top: 30px; 
+        padding-bottom: 20px; 
     }
 
     .container-vertentes {
-        gap: 10px; /* Reduz o espaçamento entre cards */
-        font-size: 0.9rem; /* Reduz o tamanho da fonte */    
-        margin-top: 5px;
+        gap: 20px; 
+        font-size: 0.8rem; 
+        line-height: 1.2;
+        margin-top: 10px;
+
     }
 
     .container-pesquisa,
     .container-extensao,
     .container-tutoria {
-        padding: 5px 15px; /* Reduz o padding interno */
+        padding: 5px 15px; 
     }
 
-    /* Ajusta os efeitos hover para deslocamento menor */
     .container-pesquisa:hover {
         transform: translate(10px, -5px) scale(1.02);
     }
@@ -185,4 +128,50 @@
     .container-tutoria:hover {
         transform: translate(-10px, -5px) scale(1.02);
     }
+
+    .redes-sociais-frase{
+    font-size: 1.1rem;
+    margin-top: 40px;
 }
+}
+
+/*resposividae mobile*/
+@media screen and (max-width: 768px) {
+.container-texto h1 {
+    margin-top: 80px;
+    font-size: 1rem;
+}
+
+.container-vertentes {
+    display: flex;
+    gap: 2px;
+    font-size: 0.6rem;
+}
+
+.container-pesquisa,
+.container-extensao,
+.container-tutoria {
+    padding: 2px 10px;
+    border: 0.2px solid #1a097d;
+    border-radius: 30px; 
+}
+
+.redes-sociais-frase{
+    font-size: 0.8rem;
+}
+
+.social-links-about {
+  gap: 15px;
+}
+
+.social-link-about {
+  gap: 5px;
+  font-size: 0.7rem;
+}
+
+.social-icon {
+  width: 20px;
+}
+}
+
+

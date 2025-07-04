@@ -3,6 +3,7 @@
     max-width: 100%;
     max-height: 100%;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .image-logo{
@@ -11,4 +12,15 @@
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+}
+
+/*responsividade para mobile*/
+@media screen and (max-width: 768px) {
+  .image-logo {
+    width: 130px; 
+  }
+
+  .logoPET-container {
+    margin-top: 10px;
+  }
 }

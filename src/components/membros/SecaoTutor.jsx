@@ -89,7 +89,7 @@ export default function SecaoTutor() {
             {/*sessão responsvel pelo LADO ESQUERDO pagina*/}
             <div className="fotos-tutora">
                 <div className="fotos-tutora-container">
-                    <div className="block">
+                    <div className="block-celular">
                         <div className="foto-container">
                             <img
                                 src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
@@ -99,7 +99,7 @@ export default function SecaoTutor() {
                         </div>
                     </div>
 
-                    <div className="block">
+                    <div className="block-celular">
                         <div className="foto-container">
                             <img
                                 src={process.env.PUBLIC_URL + "/images/logo-pet.png"}

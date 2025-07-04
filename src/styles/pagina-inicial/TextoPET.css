@@ -60,13 +60,13 @@
   }
 
   .titulo-texto {
-    font-size: 1.8vw; /* Escala com a largura */
+    font-size: 1.7vw; /* Escala com a largura */
     margin-left: 30%; /* Mantém % original */
     margin-bottom: 0.5vh;
   }
 
   .corpo-texto {
-    font-size: 1.4vw; /* Texto responsivo */
+    font-size: 1.3vw; /* Texto responsivo */
     max-width: 70%;
     margin-left: 25%;
     line-height: 1.5;
@@ -82,5 +82,39 @@
     padding: 1.5vh 2vw;
     width: 12vw;
     border-radius: 2vw;
+  }
+}
+
+/* resposividade para mobile*/
+@media screen and (max-width: 768px) {
+  .texto-PET {
+    margin-top: 15%;
+    padding: 0 15px;
+    align-items: center;
+  }
+
+  .titulo-texto {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .corpo-texto {
+    font-size: 0.8rem;
+    margin-left: 0;
+    max-width: 100%;
+    text-align: justify;
+  }
+
+  .localBotao {
+    margin-left: 0;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .botaoSaibaMais {
+    font-size: 0.7rem;
+    width: 130px;
+    padding: 10px 12px;
   }
 }

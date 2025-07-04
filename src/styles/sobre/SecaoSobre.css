@@ -35,3 +35,29 @@
   display: flex;
   flex-direction: column;
 }
+
+/*resposividade monitor*/
+@media screen and (min-width: 1600px) {
+    .container-aurora{
+      height: 10vh;
+    }
+}
+
+/*resposividae mobile*/
+@media screen and (max-width: 768px) {
+  .tela-sobre {
+    flex-direction: column;
+    height: 100vh; /* deixa altura automática para evitar cortes */
+  }
+
+  .secao-esquerda,
+  .secao-direita {
+    width: 100%;
+    height: 25%;
+    box-sizing: border-box;
+  }
+
+  .container-aurora {
+    height: 30vh; /* reduz altura para caber melhor no mobile */
+  }
+}
