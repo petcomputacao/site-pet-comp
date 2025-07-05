@@ -3,7 +3,6 @@ import "../../styles/membros/SecaoTutor.css"
 export default function SecaoTutor() {
     return (
         <section className="secao-tutor">
-            {/*sessão responsavel pelo LADO ESQUERDO da pagina (foto, nome, informação)*/}
             <div className="foto-nome-container">
                 <div className="block">
                     <div className="nomeTutora-container">
