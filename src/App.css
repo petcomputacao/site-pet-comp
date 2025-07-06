@@ -94,9 +94,6 @@ html, body {
 .Sobre {
   height: 100vh; 
   background-color: #dcdae4; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Projetos realizados pelo PET */
