@@ -1,45 +1,24 @@
-.functionPAI{
-    position: relative;
+.container-sobre{
+  width: 100%;
+  height: 100%;
 }
 
-.container-aurora {
-    width: 100%;
-    height: 20vh;
-    top: 0;
-    right: 0;
-    transform: rotate(180deg);
-    z-index: 10;
-    background-color: red;
+.aurora {
+  width: 100%;
+  height: 30%;
+  transform: rotate(180deg);
 }
 
 .tela-sobre {
     display: flex;
     width: 100%;
-    height: 100%;
-}
-
-/*seção destinada a parte esquerda da pagina SOBRE*/
-.secao-esquerda {
-  width: 50%;
-  height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-}
-
-/*seção destinada a parte direita da pagina SOBRE*/
-.secao-direita {
-  width: 50%;
-    height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
+    height: 70%;
 }
 
 /*resposividade monitor*/
 @media screen and (min-width: 1600px) {
     .container-aurora{
-      height: 10vh;
+      height: 20vh;
     }
 }
 
@@ -57,7 +36,8 @@
     box-sizing: border-box;
   }
 
+  /* reduz altura para caber melhor no mobile */
   .container-aurora {
-    height: 30vh; /* reduz altura para caber melhor no mobile */
+    height: 20vh;
   }
 }

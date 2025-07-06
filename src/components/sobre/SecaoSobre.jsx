@@ -5,19 +5,14 @@ import SobreDireita from "./SecaoSobreDireita";
 
 export default function SecaoSobre() {
     return (
-        <div className="fuctionPAI">
-                <div className="container-aurora">
-                    <Aurora />
-                </div>
+        <div className="container-sobre">
+            {/* <div className="aurora">
+                <Aurora />
+            </div> */}
 
-                <div className="tela-sobre">
-                    <section className="secao-esquerda">
-                        <SobreEsquerda/>
-                    </section>
-
-                    <section className="secao-direita">
-                        <SobreDireita/>
-                    </section>
+            <div className="tela-sobre">
+                    <SobreEsquerda/>
+                    <SobreDireita/>
             </div>
         </div>
     );

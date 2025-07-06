@@ -2,7 +2,7 @@ import "../../styles/sobre/SecaoSobreDireita.css"
 
 export default function SobreDireita(){
     return(
-        <div className="functionPAISobreDireita">
+        <div className="container-sobre-direita">
             {/*"titulo" bloco das vertentes do PET"*/}
             <div className="block">
                 <div className="container-texto">
