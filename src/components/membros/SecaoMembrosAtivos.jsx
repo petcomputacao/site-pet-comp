@@ -6,92 +6,92 @@ export default function SecaoMembrosAtivos() {
             <div className="topo">
                 <p>Membros</p>
             </div>
-            <div class="galeria">
-                <div class="item-galeria">
+            <div className="galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />
                     <p className="nome">Nome</p>
                 </div>
-                <div class="item-galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />
                     <p className="nome">Nome</p>
                 </div>
-                <div class="item-galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />
                     <p className="nome">Nome</p>
                 </div>
-                <div class="item-galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />
                     <p className="nome">Nome</p>
                 </div>
-                <div class="item-galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />
                     <p className="nome">Nome</p>
                 </div>
-                <div class="item-galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />
                     <p className="nome">Nome</p>
                 </div>
-                <div class="item-galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />
                     <p className="nome">Nome</p>
                 </div>
-                <div class="item-galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />
                     <p className="nome">Nome</p>
                 </div>
-                <div class="item-galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />
                     <p className="nome">Nome</p>
                 </div>
-                <div class="item-galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />
                     <p className="nome">Nome</p>
                 </div>
-                <div class="item-galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />
                     <p className="nome">Nome</p>
                 </div>
-                <div class="item-galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />
                     <p className="nome">Nome</p>
                 </div>
-                <div class="item-galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />
                     <p className="nome">Nome</p>
                 </div>
-                <div class="item-galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />
                     <p className="nome">Nome</p>
                 </div>
-                <div class="item-galeria">
+                <div className="item-galeria">
                     <img src={process.env.PUBLIC_URL + "/images/avatar.avif"} 
                             alt="Descrição 1" 
                             className="foto-membro-ativo" />

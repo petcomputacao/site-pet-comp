@@ -1,28 +1,333 @@
 .secao-tutor {
-    height: 95%;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0 8vw;
-    gap: 6vw;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 1.25rem;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
-.foto-tutor-container .foto-tutor-image {
-    width: 300px; 
-    object-fit: cover; 
+/*aba da esquerda da pagina*/
+.foto-nome-container{
+    width: 25%;
+    height: 100vh;
+    margin: 20px;
 }
 
-.secao-tutor .coluna-esquerda {
+.nomeTutora-container{
+    margin-top: 40px;
     display: flex;
-    flex-direction: column;
+    justify-content: center; 
     align-items: center;
 }
 
-.secao-tutor .coluna-direita {
-    text-align: justify;
-    max-width: 70ch;
+.name-box{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-weight: 600;
+
 }
+
+.foto-perfil-tutora-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.foto-tutor-image{
+    width: 75%;
+    height: 100%;
+}
+
+.logos-tutora-container{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 40px;
+}
+
+.picture1{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.picture-description{
+    width: 30%;
+    margin: auto;
+}
+
+.picture2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/*aba CENTRO da pagina*/
+.carreira-descricao-links{
+    width: 55%;
+    height: 100%;
+}
+
+.titulo-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+}
+
+.titulo-descricao-tutora{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 2.0rem;
+    font-weight: 600;
+}
+
+.corpo-texto-descricao-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+    background: rgb(0, 0, 0,0.05);
+    padding: 5px;
+    border-radius: 16px;
+}
+
+.corpo-texto-descricao{
+    font-family: 'Roboto';
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.hiperLink-professora-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+}
+
+.botaoHiperLink-professora{
+    margin-top: 15px;
+}
+
+.texto-hiperlink-professora{
+    font-family: 'Roboto';
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.link-professora{
+    color: blue;
+}
+
+
+/*aba DIREITA da pagina*/
+.fotos-tutora {
+  height: 100vh;
+  padding: 10px 0px;
+  box-sizing: border-box; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fotos-tutora-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.foto-container {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-tutor {
+  max-width: 70%;
+  object-fit: cover;
+}
+
+/* responsividade telas grandes (monitor)*/
+@media screen and (min-width: 1600px) {
+    /*direita*/
+    .fotos-tutora{
+    width: 20%;
+    }
+    /*centro*/
+    .titulo-container{
+    margin-top: 120px;
+    }
+
+    .titulo-descricao-tutora{
+    font-size: 2.5rem;
+    }
+
+    .corpo-texto-descricao-container{
+        margin-top: 40px;
+    }
+
+    .corpo-texto-descricao{
+        font-size: 1.7rem;
+    }
+
+    .hiperLink-professora-container{
+        margin-top: 20px;
+    }
+
+    .botaoHiperLink-professora{
+        margin-top: 20px;
+    }
+
+    .texto-hiperlink-professora{
+        font-size: 1.4rem;
+    }
+
+    /*esquerda*/
+    .nomeTutora-container{
+        margin-top: 100px;
+    }
+
+    .name-box{
+        font-size: 1.3rem;
+    }
+
+    .foto-tutor-image{
+    margin-top: 40px;
+    }
+
+    .logos-tutora-container{
+        margin-top: 80px;
+    }
+
+    .picture1{
+        width: 55%;
+    }
+
+    .picture2{
+        width: 55%;
+    }
+}
+
+/* responsividade para mobile */
+@media screen and (max-width: 768px) {
+  .secao-tutor {
+    flex-direction: column;
+    height: 100%;
+  }
+
+    /*aba SUPERIOR da pagina*/
+    .foto-nome-container{
+    width: 100%;
+    height: 35%;
+}
+
+.nomeTutora-container{
+    margin-top: 5px;
+}
+
+.name-box{
+    font-size: 0.8rem;
+}
+
+.foto-tutor-image{
+    width: 40%;
+}
+
+.logos-tutora-container{
+    justify-content: center; 
+    margin-top: 10px;
+}
+
+.picture1{
+    width: 30%;
+}
+
+.picture-description{
+    width: 40%;
+}
+
+.picture2{
+    width: 30%;
+}
+
+/*aba CENTRO da pagina*/
+.carreira-descricao-links{
+    width: 100%;
+    height: 45%;
+}
+
+.titulo-container{
+    margin-top: 0px;
+    height: 40px;
+}
+
+.titulo-descricao-tutora{
+    font-size: 0.9rem;
+}
+
+.corpo-texto-descricao-container{
+    margin-top: 0px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.corpo-texto-descricao{
+    font-size: 0.85rem;
+}
+
+.hiperLink-professora-container{
+    margin-top: 0px;
+}
+
+.botaoHiperLink-professora{
+    margin: 0px;
+}
+
+.texto-hiperlink-professora{
+    font-size:0.9rem;
+    font-weight: 800;
+}
+
+
+/*aba parte INFERIOR da pagina*/
+.fotos-tutora {
+  height: 20%;
+  width: 100%;
+  padding: 0px;
+  display: flex;
+}
+
+.fotos-tutora-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  gap: 0;
+}
+
+.foto-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.foto-tutor {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+}
+
+
+

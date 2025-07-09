@@ -9,6 +9,7 @@ const Footer = () => {
 
         <div className="footer-content">
         <p>&copy; 2025 PET Computação UFCG. Todos os direitos reservados.</p>
+        <p>Redes Sociais:</p>
         <div className="social-links">
             <a
             href="https://github.com/petcomputacao"
