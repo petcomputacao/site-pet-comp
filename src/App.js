@@ -27,7 +27,7 @@ function App() {
       <main>
           {/* Pagina Inicial */}
           <section id="paginaInicial" className="paginaInicial">
-            <div className="content-wrapper"> 
+            <div className="content-wrapper">
               <section className='esquerda-pagina-inicial'>
                 <TextoPET />
               </section>
