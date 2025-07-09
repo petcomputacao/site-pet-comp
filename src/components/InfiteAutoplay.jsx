@@ -1,4 +1,4 @@
-import '../../styles/projectspage/InfiniteAutoplay.css';
+import '../styles/InfiniteAutoplay.css';
 
 function AutoPlay(){
     return(
@@ -13,7 +13,7 @@ function AutoPlay(){
 
                 <div className='imagesblog'>
                     {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
+                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
                         alt='imagem-pet'/>
                 </div>
 
@@ -25,12 +25,18 @@ function AutoPlay(){
 
                 <div className='imagesblog'>
                     {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
+                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
                         alt='imagem-pet'/>
                 </div>
                 <div className='imagesblog'>
                     {/* conteudo do backend*/}
                     <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
+                        alt='imagem-pet'/>
+                </div>
+
+                <div className='imagesblog'>
+                    {/* conteudo do backend*/}
+                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
                         alt='imagem-pet'/>
                 </div>
 
@@ -42,7 +48,7 @@ function AutoPlay(){
 
                 <div className='imagesblog'>
                     {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
+                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
                         alt='imagem-pet'/>
                 </div>
 
@@ -54,7 +60,7 @@ function AutoPlay(){
 
                 <div className='imagesblog'>
                     {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
+                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
                         alt='imagem-pet'/>
                 </div>
 
@@ -66,13 +72,7 @@ function AutoPlay(){
 
                 <div className='imagesblog'>
                     {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
-                </div>
-
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
+                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
                         alt='imagem-pet'/>
                 </div>
 
@@ -85,7 +85,7 @@ function AutoPlay(){
 
                 <div className='imagesblog'>
                     {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
+                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
                         alt='imagem-pet'/>
                 </div>
 
@@ -97,12 +97,7 @@ function AutoPlay(){
 
                 <div className='imagesblog'>
                     {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
-                </div>
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
+                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
                         alt='imagem-pet'/>
                 </div>
 
@@ -114,7 +109,7 @@ function AutoPlay(){
 
                 <div className='imagesblog'>
                     {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
+                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
                         alt='imagem-pet'/>
                 </div>
 
@@ -126,28 +121,9 @@ function AutoPlay(){
 
                 <div className='imagesblog'>
                     {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
+                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
                         alt='imagem-pet'/>
                 </div>
-
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
-                </div>
-
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
-                </div>
-
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
-                </div>
-
             </div>
         </div>
     )

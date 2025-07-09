@@ -37,8 +37,8 @@ html, body {
 .header {
   position: fixed;
   top: 0; 
-  width: 100%;
-  height: 60px;
+  width: 100vw;
+  height: 8vh;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -51,7 +51,7 @@ html, body {
 /* seção Página Inicial */
 .paginaInicial {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   flex-direction: column;
 }
 
@@ -113,16 +113,12 @@ html, body {
   width: 100vw;
 }
 
-/* container que guarda as duas caixas de texto informativas */
-.textosProjects {
-  display: flex;
-  height: 50%;
-}
+/*===========================================================*/
 
-/* container que guarda o carrossel infinito com os projetos */
-.content-projects {
-  display: flex;
-  height: 50%;
+/* seção Produções*/
+.Producoes {
+  height: 100vh;
+  width: 100vw;
 }
 
 /*===========================================================*/
@@ -138,6 +134,12 @@ html, body {
 /* Pagina dos Membros */
 .PaginaMembros {
   height: 100vh;
+  width: 100vw;
+}
+
+/*===========================================================*/
+
+.Footer {
   width: 100vw;
 }
 

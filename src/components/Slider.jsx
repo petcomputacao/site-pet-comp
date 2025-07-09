@@ -1,4 +1,4 @@
-import '../../styles/pagina-inicial/Slider.css';
+import '../styles/Slider.css';
 import React, { useState } from 'react';
 
 const SliderImages = () => {

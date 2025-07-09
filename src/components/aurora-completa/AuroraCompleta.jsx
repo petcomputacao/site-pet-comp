@@ -8,7 +8,7 @@ export default function AuroraCompleta () {
                 <Aurora />
             </div>
             <div className='aurora-inferior'>
-                    <Aurora />
+                <Aurora />
             </div>
         </div>
     );

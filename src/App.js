@@ -8,10 +8,10 @@ import TextoPET             from './components/pagina-inicial/TextoPET';
 import SecaoTutor           from './components/membros/SecaoTutor';
 import SecaoMembrosAtivos   from './components/membros/SecaoMembrosAtivos';
 import SecaoSobre           from './components/sobre/SecaoSobre';
-import AutoPlay             from './components/projectspage/InfiteAutoplay';
-import TextoProjects        from './components/projectspage/TextoProjects';
-import SliderImages         from './components/pagina-inicial/Slider';
+import SliderImages         from './components/Slider';
 import LogoPETpaginaInicial from './components/pagina-inicial/LogoPETpaginaInicial';
+import Projetos from './components/projetos-desenvolvimento/Projetos';
+import Producoes from './components/producoes/Producoes'
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           <Navbar />
       </div>
 
-      {/* Sessão das "partes" da pagina */}
+      {/* Seções da página */}
       <main>
           {/* Pagina Inicial */}
           <section id="paginaInicial" className="paginaInicial">
@@ -36,12 +36,13 @@ function App() {
                   <SliderImages/>
                 </div>
                 <div className='logo-Section'>
-                    <LogoPETpaginaInicial />
+                  <LogoPETpaginaInicial />
                 </div>
               </section>
             </div>
           </section>
 
+          {/* Animação Aurora */}
           <section className='section-aurora'>
             <AuroraCompleta/>
           </section>
@@ -51,18 +52,19 @@ function App() {
             <SecaoSobre />
           </section>
 
-          {/* Projetos */}
+          {/* Projetos em desenvolvimento */}
           <div className='blockpage'>
             <section id="Projetos" className="Projetos">
-              <div className='textosProjects'>
-                <TextoProjects />
-              </div>
-              <div className="content-projects"> 
-                <AutoPlay/>
-              </div>
+              <Projetos />
             </section>
           </div>
 
+          {/* Produções */}
+          <div>
+            <section id='Producoes' className='Producoes'>
+              <Producoes />
+            </section>
+          </div>
           {/* Pagina dedicada ao Tutor(a) */}
           <div className='blockpage'>
             <section id="Tutor" className="PaginaTutor">
@@ -78,7 +80,7 @@ function App() {
           </div>
       </main>
       {/* Rodapé da pagina */}
-      <footer>
+      <footer className='Footer'>
         <Footer />
       </footer>
     </div>

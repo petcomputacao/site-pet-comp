@@ -1,4 +1,4 @@
-import '../../styles/projectspage/TextoProjects.css';
+import '../../styles/projetos/TextoProjects.css';
 
 function TextoProjects(){
     return(

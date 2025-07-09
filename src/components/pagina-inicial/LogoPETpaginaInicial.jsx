@@ -4,9 +4,9 @@ function LogoPETpaginaInicial() {
     return(
         <div className="logoPET-container">
             <img
-                src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                alt="Logo do PET"
-                className="image-logo"
+                src={process.env.PUBLIC_URL + "/images/exemplos/exemplo.jpg"}
+                alt="exemplo"
+                className="imagem-exemplo"
             />
         </div>
     );
