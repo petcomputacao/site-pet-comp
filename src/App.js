@@ -1,6 +1,6 @@
 import './App.css';
 
-import Aurora               from './components/pagina-inicial/Aurora';
+import Aurora               from './components/Aurora';
 import LogoPET              from './components/header-static/LogoPET';
 import Navbar               from './components/header-static/Navbar';
 import Footer               from './components/Footer';
