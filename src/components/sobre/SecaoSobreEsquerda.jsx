@@ -2,25 +2,25 @@ import "../../styles/sobre/SecaoSobreEsquerda.css"
 
 export default function SobreEsquerda (){
     return(
-        <div className="container-sobre-esquerda">
+        <div className="FuncaoPai">
             <div className="container-esquerda">
                 {/*titulo do texto */}
                 <div className="block">
-                    <div className="container-titulo-sobre">
+                    <div className="container-texto-esquerda">
                     <h1>SOBRE O PET</h1>
                 </div>
                 </div>
                 {/*foto com o logo da ufcg*/}
-                {/* <div className="block">
+                <div className="block">
                     <div className="container-foto-esquerda">
                         <div className="container-foto">
                             <img src={process.env.PUBLIC_URL + "/images/logo-ufcg.png"} alt="imagem esquerda" />
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
             {/*corpo do texto*/}
-            <div className="container-paragrafo-sobre">
+            <div className="aboutPET">
                 <div className="block">
                     <div className="container-ABOUT">
                         <p>

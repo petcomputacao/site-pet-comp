@@ -1,31 +1,45 @@
-.container-sobre-esquerda {
-    width: 45vw;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container-esquerda{
+    display: flex;             
+    align-items: center;       
+    justify-content: center;   
+    gap: 120px;  
+    margin-top: 100px;
 }
 
-.container-titulo-sobre{
-    font-size: 1.8rem;
+.container-texto-esquerda{
+    width: 100%;
+    font-size: 1.9rem;
     font-weight: 800;
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
-    margin-top: 90px;
+    margin-top: 60px;
 }
 
-.container-paragrafo-sobre {
+.container-foto-esquerda{
+    width: 50%; 
+    display: flex;
+    justify-content: center;     
+    align-items: center;   
+    margin-top: 20px;
+}
+
+.container-foto{
+    width: 120px;
+}
+
+.aboutPET{
     display: flex;
     font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 1.3rem;
+    font-weight: 400;
+    font-size: 1.2rem;
     text-align: justify;
     justify-content: center; 
     align-items: center;
     line-height: 1.3;
 }
 
-.container-ABOUT {
+.container-ABOUT{
+    background-color: transparent;
     color: #000000;
     max-width: 600px;
 }
@@ -53,7 +67,8 @@
 /* responsividade telas grandes (monitor)*/
 @media screen and (min-width: 1600px) {
     .container-esquerda {
-        gap: 60px; 
+        gap: 180px; 
+        margin-top: 160px;
     }
 
     .container-texto-esquerda {
@@ -89,25 +104,27 @@
 
 /*responsividde mobule */
 @media screen and (max-width: 768px) {
-    .container-esquerda {
-    gap: 55px;  
-    }
+    .container-esquerda{
+    gap: 50px;  
+}
 
-    .container-texto-esquerda {
-        font-size: 1.2rem;
-        margin-top: 40px;
-    }
+.container-texto-esquerda{
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
 
-    .aboutPET {
-        font-size: 0.7rem;
-    }
 
-    .container-ABOUT {
-        max-width: 400px;
-    }
+.aboutPET{
+    font-size: 0.8rem;
+    margin: 5px;
+}
 
-    .texto-hiperlink {
-    font-size: 0.6rem;
-    margin-top: 10px;
-    }
+.container-ABOUT{
+    max-width: 400px;
+}
+
+.texto-hiperlink {
+  font-size: 0.7rem;
+  margin-top: 10px;
+}
 }

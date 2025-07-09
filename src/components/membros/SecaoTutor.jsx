@@ -3,6 +3,7 @@ import "../../styles/membros/SecaoTutor.css"
 export default function SecaoTutor() {
     return (
         <section className="secao-tutor">
+            {/*sessão responsavel pelo LADO ESQUERDO da pagina (foto, nome, informação)*/}
             <div className="foto-nome-container">
                 <div className="block">
                     <div className="nomeTutora-container">
@@ -18,11 +19,11 @@ export default function SecaoTutor() {
                     <div className="foto-perfil-tutora-container">
                         <img src={process.env.PUBLIC_URL + "/images/livia.jpeg"} 
                         alt="Foto Tutor" 
-                        className="foto-tutor-imagem"/>
+                        className="foto-tutor-image"/>
                     </div>
                 </div>
 
-                {/* <div className="block-inferior">
+                <div className="block-inferior">
                     <div className="logos-tutora-container">
                         <div className="picture1">
                             <img
@@ -39,7 +40,7 @@ export default function SecaoTutor() {
                             />
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
 
 
@@ -86,12 +87,12 @@ export default function SecaoTutor() {
 
 
             {/*sessão responsvel pelo LADO ESQUERDO pagina*/}
-            {/* <div className="fotos-tutora">
+            <div className="fotos-tutora">
                 <div className="fotos-tutora-container">
                     <div className="block-celular">
                         <div className="foto-container">
                             <img
-                                src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
+                                src={process.env.PUBLIC_URL + "/images/exemplos/exemplo.jpg"}
                                 alt="Imagem tutor 1"
                                 className="foto-tutor"
                             />
@@ -101,7 +102,7 @@ export default function SecaoTutor() {
                     <div className="block-celular">
                         <div className="foto-container">
                             <img
-                                src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
+                                src={process.env.PUBLIC_URL + "/images/exemplos/exemplo.jpg"}
                                 alt="Imagem tutor 2"
                                 className="foto-tutor"
                             />
@@ -111,14 +112,14 @@ export default function SecaoTutor() {
                     <div className="block-inferior">
                         <div className="foto-container">
                             <img
-                                src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
+                                src={process.env.PUBLIC_URL + "/images/exemplos/exemplo.jpg"}
                                 alt="Imagem tutor 3"
                                 className="foto-tutor"
                             />
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
         </section>
     );

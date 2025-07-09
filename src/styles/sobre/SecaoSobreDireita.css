@@ -1,28 +1,26 @@
-.container-sobre-direita{
-    width: 55vw;
+.functionPAISobreDireita{
     height: 100%;
+    width: 100%;
 }
 
-/* NOSSAS VERTENTES */
 .container-texto h1 {
     font-size: 2.5rem;
     font-weight: 700;
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    margin-top: 80px; 
-
+    margin-top: 200px; 
 }
 
 .container-vertentes {
-    width: 98%;
     display: flex;
-    gap: 40px;
+    gap: 35px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 1.5;
-    margin-top: 80px;
+    margin-top: 100px;
+    padding: 10px;
 }
 
 .container-pesquisa,
@@ -66,7 +64,7 @@
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 1.2rem;
-    margin-top: 60px;
+    margin-top: 90px;
     font-weight: 400;
 }
 
@@ -100,21 +98,21 @@
 /*responsivo para tela de computador */
 @media screen and (max-width: 1400px) {
     .secao-direita {
-        padding: 20px; 
+        padding: 0px; 
+        margin-top: 180px;
     }
 
     .container-texto h1 {
-        font-size: 1.5rem; 
+        font-size: 1.8rem; 
         margin-top: 30px; 
-        padding-bottom: 20px; 
+        padding-bottom: 10px; 
     }
 
     .container-vertentes {
-        gap: 20px; 
+        gap: 10px; 
         font-size: 0.8rem; 
         line-height: 1.2;
         margin-top: 10px;
-
     }
 
     .container-pesquisa,
@@ -124,16 +122,16 @@
     }
 
     .container-pesquisa:hover {
-        transform: translate(10px, -5px) scale(1.02);
+        transform: translate(5px, -5px) scale(1.02);
     }
 
     .container-tutoria:hover {
-        transform: translate(-10px, -5px) scale(1.02);
+        transform: translate(-5px, -5px) scale(1.02);
     }
 
     .redes-sociais-frase{
     font-size: 1.1rem;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 }
 
@@ -146,7 +144,7 @@
 
 .container-vertentes {
     display: flex;
-    gap: 2px;
+    gap: 5px;
     font-size: 0.6rem;
 }
 

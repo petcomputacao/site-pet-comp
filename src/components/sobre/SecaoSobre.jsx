@@ -4,9 +4,18 @@ import SobreDireita from "./SecaoSobreDireita";
 
 export default function SecaoSobre() {
     return (
-        <div className="container-sobre">
-            <SobreEsquerda/>
-            <SobreDireita/>
+        <div className="fuctionPAI">
+                <div className="tela-sobre">
+                    {/*metade da esquerda da tela*/}
+                    <section className="secao-esquerda">
+                        <SobreEsquerda/>
+                    </section>
+
+                    {/*metade da direita da tela*/}
+                    <section className="secao-direita">
+                        <SobreDireita/>
+                    </section>
+            </div>
         </div>
     );
 }

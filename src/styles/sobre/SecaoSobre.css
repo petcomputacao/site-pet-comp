@@ -1,13 +1,45 @@
-.container-sobre {
-  width: 100%;
+.functionPAI{
+    position: relative;
+}
+
+.container-aurora {
+    width: 100%;
+    height: 20vh;
+    top: 0;
+    right: 0;
+    transform: rotate(180deg);
+    z-index: 10;
+    background-color: red;
+}
+
+.tela-sobre {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/*seção destinada a parte esquerda da pagina SOBRE*/
+.secao-esquerda {
+  width: 50%;
   height: 100%;
+  box-sizing: border-box;
   display: flex;
+  flex-direction: column;
+}
+
+/*seção destinada a parte direita da pagina SOBRE*/
+.secao-direita {
+  width: 50%;
+    height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 /*resposividade monitor*/
 @media screen and (min-width: 1600px) {
     .container-aurora{
-      height: 20vh;
+      height: 10vh;
     }
 }
 
@@ -25,8 +57,7 @@
     box-sizing: border-box;
   }
 
-  /* reduz altura para caber melhor no mobile */
   .container-aurora {
-    height: 20vh;
+    height: 30vh; /* reduz altura para caber melhor no mobile */
   }
 }

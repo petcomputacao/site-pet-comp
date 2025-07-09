@@ -56,7 +56,7 @@
 /* ADAPTAÇÃO PARA DESKTOP (MESMA PROPORÇÃO, VALORES EM VW) */
 @media (max-width: 1400px) {
   .texto-PET {
-    margin-top: 17vh; /* Relativo à altura da tela */
+    margin-top: 25vh; /* Relativo à altura da tela */
   }
 
   .titulo-texto {
