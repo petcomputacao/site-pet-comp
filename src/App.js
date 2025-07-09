@@ -1,6 +1,6 @@
 import './App.css';
 
-import Aurora               from './components/Aurora';
+import AuroraCompleta       from './components/aurora-completa/AuroraCompleta';
 import LogoPET              from './components/header-static/LogoPET';
 import Navbar               from './components/header-static/Navbar';
 import Footer               from './components/Footer';
@@ -40,7 +40,10 @@ function App() {
                 </div>
               </section>
             </div>
-            <Aurora/>
+          </section>
+
+          <section className='section-aurora'>
+            <AuroraCompleta/>
           </section>
 
           {/* Sobre */}
