@@ -1,14 +1,14 @@
 .secao-tutor {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     color: rgb(0, 0, 0);
 }
 
-/*aba da esquerda da pagina*/
+/* container esquerdo da seção com nome e foto do tutor(a) */
 .foto-nome-container{
-    width: 25%;
+    width: 30%;
     height: 100vh;
     margin: 20px;
 }
@@ -34,7 +34,7 @@
     align-items: center;
 }
 
-.foto-tutor-image{
+.foto-tutor-imagem {
     width: 75%;
     height: 100%;
 }

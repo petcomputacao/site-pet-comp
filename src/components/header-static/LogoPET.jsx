@@ -2,7 +2,7 @@ import '../../styles/header-static/LogoPET.css';
 
 function LogoPET() {
     return(
-        <div className="logo2-container">
+        <div className="container-logo-PET">
             <img
                 src={process.env.PUBLIC_URL + "/images/logo-pet-branco.png"}
                 alt="Logo da UFCG"

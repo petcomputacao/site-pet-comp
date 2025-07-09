@@ -1,8 +1,9 @@
 .container-sobre-direita{
-    width: 100%;
+    width: 55vw;
     height: 100%;
 }
 
+/* NOSSAS VERTENTES */
 .container-texto h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -14,8 +15,9 @@
 }
 
 .container-vertentes {
+    width: 98%;
     display: flex;
-    gap: 35px;
+    gap: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
