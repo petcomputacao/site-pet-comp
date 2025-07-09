@@ -103,13 +103,13 @@ html, body {
 /*===========================================================*/
 
 /* seção Projetos */
-.Projetos{
+.Projetos {
   height: 100vh;
   width: 100vw;
 }
 
 /* container que guarda as duas caixas de texto informativas */
-.textosProjects{
+.textosProjects {
   display: flex;
   height: 50%;
 }
@@ -123,17 +123,19 @@ html, body {
 /*===========================================================*/
 
 /* Pagina do Tutor */
-.PaginaTutor{
-  height: 100vh; 
+.PaginaTutor {
+  height: 100vh;
+  width: 100vw;
   background-color: #dcdae4; 
 }
 
 /*===========================================================*/
 
 /* Pagina dos Membros */
-.PaginaMembros{
-  height: 100vh; 
-  background-color: #ff0000;
+.PaginaMembros {
+  height: 100vh;
+  width: 100vw;
+  
 }
 
 /*===========================================================*/
