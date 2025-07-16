@@ -10,8 +10,8 @@ import SecaoMembrosAtivos   from './components/membros/SecaoMembrosAtivos';
 import SecaoSobre           from './components/sobre/SecaoSobre';
 import SliderImages         from './components/Slider';
 import LogoPETpaginaInicial from './components/pagina-inicial/LogoPETpaginaInicial';
-import Projetos from './components/projetos-desenvolvimento/Projetos';
-import Producoes from './components/producoes/Producoes'
+import Projetos             from './components/projetos-desenvolvimento/Projetos';
+import Producoes            from './components/producoes/Producoes'
 
 
 function App() {
