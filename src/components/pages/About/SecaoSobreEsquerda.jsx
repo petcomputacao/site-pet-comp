@@ -30,22 +30,7 @@ export default function SobreEsquerda (){
                     </div>
                 </div>
             </div>
-            {/*texto com hiper link para a pagina do PET no MEC */}
-            <div className="block-inferior">
-                <div className="botaoHiperLink">
-                    <p className="texto-hiperlink">
-                        Para informações mais detalhadas sobre o PET,{' '}
-                    <a
-                        href="https://portal.mec.gov.br/index.php?option=com_content&view=article&id=12223&Itemid=480"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link-pet"
-                    >
-                    clique aqui!
-                    </a>
-                    </p>
-                </div>
-            </div>
+            
         </div>
     )
 }

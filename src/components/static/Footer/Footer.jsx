@@ -3,11 +3,52 @@ import '../styles/Footer.css';
 const Footer = () => {
   return (
     <footer className="site-footer">
-        <div className="footer-image left">
-        <img src={process.env.PUBLIC_URL + "/images/logo-ufcg.png"} alt="imagem esquerda" />
-      </div>
+        <section className='sesaodireita-footer'>
+            <div className="titulofooter-container">
+                <h2 className="titulofooter">Links importantes sobre o grupo PET</h2>
+                <div className='linksImportantes-footer'>
+                    <ul className="listafooter">
+                        <li>
+                            <a
+                            href="https://memoria.computacao.ufcg.edu.br/graduacao/pet-computa%C3%A7%C3%A3o"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="linkfooter"
+                            >
+                            PET no site da Computação - UFCG
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                            href="http://sigpet.mec.gov.br/primeiro-acesso"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="linkfooter"
+                            >
+                            PET no sistema SIGPET (Ministério da Educação)
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                            href="https://portal.mec.gov.br/pet"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="linkfooter"
+                            >
+                            PET no Portal do MEC
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div className='image-left-container'>
+                <div className="footer-imageleft">
+                    <img src={process.env.PUBLIC_URL + "/images/logo-computacao.png"} alt="imagem direita" />
+                </div>
+            </div>
+        </section>
 
-        <div className="footer-content">
+        {/* <div className="footer-content">
         <p>&copy; 2025 PET Computação UFCG. Todos os direitos reservados.</p>
         <p>Redes Sociais:</p>
         <div className="social-links">
@@ -70,7 +111,7 @@ const Footer = () => {
 
         <div className="footer-image right">
         <img src={process.env.PUBLIC_URL + "/images/logo-computacao.png"} alt="imagem direita" />
-        </div>
+        </div>*/}
 
     </footer>
   );
