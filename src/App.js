@@ -1,6 +1,7 @@
 import './App.css';
 
 import Header from './components/static/Header/Header';
+import SecaoSobre from './components/pages/About/SecaoSobre';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
 
           {/* Sobre */}
           <section id="Sobre" className="Sobre">
+            <SecaoSobre />
           </section>
 
           {/* Projetos em desenvolvimento */}

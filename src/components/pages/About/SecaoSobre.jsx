@@ -1,20 +1,16 @@
-import "../../styles/sobre/SecaoSobre.css"
-import SobreEsquerda from "./SecaoSobreEsquerda";
-import SobreDireita from "./SecaoSobreDireita";
+import "./SecaoSobre.css"
 
 export default function SecaoSobre() {
     return (
-        <div className="fuctionPAI">
-                <div className="tela-sobre">
-                    {/*metade da esquerda da tela*/}
-                    <section className="secao-esquerda">
-                        <SobreEsquerda/>
-                    </section>
+        <div className="container-sobre">
+            <div className="cotainer-sobre__titulo">
+                <h1 className="titulo-sobre">
+                    PILARES
+                </h1>
+            </div>
 
-                    {/*metade da direita da tela*/}
-                    <section className="secao-direita">
-                        <SobreDireita/>
-                    </section>
+            <div className="container-sobre__pilares">
+
             </div>
         </div>
     );
