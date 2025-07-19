@@ -1,63 +1,104 @@
-.functionPAI{
-    position: relative;
-}
-
-.container-aurora {
-    width: 100%;
-    height: 20vh;
-    top: 0;
-    right: 0;
-    transform: rotate(180deg);
-    z-index: 10;
-    background-color: red;
-}
-
-.tela-sobre {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-/*seção destinada a parte esquerda da pagina SOBRE*/
-.secao-esquerda {
-  width: 50%;
+.container-sobre {
+  width: 100%;
   height: 100%;
-  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+}
+
+.container-sobre__aurora {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  margin-top: 20%;
+}
+
+.titulo__PILARES {
+  margin-top: 4%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  z-index: 10;
 }
 
-/*seção destinada a parte direita da pagina SOBRE*/
-.secao-direita {
-  width: 50%;
-    height: 100%;
-  box-sizing: border-box;
+.container-sobre__pilares {
+  margin-top: 5%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+  z-index: 10;
 }
 
-/*resposividade monitor*/
-@media screen and (min-width: 1600px) {
-    .container-aurora{
-      height: 10vh;
-    }
+.pilares__pesquisa {
+  background-color: #0021de;
+}
+.pilares__ensino {
+  background-color: #021bad;
+}
+.pilares__tutoria {
+  background-color: #001487;
 }
 
-/*resposividae mobile*/
-@media screen and (max-width: 768px) {
-  .tela-sobre {
-    flex-direction: column;
-    height: 100vh; /* deixa altura automática para evitar cortes */
-  }
+.pesquisa-logo,
+.ensino-logo,
+.tutoria-logo {
+  width: 5rem;
+  height: 5rem;
+  display: block;
+  margin: -3.1rem auto 0 auto;
+}
 
-  .secao-esquerda,
-  .secao-direita {
-    width: 100%;
-    height: 25%;
-    box-sizing: border-box;
-  }
+.pilares__pesquisa,
+.pilares__ensino,
+.pilares__tutoria {
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 20%;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  transition: transform 0.3s ease, 
+              box-shadow 0.3s ease, 
+              background-color 0.3s ease, 
+              color 0.3s ease;
 
-  .container-aurora {
-    height: 30vh; /* reduz altura para caber melhor no mobile */
-  }
+}
+
+.pesquisa__titulo,
+.ensino__titulo,
+.tutoria__titulo {
+  text-align: center;
+}
+
+/* vai da esquerda pra direita*/
+.pilares__pesquisa:hover {
+    transform: translate(20px, -8px) scale(1.15);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
+    background-color: #ffffff;
+    color: #101012;
+}
+
+/*vai pra cima*/
+.pilares__ensino:hover {
+    transform: translateY(-8px) scale(1.15);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
+    background-color: #ffffff;
+    color: #101012;
+}
+
+/*vai da direita pra esqierda*/
+.pilares__tutoria:hover {
+    transform: translate(-20px, -8px) scale(1.15);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
+    background-color: #ffffff;
+    color: #101012;
 }

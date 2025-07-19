@@ -1,5 +1,5 @@
-import "../../styles/aurora-completa/AuroraCompleta.css"
-import Aurora from '../Aurora'
+import "./AuroraCompleta.css"
+import Aurora from './Aurora'
 
 export default function AuroraCompleta () {
     return (

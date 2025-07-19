@@ -6,7 +6,7 @@ html, body {
 
 .header{
   height: 0vh;
-  width: 75%;
+  width: 75vw;
   margin: 0 auto;
 }
 /*===========================================================*/
@@ -14,7 +14,7 @@ html, body {
 /* seção Página Inicial */
 .paginaInicial{
   height: 80vh;
-  width: 100%;
+  width: 100vw;
   background: green;
 }
 
@@ -23,8 +23,7 @@ html, body {
 /* seção Sobre */
 .Sobre {
   height: 80vh;
-  width: 100%;
-  background: blue;
+  width: 100vw;
 }
 
 /*===========================================================*/
@@ -32,7 +31,7 @@ html, body {
 /* seção Projetos */
 .Projetos {
   height: 85vh;
-  width: 100%;
+  width: 100vw;
   background: palegoldenrod;
 }
 
@@ -41,7 +40,7 @@ html, body {
 /* seção Produções*/
 .Producoes {
   height: 85vh;
-  width: 100%;
+  width: 100vw;
   background: yellow;
 }
 
@@ -50,7 +49,7 @@ html, body {
 /* Pagina do Tutor */
 .PaginaTutor {
   height: 60vh;
-  width: 100%;
+  width: 100vw;
   background: red;
 }
 
@@ -59,7 +58,7 @@ html, body {
 /* Pagina dos Membros */
 .PaginaMembros {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background: brown;
 }
 
@@ -67,7 +66,7 @@ html, body {
 
 .Footer {
   height: 70vh;
-  width: 100%;
+  width: 100vw;
   background: pink;
 }
 /*===========================================================*/
