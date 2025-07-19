@@ -1,344 +1,98 @@
-.secao-tutor {
-    height: 100vh;
-    width: 100%;
+.secao-tutor{
+    width: 60%;
+    height: 100%;
+    margin: 0px auto;
     display: flex;
-    align-items: center;
-    color: rgb(0, 0, 0);
 }
 
-/*aba da esquerda da pagina*/
-.foto-nome-container{
-    width: 25%;
-    height: 100vh;
-    margin: 20px;
-    margin-top: 80px;
+.parteEsquerda-tutor-container{
+    width: 50%;
 }
 
-.nomeTutora-container{
-    margin-top: 40px;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-}
-
-.name-box{
-    font-family: 'Poppins', sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.foto-perfil-tutora-container{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin-top: 20px;
-
-}
-
-.foto-tutor-image{
+.nome-tutor-container{
     width: 75%;
-    height: 100%;
+    margin: 0px auto;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    height: 10%;
 }
 
-.logos-tutora-container{
-    display: flex;
-    justify-content: space-between; 
-    margin-top: 40px;
+.nome-tutor{
+    font-size: 1.5rem;
+    color: #1f1f1f;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
 }
 
-.picture1{
+.descricao-tutor-container{
+    width: 90%;
+    margin: 0px auto;
+    height: 65%;
+    padding: 10px;
+}
+
+.descricao-tutor {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: justify;
+  color: #333;
+}
+
+
+
+
+.parteDireita-tutor-container{
     width: 50%;
-    display: flex;
-    align-items: center;
 }
 
-.picture-description{
-    width: 30%;
-    margin: auto;
+.fotoTutor-container {
+    width: 85%;
+    margin: 0 auto; /* Centraliza o container principal */
+    height: 75%;
+    margin-top: 0.5rem;
+
 }
 
-.picture2{
-    width: 50%;
-    display: flex;
-    align-items: center;
-}
-
-
-
-/*aba CENTRO da pagina*/
-.carreira-descricao-links{
-    width: 55%;
+.fotoTutor {
+    width: 100%;
     height: 100%;
-    margin-top: 80px;
-}
-
-.titulo-container{
+    margin: 0 auto;
     display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin-top: 20px;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
 
-.titulo-descricao-tutora{
-    font-family: 'Poppins', sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 2.0rem;
-    font-weight: 600;
+.foto-tutor-image {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.corpo-texto-descricao-container{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin-top: 20px;
-    background: rgb(0, 0, 0,0.05);
-    padding: 5px;
-    border-radius: 16px;
-}
-
-.corpo-texto-descricao{
-    font-family: 'Roboto';
-    color: rgb(0, 0, 0);
-    font-size: 1.3rem;
-    font-weight: 500;
-    text-align: justify;
-}
-
-.hiperLink-professora-container{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin-top: 10px;
-}
-
-.botaoHiperLink-professora{
-    margin-top: 15px;
+.hiperlinkTutor-container{
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 0.5rem;
+    height: 10%;
 }
 
 .texto-hiperlink-professora{
-    font-family: 'Roboto';
-    color: rgb(0, 0, 0);
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 0.9rem;
+    color: #1f1f1f;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
 }
 
 .link-professora{
-    color: blue;
-}
-
-
-/*aba DIREITA da pagina*/
-.fotos-tutora {
-  height: 100%;
-    width: 20%;
-  padding: 5px 0px;
-  box-sizing: border-box; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fotos-tutora-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  height: 100%;
-  width: 100%;
-    margin-top: 80px;
-}
-
-.foto-container {
-  max-width: 100%;
-  max-height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.foto-tutor {
-  max-width: 70%;
-  object-fit: cover;
-}
-
-/* responsividade telas grandes (monitor)*/
-@media screen and (min-width: 1600px) {
-    /*direita*/
-    .fotos-tutora{
-    width: 20%;
-    margin-top: 20px;
-    }
-
-    .foto-container {
-    margin-top: 50px;
-    }    
-
-    /*centro*/
-    .titulo-container{
-    margin-top: 60px;
-    }
-
-    .titulo-descricao-tutora{
-    font-size: 2.5rem;
-    }
-
-    .corpo-texto-descricao-container{
-        margin-top: 60px;
-    }
-
-    .corpo-texto-descricao{
-        font-size: 1.7rem;
-    }
-
-    .hiperLink-professora-container{
-        margin-top: 50px;
-    }
-
-    .botaoHiperLink-professora{
-        margin-top: 20px;
-    }
-
-    .texto-hiperlink-professora{
-        font-size: 1.4rem;
-    }
-
-    /*esquerda*/
-    .nomeTutora-container{
-        margin-top: 60px;
-    }
-
-    .name-box{
-        font-size: 1.3rem;
-    }
-
-    .foto-tutor-image{
-    margin-top: 40px;
-    }
-
-    .logos-tutora-container{
-        margin-top: 80px;
-    }
-
-    .picture1{
-        width: 55%;
-    }
-
-    .picture2{
-        width: 55%;
-    }
-}
-
-/* responsividade para mobile */
-@media screen and (max-width: 768px) {
-  .secao-tutor {
-    flex-direction: column;
-    height: 100%;
-  }
-
-    /*aba SUPERIOR da pagina*/
-    .foto-nome-container{
-    width: 100%;
-    height: 35%;
-    margin-top: 0px;
-}
-
-.nomeTutora-container{
-    margin-top: 5px;
-}
-
-.name-box{
-    font-size: 0.8rem;
-}
-
-.foto-tutor-image{
-    width: 40%;
-}
-
-.logos-tutora-container{
-    justify-content: center; 
-    margin-top: 10px;
-}
-
-.picture1{
-    width: 30%;
-}
-
-.picture-description{
-    width: 40%;
-}
-
-.picture2{
-    width: 30%;
-}
-
-/*aba CENTRO da pagina*/
-.carreira-descricao-links{
-    width: 100%;
-    height: 45%;
-    margin-top: 0px;
-}
-
-.titulo-container{
-    margin-top: 0px;
-    height: 40px;
-}
-
-.titulo-descricao-tutora{
     font-size: 0.9rem;
+    color: #274c9eff;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 600;
 }
 
-.corpo-texto-descricao-container{
-    margin-top: 0px;
-    padding: 5px;
-    margin: 5px;
+.link-professora:hover {
+    color: rgb(73, 131, 255);
 }
-
-.corpo-texto-descricao{
-    font-size: 0.85rem;
-}
-
-.hiperLink-professora-container{
-    margin-top: 0px;
-}
-
-.botaoHiperLink-professora{
-    margin: 0px;
-}
-
-.texto-hiperlink-professora{
-    font-size:0.8rem;
-    font-weight: 800;
-}
-
-
-/*aba parte INFERIOR da pagina*/
-.fotos-tutora {
-    width: 100%;
-}
-
-.fotos-tutora-container {
-  flex-direction: row;
-  gap: 0px;
-  height: 100%;
-  width: 100%;
-    margin-top: 0px;
-}
-
-.foto-container {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-}
-
-.foto-tutor {
-  width: 100%;
-  object-fit: cover;
-}
-}
-
-
-

@@ -6,7 +6,7 @@ function Header() {
   const [activeSection, setActiveSection] = useState('home');
 
   const scrollToSection = (sectionId) => {
-    const section = document.getElementById(`${sectionId}-section`);
+    const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ 
         behavior: 'smooth',
@@ -32,7 +32,7 @@ function Header() {
         <div className='buttons-navbar'>
           <ul className="navbar-list">
             <li className="navbar-item">
-              <button className="navbar-link" onClick={() => scrollToSection('paginaInicial')}>
+              <button className="navbar-link" onClick={() => scrollToSection('PaginaInicial')}>
                 Página Inicial
               </button>
             </li>
@@ -44,11 +44,6 @@ function Header() {
             <li className="navbar-item">
               <button className="navbar-link" onClick={() => scrollToSection('Projetos')}>
                 Projetos
-              </button>
-            </li>
-            <li className="navbar-item">
-              <button className="navbar-link" onClick={() => scrollToSection('Producoes')}>
-                Produções
               </button>
             </li>
             <li className="navbar-item">

@@ -1,0 +1,156 @@
+:root {
+  /* Cores e tamanho reutilizáveis como variáveis */
+  --color-purple: #8b5cf6;
+  --color-pink: #ec4899;
+  --color-gray: #9ca3af;
+  --color-black: #1f2937;
+  --card-size: 20rem;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Container geral do carrossel */
+.carousel {
+  position: relative; /* Permite posicionar elementos filhos com position: absolute */
+  width: var(--card-size); /* Largura fixa baseada em variável */
+  height: var(--card-size); /* Altura igual à largura, tornando um quadrado */
+  perspective: 800px; /* Dá profundidade para o efeito 3D */
+  transform-style: preserve-3d; /* Mantém a hierarquia 3D dos elementos filhos */
+  margin: auto; /* Centraliza na tela */
+}
+
+/* Cada "slot" de card no carrossel */
+.card-container {
+  position: absolute; /* Todos os cards ficam empilhados no mesmo ponto */
+  width: 100%;
+  height: 90%;
+
+  /* Transforma o card baseado em distância ao card central */
+  transform:
+    rotateY(calc(var(--offset) * 90deg)) /* Gira em Y baseado na posição relativa */
+    scaleY(calc(1 + var(--abs-offset) * -0.2)) /* Encolhe o eixo Y dos cards laterais */
+    translateZ(calc(var(--abs-offset) * -80rem)) /* Manda os cards pro fundo com base na distância */
+    translateX(calc(var(--direction) * -10rem)); /* Move lateralmente pra simular fila */
+
+  filter: blur(calc(var(--abs-offset) * 1rem)); /* Adiciona blur nos cards laterais */
+  transition: all 0.3s ease-out; /* Transição suave nas transformações */
+}
+
+/* Estilização de cada card individual */
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 1px 20px;
+  background-color: rgba(26, 10, 112, 0.85);
+  border-radius: 15px;
+  color: var(--color-black); 
+  text-align: justify;
+  transition: all 0.3s ease-out; 
+  display: flex;          
+  flex-direction: column; 
+  justify-content: space-between; 
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  border: 2px solid #09013a;
+
+}
+
+/* Título do card */
+.card h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  text-shadow: 1px 1px 2px rgba(177, 177, 177, 0.2);
+  letter-spacing: 1px;
+}
+
+.card p {
+  font-size: 1rem; /* Tamanho da fonte */
+  line-height: 1.2; /* Espaçamento entre linhas */
+  color: rgb(218, 218, 218); /* Cor do texto */
+  text-align: justify; /* Justifica o texto */
+  font-family: 'Montserrat', sans-serif; /* Fonte usada no restante */
+  margin: 0; /* Remove margem padrão do parágrafo */
+  flex: 1;                /* O parágrafo ocupa o máximo de espaço possível */
+  overflow: hidden;       /* Esconde qualquer excesso (pode usar scroll se quiser) */
+  letter-spacing: 0.5px;
+
+}
+
+/* Transição e visibilidade dos elementos internos do card */
+.card p,
+.card h2 {
+  transition: all 0.3s ease-out;
+  opacity: var(--active); /* Só o card central fica totalmente visível */
+}
+
+/* Botões de navegação */
+.nav {
+  color: rgb(0, 0, 0);
+  font-size: 5rem; /* Ícones grandes */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%; /* Centralizado verticalmente */
+  z-index: 2; /* Sempre acima dos cards */
+  cursor: pointer;
+  user-select: none; /* Impede seleção do texto ao clicar */
+  background: none;
+  border: none;
+}
+
+/* Botão da esquerda */
+.nav.left {
+  transform: translateX(-150%) translateY(-50%); /* Posiciona à esquerda do carrossel */
+}
+
+/* Botão da direita */
+.nav.right {
+  right: 0;
+  transform: translateX(150%) translateY(-50%); /* Posiciona à direita */
+}
+
+/* Container das bolinhas */
+.carousel-indicators {
+  display: flex;               /* Organiza as bolinhas em linha */
+  justify-content: center;     /* Centraliza as bolinhas horizontalmente */
+  margin-top: 0rem;            /* Espaço acima delas */
+  gap: 0.5rem;                 /* Espaço entre cada bolinha */
+}
+
+/* Estilo padrão das bolinhas */
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;          /* Bolinha redonda */
+  background-color: var(--color-gray);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Bolinha do slide ativo */
+.indicator.active {
+  background-color: rgb(15, 15, 78);    
+  width: 14px;
+  height: 14px;
+}
+
+.card-container[style*="--offset: 0"] .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
+  transition: transform 0.6s ease, box-shadow 0.3s ease;
+  z-index: 3;
+  background-color: rgb(255, 255, 255,0.9);
+}
+
+.card-container[style*="--offset: 0"] .card:hover h2,
+.card-container[style*="--offset: 0"] .card:hover p {
+  color: black;
+}

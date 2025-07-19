@@ -1,6 +1,9 @@
 import './App.css';
 
 import Header from './components/static/Header/Header';
+import HomePet from './components/pages/HomePage/HomePET';
+import Vertentes from './components/pages/ProjectsLines/VertentesProjects';
+import SecaoTutor from './components/pages/MemberPage/TutorPage/SecaoTutor';
 
 function App() {
   return (
@@ -13,7 +16,8 @@ function App() {
       {/* Seções da página */}
       <main>
           {/* Pagina Inicial */}
-          <section id="paginaInicial" className="paginaInicial">
+          <section id="PaginaInicial" className="paginaInicial">
+            <HomePet/>
           </section>
 
           {/* Sobre */}
@@ -21,32 +25,27 @@ function App() {
           </section>
 
           {/* Projetos em desenvolvimento */}
-          <div className='blockpage'>
             <section id="Projetos" className="Projetos">
+              <Vertentes/>
             </section>
-          </div>
 
           {/* Produções */}
           <div>
-            <section id='Producoes' className='Producoes'>
+            <section  className='Producoes'>
             </section>
           </div>
           {/* Pagina dedicada ao Tutor(a) */}
-          <div className='blockpage'>
-            <section id="Tutor" className="PaginaTutor">
+            <section id="Membros" className="PaginaTutor">
+              <SecaoTutor/>
             </section>
-          </div>
 
           {/* Pagina dedicada aos membros ativos */}
-          <div className='blockpage'>
-            <section id="Membros" className ="PaginaMembros">
+            <section className ="PaginaMembros">
             </section>
-          </div>
       </main>
       
       {/* Rodapé da pagina */}
       <footer className='Footer'>
-
       </footer>
     </div>
   );
