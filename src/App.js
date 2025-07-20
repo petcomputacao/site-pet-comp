@@ -4,6 +4,7 @@ import Header from './components/static/Header/Header';
 import HomePet from './components/pages/HomePage/HomePET';
 import Vertentes from './components/pages/ProjectsLines/VertentesProjects';
 import SecaoTutor from './components/pages/MemberPage/TutorPage/SecaoTutor';
+import SecaoSobre from './components/pages/About/SecaoSobre';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
 
           {/* Sobre */}
           <section id="Sobre" className="Sobre">
+            <SecaoSobre />
           </section>
 
           {/* Projetos em desenvolvimento */}

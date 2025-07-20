@@ -1,0 +1,104 @@
+.container-sobre {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.container-sobre__aurora {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  margin-top: 20%;
+}
+
+.titulo__PILARES {
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: black;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  z-index: 10;
+}
+
+.container-sobre__pilares {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  z-index: 10;
+}
+
+.pilares__pesquisa {
+  background-color: #0021de;
+}
+.pilares__ensino {
+  background-color: #021bad;
+}
+.pilares__tutoria {
+  background-color: #001487;
+}
+
+.pesquisa-logo,
+.ensino-logo,
+.tutoria-logo {
+  width: 5rem;
+  height: 5rem;
+  display: block;
+  margin: -3.1rem auto 0 auto;
+}
+
+.pilares__pesquisa,
+.pilares__ensino,
+.pilares__tutoria {
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 20%;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  transition: transform 0.3s ease, 
+              box-shadow 0.3s ease, 
+              background-color 0.3s ease, 
+              color 0.3s ease;
+
+}
+
+.pesquisa__titulo,
+.ensino__titulo,
+.tutoria__titulo {
+  text-align: center;
+}
+
+/* vai da esquerda pra direita*/
+.pilares__pesquisa:hover {
+    transform: translate(20px, -8px) scale(1.15);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
+    background-color: #ffffff;
+    color: #101012;
+}
+
+/*vai pra cima*/
+.pilares__ensino:hover {
+    transform: translateY(-8px) scale(1.15);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
+    background-color: #ffffff;
+    color: #101012;
+}
+
+/*vai da direita pra esqierda*/
+.pilares__tutoria:hover {
+    transform: translate(-20px, -8px) scale(1.15);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
+    background-color: #ffffff;
+    color: #101012;
+}
