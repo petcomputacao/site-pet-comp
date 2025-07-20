@@ -192,7 +192,7 @@ export default function SecaoMembrosAtivos() {
                         <p className="info__nome">Denilson Deivid Lima Silva</p>
                         <div className="info__icones--redes">
                             <a
-                                href=""
+                                href="https://www.linkedin.com/in/denilson-silva-75b170206/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="redes__link--linkedin"
