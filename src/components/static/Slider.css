@@ -1,7 +1,7 @@
 /* Container principal */
 .slider-container {
   position: relative;
-  width: 50%;
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
   margin-top: 20px;
@@ -27,7 +27,7 @@
 
 /* Imagem dentro do slide */
 .slide-image {
-  max-width: 100%;
+  max-width: 70%;
   max-height: 100%;
   object-fit: contain;
   background-color: rgb(60, 0, 117);
@@ -53,11 +53,11 @@
 }
 
 .slider-control.prev {
-  left: 10px;
+  left: 3%;
 }
 
 .slider-control.next {
-  right: 10px;
+  right: 3%;
 }
 
 /* Indicadores */

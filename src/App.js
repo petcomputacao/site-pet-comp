@@ -2,6 +2,7 @@ import './App.css';
 
 import Header from './components/static/Header/Header';
 import SecaoSobre from './components/pages/About/SecaoSobre';
+import Producoes from './components/pages/InProgressProjects/Producoes';
 
 function App() {
   return (
@@ -25,12 +26,14 @@ function App() {
           {/* Projetos em desenvolvimento */}
           <div className='blockpage'>
             <section id="Projetos" className="Projetos">
+            
             </section>
           </div>
 
           {/* Produções */}
           <div>
             <section id='Producoes' className='Producoes'>
+              <Producoes />
             </section>
           </div>
           {/* Pagina dedicada ao Tutor(a) */}

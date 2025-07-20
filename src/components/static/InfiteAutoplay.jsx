@@ -1,128 +1,68 @@
-import '../styles/InfiniteAutoplay.css';
+import './InfiniteAutoplay.css';
 
 function AutoPlay(){
     return(
         <div className='slider'>
             <div className='slide-track'>
-
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
+                <div className='content'>
+                    <img src={process.env.PUBLIC_URL + "/images/logos/logo_caesi_sem_fundo.png"}
+                         alt='imagem-caesi'
+                         className='content__logo'/>
                 </div>
 
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
-                        alt='imagem-pet'/>
+                <div className='content'>
+                    <img src={process.env.PUBLIC_URL + "/images/logos/logo_elas_sem_fundo.png"}
+                         alt='imagem-elas'
+                         className='content__logo'/>
                 </div>
 
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
+                <div className='content'>
+                    <img src={process.env.PUBLIC_URL + "/images/logos/logo_guardians_sem_fundo.png"}
+                         alt='imagem-guardians'
+                         className='content__logo'/>
                 </div>
 
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
-                        alt='imagem-pet'/>
-                </div>
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
+                <div className='content'>
+                    <img src={process.env.PUBLIC_URL + "/images/logos/logo_IEEE_sem_fundo.png"}
+                         alt='imagem-IEEE'
+                         className='content__logo'/>
                 </div>
 
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
-                        alt='imagem-pet'/>
+                <div className='content'>
+                    <img src={process.env.PUBLIC_URL + "/images/logos/logo_win_code_competitive_sem_fundo.png"}
+                         alt='imagem-wcc'
+                         className='content__logo'/>
                 </div>
 
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
+                {/* dupliquei para efeito de "rolagem infinita" */}
+                <div className='content'>
+                    <img src={process.env.PUBLIC_URL + "/images/logos/logo_caesi_sem_fundo.png"}
+                         alt='imagem-caesi'
+                         className='content__logo'/>
                 </div>
 
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
-                        alt='imagem-pet'/>
+                <div className='content'>
+                    <img src={process.env.PUBLIC_URL + "/images/logos/logo_elas_sem_fundo.png"}
+                         alt='imagem-elas'
+                         className='content__logo'/>
                 </div>
 
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
+                <div className='content'>
+                    <img src={process.env.PUBLIC_URL + "/images/logos/logo_guardians_sem_fundo.png"}
+                         alt='imagem-guardians'
+                         className='content__logo'/>
                 </div>
 
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
-                        alt='imagem-pet'/>
+                <div className='content'>
+                    <img src={process.env.PUBLIC_URL + "/images/logos/logo_IEEE_sem_fundo.png"}
+                         alt='imagem-IEEE'
+                         className='content__logo'/>
                 </div>
 
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
-                </div>
-
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
-                        alt='imagem-pet'/>
-                </div>
-
-                {/*animação repetida pra dar a sensação de infinito*/}
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
-                </div>
-
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
-                        alt='imagem-pet'/>
-                </div>
-
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
-                </div>
-
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
-                        alt='imagem-pet'/>
-                </div>
-
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
-                </div>
-
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
-                        alt='imagem-pet'/>
-                </div>
-
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/logo-pet.png"}
-                        alt='imagem-pet'/>
-                </div>
-
-                <div className='imagesblog'>
-                    {/* conteudo do backend*/}
-                    <img src={process.env.PUBLIC_URL + "/images/exemplos/medium.png"}
-                        alt='imagem-pet'/>
+                <div className='content'>
+                    <img src={process.env.PUBLIC_URL + "/images/logos/logo_win_code_competitive_sem_fundo.png"}
+                         alt='imagem-wcc'
+                         className='content__logo'/>
                 </div>
             </div>
         </div>

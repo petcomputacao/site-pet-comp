@@ -1,25 +1,26 @@
-import "../../styles/producoes/producoes.css"
+import "./producoes.css"
 
-import SliderImages from "../Slider";
-import AutoPlay from "../InfiteAutoplay";
+import SliderImages from "../../static/Slider"
+import AutoPlay from "../../static/InfiteAutoplay"
 
 export default function Producoes () {
     return (
         <>
-        <section className='secao-producoes'>
-                <div className='block'>
-                    <div className='cabecalho'>
-                        <h1 className='titulo-secao'>Nossas Produções</h1>
-                    </div>
-                    <div className='meio'>
-                        <SliderImages />
-                    </div>
-                    <div className='baixo'>
-                        <AutoPlay />
-                    </div>
+        <div className="container-producoes">
+            <div className="container-producoes__superior">
+                <div className="superior__titulo">
+                    <h1 className="titulo_PETCOMPACAO">
+                        PET COMP | AÇÃO
+                    </h1>
                 </div>
-
-            </section>
+                <div className="superior__carrossel-instagram">
+                    <SliderImages />
+                </div>
+            </div>
+            <div className="container-producoes__inferior">
+                <AutoPlay />
+            </div>
+        </div> 
         </>
     );
 };
