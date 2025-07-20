@@ -209,7 +209,7 @@ export default function SecaoMembrosAtivos() {
                                 </svg>
                             </a>
                             <a
-                                href=""
+                                href="https://github.com/denilsondeivid"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="redes__link--github"
