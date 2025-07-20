@@ -69,3 +69,14 @@
     display: flex;
     gap: 1.1%;
 }
+
+.redes__link--linkedin,
+.redes__link--github {
+    transition: transform 0.4s;
+}
+
+.redes__link--linkedin:hover,
+.redes__link--github:hover {
+    transform: scale(1.1);
+    transform: translateY(2px);
+}
