@@ -4,6 +4,7 @@ import Header from './components/static/Header/Header';
 import SecaoSobre from './components/pages/About/SecaoSobre';
 import Producoes from './components/pages/InProgressProjects/Producoes';
 import MembrosAtivos from './components/pages/MemberPage/MembrosAtivosPage/MembrosAtivos';
+import Footer from './components/static/Footer/Footer';
 
 function App() {
   return (
@@ -53,7 +54,7 @@ function App() {
       
       {/* Rodapé da pagina */}
       <footer className='Footer'>
-
+        <Footer />
       </footer>
     </div>
   );
