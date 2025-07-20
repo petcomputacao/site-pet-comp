@@ -41,7 +41,6 @@ html, body {
 .Producoes {
   height: 85vh;
   width: 100vw;
-  background: yellow;
 }
 
 /*===========================================================*/
@@ -57,9 +56,8 @@ html, body {
 
 /* Pagina dos Membros */
 .PaginaMembros {
-  height: 100vh;
+  height: 180vh;
   width: 100vw;
-  background: brown;
 }
 
 /*===========================================================*/

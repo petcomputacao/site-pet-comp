@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/static/Header/Header';
 import SecaoSobre from './components/pages/About/SecaoSobre';
 import Producoes from './components/pages/InProgressProjects/Producoes';
+import MembrosAtivos from './components/pages/MemberPage/MembrosAtivosPage/MembrosAtivos';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           {/* Pagina dedicada aos membros ativos */}
           <div className='blockpage'>
             <section id="Membros" className ="PaginaMembros">
+              <MembrosAtivos />
             </section>
           </div>
       </main>
