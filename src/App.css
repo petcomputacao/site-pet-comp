@@ -6,7 +6,7 @@ html, body {
 
 .header{
   height: 0vh;
-  width: 75%;
+  width: 75vw;
   margin: 0 auto;
 }
 /*===========================================================*/
@@ -14,74 +14,55 @@ html, body {
 /* seção Página Inicial */
 .paginaInicial{
   height: 80vh;
-  width: 100%;
+  width: 100vw;
 }
 
 /*===========================================================*/
 
 /* seção Sobre */
 .Sobre {
-  height: 80vh;
-  width: 100%;
-  background: blue;
+  height: 90vh;
+  width: 100vw;
 }
 
 /*===========================================================*/
 
 /* seção Projetos */
 .Projetos {
-  height: 80vh;
-  width: 100%;
+  height: 75vh;
+  width: 100vw;
 }
 
 /*===========================================================*/
 
 /* seção Produções*/
 .Producoes {
-  height: 85vh;
-  width: 100%;
-  background: green;
+  height: 105vh;
+  width: 100vw;
 }
 
 /*===========================================================*/
 
 /* Pagina do Tutor */
 .PaginaTutor {
-  height: 65vh;
-  width: 100%;
+  height: 70vh;
+  width: 100vw;
 }
 
 /*===========================================================*/
 
 /* Pagina dos Membros */
 .PaginaMembros {
-  height: 100vh;
-  width: 100%;
-  background: brown;
+  height: 180vh;
+  width: 100vw;
 }
 
 /*===========================================================*/
 
 .Footer {
   height: 70vh;
-  width: 100%;
-  background: pink;
+  width: 100vw;
 }
-/*===========================================================*/
-/* TRANSIÇÃO DOS CONTAINERS */
-
-.container {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.container.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
 /*===========================================================*/
 
 /* Responsividade MOBILE */

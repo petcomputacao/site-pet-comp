@@ -1,6 +1,10 @@
 import './App.css';
 
 import Header from './components/static/Header/Header';
+import SecaoSobre from './components/pages/About/SecaoSobre';
+import Producoes from './components/pages/InProgressProjects/Producoes';
+import MembrosAtivos from './components/pages/MemberPage/MembrosAtivosPage/MembrosAtivos';
+import Footer from './components/static/Footer/Footer';
 import HomePet from './components/pages/HomePage/HomePET';
 import Vertentes from './components/pages/ProjectsLines/VertentesProjects';
 import SecaoTutor from './components/pages/MemberPage/TutorPage/SecaoTutor';
@@ -22,6 +26,7 @@ function App() {
 
           {/* Sobre */}
           <section id="Sobre" className="Sobre">
+            <SecaoSobre />
           </section>
 
           {/* Projetos em desenvolvimento */}
@@ -31,21 +36,28 @@ function App() {
 
           {/* Produções */}
           <div>
-            <section  className='Producoes'>
+            <section id='Producoes' className='Producoes'>
+              <Producoes />
             </section>
           </div>
           {/* Pagina dedicada ao Tutor(a) */}
-            <section id="Membros" className="PaginaTutor">
-              <SecaoTutor/>
+          <div className='blockpage'>
+            <section id="Tutor" className="PaginaTutor">
+               <SecaoTutor/>
             </section>
+          </div>
 
           {/* Pagina dedicada aos membros ativos */}
-            <section className ="PaginaMembros">
+          <div className='blockpage'>
+            <section id="Membros" className ="PaginaMembros">
+              <MembrosAtivos />
             </section>
+          </div>
       </main>
       
       {/* Rodapé da pagina */}
       <footer className='Footer'>
+        <Footer />
       </footer>
     </div>
   );
