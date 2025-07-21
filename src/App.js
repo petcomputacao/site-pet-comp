@@ -6,6 +6,8 @@ import Vertentes from './components/pages/ProjectsLines/VertentesProjects';
 import SecaoTutor from './components/pages/MemberPage/TutorPage/SecaoTutor';
 import SecaoSobre from './components/pages/About/SecaoSobre';
 import Producoes from './components/pages/InProgressProjects/Producoes';
+import MembrosAtivos from './components/pages/MemberPage/MembrosAtivosPage/MembrosAtivos';
+import Footer from './components/static/Footer/Footer';
 
 function App() {
   return (
@@ -45,8 +47,11 @@ function App() {
             </section>
 
           {/* Pagina dedicada aos membros ativos */}
-            <section className ="PaginaMembros">
-            </section>
+            <div className='blockpage'>
+              <section id="Membros" className ="PaginaMembros">
+                <MembrosAtivos />
+              </section>
+            </div>
       </main>
       
       {/* Rodapé da pagina */}
