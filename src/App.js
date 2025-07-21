@@ -56,6 +56,7 @@ function App() {
       
       {/* Rodapé da pagina */}
       <footer className='Footer'>
+        <Footer />
       </footer>
     </div>
   );
