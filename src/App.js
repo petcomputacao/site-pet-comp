@@ -5,6 +5,7 @@ import HomePet from './components/pages/HomePage/HomePET';
 import Vertentes from './components/pages/ProjectsLines/VertentesProjects';
 import SecaoTutor from './components/pages/MemberPage/TutorPage/SecaoTutor';
 import SecaoSobre from './components/pages/About/SecaoSobre';
+import Producoes from './components/pages/InProgressProjects/Producoes';
 
 function App() {
   return (
@@ -29,11 +30,13 @@ function App() {
           {/* Projetos em desenvolvimento */}
             <section id="Projetos" className="Projetos">
               <Vertentes/>
+            
             </section>
 
           {/* Produções */}
           <div>
-            <section  className='Producoes'>
+            <section id='Producoes' className='Producoes'>
+              <Producoes />
             </section>
           </div>
           {/* Pagina dedicada ao Tutor(a) */}
