@@ -5,13 +5,12 @@
 }
 
 .carrousel__card {
-    background: linear-gradient(
-        to bottom right,
-        #444,   /* cinza escuro */
-        #666,   /* cinza médio */
-        #999    /* cinza claro */
-    );
-    border: 1px solid #222;
+    /* temporario ate a insercao do conteudo real do insta*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* -------------------------------------------------- */
+    background: linear-gradient(to right,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
     border-radius: 5px;
     width: 25%;
     position: relative;
@@ -27,6 +26,23 @@
     transform: translateY(-10px);
 }
 
-.carrousel__card:hover ~ .carrousel__card {
+.carrousel__card:hover:not(:first-child) {
     left: 50px;
+}
+
+.carrousel__card:hover:not(:first-child) ~ .carrousel__card {
+    left: 50px;
+}
+
+.container__carrousel .carrousel__card:nth-child(1) {
+    z-index: 4;
+}
+.container__carrousel .carrousel__card:nth-child(2) {
+    z-index: 3;
+}
+.container__carrousel .carrousel__card:nth-child(3) {
+    z-index: 2;
+}
+.container__carrousel .carrousel__card:nth-child(4) {
+    z-index: 1;
 }
