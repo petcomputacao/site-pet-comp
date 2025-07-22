@@ -30,19 +30,19 @@ function App() {
           </section>
 
           {/* Projetos em desenvolvimento */}
-            <section id="Projetos" className="Projetos">
+            <section className="Projetos">
               <Vertentes/>
             </section>
 
           {/* Produções */}
           <div>
-            <section id='Producoes' className='Producoes'>
+            <section id="Projetos" className='Producoes'>
               <Producoes />
             </section>
           </div>
           {/* Pagina dedicada ao Tutor(a) */}
           <div className='blockpage'>
-            <section id="Tutor" className="PaginaTutor">
+            <section className="PaginaTutor">
                <SecaoTutor/>
             </section>
           </div>
