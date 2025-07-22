@@ -7,6 +7,8 @@
 }
 
 .membros__titulo {
+    width: 100%;
+    height: 15%;
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
@@ -19,30 +21,35 @@
 
 .membros__galeria {
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4%;
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
 }
 
 .galeria__item {
-    background: linear-gradient(270deg, #0A66C2, #00BFFF, #0A66C2);
+    /* animacao do background de cada card, guinas nao gostou ;(*/
+    /* background: linear-gradient(
+        270deg, 
+        #212529,
+        #4b555e,
+        #6b7b8a   
+    );
     background-size: 600% 600%;
-    animation: gradientFlow 10s ease infinite;
-    width: 70%;
-    height: 70%;
+    animation: gradientFlow 10s ease infinite; */
+    width: 80%;
+    height: min-content;
     border-radius: 10px;
     display: flex;
     align-items: center;
-    gap: 5%;
+    gap: 1%;
 }
 
-@keyframes gradientFlow {
+/* @keyframes gradientFlow {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
-}
+} */
 
 .item__foto-membro-ativo {
     width: 100px;
@@ -59,7 +66,7 @@
 }
 
 .info__nome {
-    font-family: "OCR A Std", monospace;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 1.3rem;
     margin-bottom: 1%;
@@ -68,6 +75,14 @@
 .info__icones--redes {
     display: flex;
     gap: 1.1%;
+}
+
+.redes__link--github {
+    color: black;
+}
+
+.redes__link--linkedin {
+    color: #0c7fbd;
 }
 
 .redes__link--linkedin,

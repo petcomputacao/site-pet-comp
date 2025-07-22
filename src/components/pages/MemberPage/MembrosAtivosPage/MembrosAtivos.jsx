@@ -4,12 +4,12 @@ export default function SecaoMembrosAtivos() {
     return (
         <div className="container-membros">
             <div className="membros__titulo">
-                <p>Membros</p>
+                <p>Membros Ativos</p>
             </div>
             <div className="membros__galeria">
                 {/* 12 membros */}
                 <div className="galeria__item">
-                    <img src={process.env.PUBLIC_URL + "/images/membros/Arthur-Campos-Arruda-de-Freitas.png"} 
+                    <img src={process.env.PUBLIC_URL + "/images/membros/arthur-campos-arruda-de-freitas.png"} 
                             alt="Descrição 1" 
                             className="item__foto-membro-ativo" />
                     <div className="item__info">
@@ -53,7 +53,7 @@ export default function SecaoMembrosAtivos() {
                     </div>
                 </div>
                 <div className="galeria__item">
-                    <img src={process.env.PUBLIC_URL + "/images/membros/Carlos-Artur-Santana-Sales.jpg"} 
+                    <img src={process.env.PUBLIC_URL + "/images/membros/carlos-artur-santana-sales.png"} 
                             alt="Descrição 2" 
                             className="item__foto-membro-ativo" />
                     <div className="item__info">
@@ -97,7 +97,7 @@ export default function SecaoMembrosAtivos() {
                     </div>
                 </div>
                 <div className="galeria__item">
-                    <img src={process.env.PUBLIC_URL + "/images/membros/arthur-fernandes-vieira.jpg"} 
+                    <img src={process.env.PUBLIC_URL + "/images/membros/arthur-fernandes-vieira.png"} 
                             alt="Descrição 3" 
                             className="item__foto-membro-ativo" />
                     <div className="item__info">
@@ -141,7 +141,7 @@ export default function SecaoMembrosAtivos() {
                     </div>
                 </div>
                 <div className="galeria__item">
-                    <img src={process.env.PUBLIC_URL + "/images/membros/Guilherme-Jose-Araujo-Oliveira.jpeg"} 
+                    <img src={process.env.PUBLIC_URL + "/images/membros/guilherme-jose-araujo-oliveira.png"} 
                             alt="Descrição 4" 
                             className="item__foto-membro-ativo" />
                     <div className="item__info">
@@ -185,7 +185,7 @@ export default function SecaoMembrosAtivos() {
                     </div>
                 </div>
                 <div className="galeria__item">
-                    <img src={process.env.PUBLIC_URL + "/images/membros/Denilson-Deivid-Lima-Silva.jpg"} 
+                    <img src={process.env.PUBLIC_URL + "/images/membros/denilson-deivid-lima-silva.png"} 
                             alt="Descrição 5" 
                             className="item__foto-membro-ativo" />
                     <div className="item__info">
@@ -229,7 +229,7 @@ export default function SecaoMembrosAtivos() {
                     </div>
                 </div>
                 <div className="galeria__item">
-                    <img src={process.env.PUBLIC_URL + "/images/membros/Fabiana-Simplício-da-Silva.jpg"} 
+                    <img src={process.env.PUBLIC_URL + "/images/membros/fabiana-simplicio-da-silva.png"} 
                             alt="Descrição 6" 
                             className="item__foto-membro-ativo" />
                     <div className="item__info">
@@ -273,7 +273,7 @@ export default function SecaoMembrosAtivos() {
                     </div>
                 </div>
                 <div className="galeria__item">
-                    <img src={process.env.PUBLIC_URL + "/images/membros/Gabriel-Oliveira-Rodrigues.jpg"} 
+                    <img src={process.env.PUBLIC_URL + "/images/membros/gabriel-oliveira-rodrigues.png"} 
                             alt="Descrição 7" 
                             className="item__foto-membro-ativo" />
                     <div className="item__info">
@@ -317,7 +317,7 @@ export default function SecaoMembrosAtivos() {
                     </div>
                 </div>
                 <div className="galeria__item">
-                    <img src={process.env.PUBLIC_URL + "/images/membros/Júlia-Cruz-de-Araújo-Andrade.png"} 
+                    <img src={process.env.PUBLIC_URL + "/images/membros/julia-cruz-de-araujo-andrade.png"} 
                             alt="Descrição 8" 
                             className="item__foto-membro-ativo" />
                     <div className="item__info">
@@ -361,7 +361,7 @@ export default function SecaoMembrosAtivos() {
                     </div>
                 </div>
                 <div className="galeria__item">
-                    <img src={process.env.PUBLIC_URL + "/images/membros/Rafael-Antonio-de-Lucena-Serey.jpg"} 
+                    <img src={process.env.PUBLIC_URL + "/images/membros/rafael-antonio-de-lucena-serey.png"} 
                             alt="Descrição 9" 
                             className="item__foto-membro-ativo" />
                     <div className="item__info">
@@ -405,7 +405,7 @@ export default function SecaoMembrosAtivos() {
                     </div>
                 </div>
                 <div className="galeria__item">
-                    <img src={process.env.PUBLIC_URL + "/images/membros/Erik-Luan-Rodrigues-Florêncio.jpg"} 
+                    <img src={process.env.PUBLIC_URL + "/images/membros/erik-luan-rodrigues-florencio.png"} 
                             alt="Descrição 10" 
                             className="item__foto-membro-ativo" />
                     <div className="item__info">
@@ -449,7 +449,7 @@ export default function SecaoMembrosAtivos() {
                     </div>
                 </div>
                 <div className="galeria__item">
-                    <img src={process.env.PUBLIC_URL + "/images/membros/Lorena-Nascimento-Carvalho-Gama.jpg"} 
+                    <img src={process.env.PUBLIC_URL + "/images/membros/lorena-nascimento-carvalho-gama.png"} 
                             alt="Descrição 11" 
                             className="item__foto-membro-ativo" />
                     <div className="item__info">
@@ -493,7 +493,7 @@ export default function SecaoMembrosAtivos() {
                     </div>
                 </div>
                 <div className="galeria__item">
-                    <img src={process.env.PUBLIC_URL + "/images/membros/Ryan-Vinnícius-Tielles-Almeida-da-Silva.jpg"} 
+                    <img src={process.env.PUBLIC_URL + "/images/membros/ryan-vinnicius-tielles-almeida-da-silva.png"} 
                             alt="Descrição 12" 
                             className="item__foto-membro-ativo" />
                     <div className="item__info">
