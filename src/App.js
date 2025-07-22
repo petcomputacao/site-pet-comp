@@ -54,6 +54,7 @@ function App() {
             </section>
           </div>
       </main>
+      <hr></hr>
       
       {/* Rodapé da pagina */}
       <footer className='Footer'>
