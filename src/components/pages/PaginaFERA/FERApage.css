@@ -1,0 +1,41 @@
+.ContainerPAGINAFERA{
+    background: rgb(250, 250, 255);
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.header{
+  height: 4vh;
+  width: 75vw;
+  margin: 0 auto;
+}
+
+.paginaincial-FERA{
+    height: 75vh;
+}
+
+.guia-FERA{
+    height: 75vh;
+}
+
+.mapa-FERA{
+    height: 95vh;
+}
+
+.dicasdeVeterano-FERA{
+    height: 100vh;
+}
+
+.perguntasFrequentes-FERA{
+    height: 90vh;
+}
+
+.contatosImportantes-FERA{
+    height: 50vh;
+}
+
+.guiaAcademico-FERA{
+    height: 250vh;
+}
+

@@ -1,0 +1,56 @@
+.contacts-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+
+.contacts-container h1 {
+  font-size: 24px;
+  margin-bottom: 2rem;
+  color: #000;
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+}
+
+.contacts-grid {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.contact-card {
+  flex: 1;
+  padding: 15px 60px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.contact-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000769;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+}
+
+.contact-card p {
+  font-size: 14px;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  color: #000769;
+  flex-shrink: 0;
+}

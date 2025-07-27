@@ -1,20 +1,9 @@
 import './Header.css';
-import React, { useState } from 'react';
-
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function Header() {
-  const [activeSection, setActiveSection] = useState('home');
-
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
-      setActiveSection(sectionId);
-    }
-  };
+  const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <div className='navbar-container'>
@@ -29,30 +18,27 @@ function Header() {
       </div>
 
       <div className='buttons-navbar-container'>
-        <div className='buttons-navbar'>
-          <ul className="navbar-list">
-            <li className="navbar-item">
-              <button className="navbar-link" onClick={() => scrollToSection('PaginaInicial')}>
-                Página Inicial
-              </button>
-            </li>
-            <li className="navbar-item">
-              <button className="navbar-link" onClick={() => scrollToSection('Sobre')}>
-                Sobre
-              </button>
-            </li>
-            <li className="navbar-item">
-              <button className="navbar-link" onClick={() => scrollToSection('Projetos')}>
-                Projetos
-              </button>
-            </li>
-            <li className="navbar-item">
-              <button className="navbar-link" onClick={() => scrollToSection('Membros')}>
-                Membros
-              </button>
-            </li>
-          </ul>
-        </div>
+        <ul className="navbar-list">
+          {/* Botão Página do PET */}
+          <li className="navbar-item">
+            <button
+              className={`navbar-link ${location.pathname === '/' ? 'active' : ''}`}
+              onClick={() => navigate('/')}
+            >
+              Página do PET
+            </button>
+          </li>
+
+          {/* Botão Página do FERA */}
+          <li className="navbar-item">
+            <button
+              className={`navbar-link ${location.pathname === '/fera' ? 'active' : ''}`}
+              onClick={() => navigate('/fera')}
+            >
+              Página do FERA
+            </button>
+          </li>
+        </ul>
       </div>
 
       <div className='redeSocial-navbar-container'>
