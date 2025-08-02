@@ -41,6 +41,18 @@
   height: auto;
 }
 
+@media (max-width: 768px) {
+.titulo-vertentes-container {
+  width: 90%;
+  margin-top: 3%;
+}
+}
+
+@media (max-width: 380px) {
+  .titulo-vertentes h1 {
+  font-size: 1.7rem;
+}
+}
 
 
 

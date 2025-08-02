@@ -71,9 +71,23 @@ html, body {
 /* Responsividade MOBILE */
 
 @media (max-width: 768px) {
-  
+  .header{
+  height: 8vh;
+  width: 100%;
 }
- 
-@media (max-width: 380px) {
-  
+
+.paginaInicial{
+  height: 105vh;
+  width: 100vw;
+}
+
+.Sobre {
+  height: 100vh;
+  width: 100vw;
+}
+.PaginaTutor {
+  height: 65vh;
+  width: 100vw;
+}
+
 }
