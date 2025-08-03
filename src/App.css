@@ -64,6 +64,7 @@ html, body {
 .Footer {
   height: 60vh;
   width: 100vw;
+  overflow-y: hidden;
 }
 /*===========================================================*/
 

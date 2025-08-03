@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className="container-footer">
           <div className='footer__infos'>
               <div className='infos__contatos'>
-                  <img src={process.env.PUBLIC_URL + "/images/logos/logo-pet.png"}
+                  <img src={process.env.PUBLIC_URL + "/images/logos/logo-pet-branco.png"}
                       alt="logo-pet"
                       className='imagem-footer--pet' />
 
@@ -83,14 +83,6 @@ const Footer = () => {
           </div>
           <div className='footer_copyright'>
               <p className='footer__copyright'>&copy; 2025 PET Computação UFCG. Todos os direitos reservados.</p>
-              <div className='imagens-comp-ufcg'>
-                  <img src={process.env.PUBLIC_URL + "/images/logos/logo-computacao.png"}
-                      alt="logo-computacao"
-                      className='imagem-footer' />
-                  <img src={process.env.PUBLIC_URL + "/images/logos/logo-ufcg.png"}
-                      alt="logo-ufcg"
-                      className='imagem-footer' />
-              </div>
           </div>
 
       </footer></>
