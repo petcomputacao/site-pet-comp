@@ -21,8 +21,8 @@
     font-size: 1.5rem;
     color: #1f1f1f;
     text-align: center;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 0.5px;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
 }
 
 .descricao-tutor-container{
@@ -80,7 +80,7 @@
     font-size: 0.9rem;
     color: #1f1f1f;
     text-align: center;
-    font-family: "Poppins", sans-serif;
+    font-family: "Lato", sans-serif;
     letter-spacing: 0.5px;
 }
 
@@ -88,11 +88,101 @@
     font-size: 0.9rem;
     color: #274c9eff;
     text-align: center;
-    font-family: "Poppins", sans-serif;
+    font-family: "Lato", sans-serif;
     letter-spacing: 0.5px;
     font-weight: 600;
 }
 
 .link-professora:hover {
     color: rgb(73, 131, 255);
+}
+
+
+
+@media (max-width: 768px) {
+.secao-tutor{
+    width: 95%;
+    height: 100%;
+}
+
+.parteEsquerda-tutor-container{
+    width: 50%;
+}
+
+.nome-tutor-container{
+    width: 100%;
+}
+
+.nome-tutor{
+    font-size: 1.2rem;
+    color: #1f1f1f;
+    letter-spacing: 1px;
+}
+
+.descricao-tutor-container{
+    width: 100%;
+    padding: 2px;
+}
+
+.descricao-tutor {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: #333;
+}
+
+.parteDireita-tutor-container{
+    width: 50%;
+}
+
+.fotoTutor-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+
+.fotoTutor {
+    width: 100%;
+    height: 100%;
+}
+
+.foto-tutor-image {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hiperlinkTutor-container{
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 3rem;
+    height: 10%;
+}
+
+.texto-hiperlink-professora{
+    font-size: 0.9rem;
+    color: #1f1f1f;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+}
+
+.link-professora{
+    font-size: 1.2rem;
+    color: #274c9eff;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+}
+
+@media (max-width: 380px) {
+.descricao-tutor {
+  font-size: 0.7rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: #333;
+}
 }

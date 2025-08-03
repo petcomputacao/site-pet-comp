@@ -6,7 +6,7 @@ function HomePet(){
         <div className='paginaInicial-container'>          
             <div className='imagemFundo-container'>
                 <img
-                    src={process.env.PUBLIC_URL + "/images/membros/imagemPet.png"}
+                    src={process.env.PUBLIC_URL + "/images/membros/imagemPET.png"}
                     alt="Imagem fundo pagina inicial"
                     className="imagemFundo-paginaInicial"
                 />

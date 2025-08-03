@@ -1,23 +1,33 @@
 import './VertentesProjects.css';
-import CarrosselProjetos from '../ProjectsLines/Carousel';
 import { Reveal } from '../../static/Transicao/Transicaocontainer.tsx';
 
+import Carousel3D from './Carousel3D.jsx';
 
 
 function Vertentes(){
     return(
         <div className='paginaVertentes-container'>
-            <Reveal width="100%">
                 <div className='titulo-vertentes-container'>
+                    <Reveal>
                     <div className='titulo-vertentes'>
                         <h1>
                             Nossas Linhas de Atuação
                         </h1>
                     </div>
+                    </Reveal>
+                    <Reveal>
+                    <div className="foto-pet">
+                        <img 
+                        src={process.env.PUBLIC_URL + "/images/logos/logo-pet.png"} 
+                        alt="logo-pet" 
+                        className="logo-pet-linhas"
+                        />
+                    </div>
+                    </Reveal>
+                    
                 </div>
-            </Reveal>
                 <div className='linhasAtuação-container'>
-                    <CarrosselProjetos/>
+                    <Carousel3D/>
                 </div>
         </div>
     )

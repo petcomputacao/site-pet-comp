@@ -1,18 +1,10 @@
 import "./SecaoSobre.css"
-import AuroraCompleta from "../../static/Aurora/AuroraCompleta";
+import { Reveal } from '../../static/Transicao/Transicaocontainer.tsx';
+
 
 export default function SecaoSobre() {
     return (
         <div className="container-sobre">
-            <div className="container-sobre__aurora">
-                <AuroraCompleta />
-            </div>
-            <div className="container-sobre__titulo">
-                <h1 className="titulo__PILARES">
-                    PILARES
-                </h1>
-            </div>
-
             <div className="container-sobre__pilares">
                 <div className="pilares__pesquisa">
                     <img src={process.env.PUBLIC_URL + "/images/logos/logo_pesquisa.png"} className="pesquisa-logo" alt="logo_pesquisa" />
@@ -20,8 +12,7 @@ export default function SecaoSobre() {
                         PESQUISA
                     </h2>
                     <p className="pesquisa__texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna purus, fringilla id vulputate pellentesque, laoreet id ex. Praesent dignissim ultricies mauris sit amet ultricies. Proin venenatis ultricies mauris, ut congue lectus vehicula eget. Sed eros tortor, hendrerit placerat placerat ut, suscipit vel lacus.
-                    </p>
+                        Todos os integrantes do PET Computação desenvolvem pesquisas em diversas áreas da computação, produzem artigos científicos e buscam soluções que fortalecem o conhecimento e a inovação dentro do ambiente acadêmico.                    </p>
                 </div>
                 <div className="pilares__ensino">
                     <img src={process.env.PUBLIC_URL + "/images/logos/logo_ensino.png"} className="ensino-logo" alt="logo_ensino" />
@@ -29,17 +20,15 @@ export default function SecaoSobre() {
                         ENSINO
                     </h2>
                     <p className="ensino__texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna purus, fringilla id vulputate pellentesque, laoreet id ex. Praesent dignissim ultricies mauris sit amet ultricies. Proin venenatis ultricies mauris, ut congue lectus vehicula eget. Sed eros tortor, hendrerit placerat placerat ut, suscipit vel lacus.
-                    </p>
+                        Os integrantes do PET Computação participam ativamente da vida acadêmica, promovendo eventos e atividades que estimulam o aprendizado, a troca de conhecimento e o desenvolvimento dos alunos da graduação.                    </p>
                 </div>
                 <div className="pilares__tutoria">
                     <img src={process.env.PUBLIC_URL + "/images/logos/logo_tutoria.png"} className="tutoria-logo" alt="logo_tutoria" />
                     <h2 className="tutoria__titulo">
-                        TUTORIA
+                        EXTENSÃO
                     </h2>
                     <p className="tutoria__texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna purus, fringilla id vulputate pellentesque, laoreet id ex. Praesent dignissim ultricies mauris sit amet ultricies. Proin venenatis ultricies mauris, ut congue lectus vehicula eget. Sed eros tortor, hendrerit placerat placerat ut, suscipit vel lacus.
-                    </p>
+                        O PET Computação atua em Campina Grande promovendo inclusão digital e tecnologia por meio de oficinas, cursos e projetos sociais que buscam ampliar o acesso ao conhecimento e melhorar a qualidade de vida da comunidade.                    </p>
                 </div>
             </div>
         </div>

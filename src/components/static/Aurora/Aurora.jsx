@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> v3.0/paginaInicial-sobre-linhasAtuacao
 import { Renderer, Program, Mesh, Color, Triangle } from "ogl";
 import { useEffect, useRef } from "react";
 
@@ -203,4 +206,8 @@ export default function Aurora(props) {
   }, [amplitude]);
 
   return <div ref={ctnDom} className="aurora-container" />;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> v3.0/paginaInicial-sobre-linhasAtuacao

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
 html, body {
   background: #ffffff;
   overflow-x: hidden;
@@ -13,15 +16,15 @@ html, body {
 
 /* seção Página Inicial */
 .paginaInicial{
-  height: 80vh;
-  width: 100%;
+  height: 85vh;
+  width: 100vw;
 }
 
 /*===========================================================*/
 
 /* seção Sobre */
 .Sobre {
-  height: 80vh;
+  height: 60vh;
   width: 100vw;
 }
 
@@ -29,15 +32,15 @@ html, body {
 
 /* seção Projetos */
 .Projetos {
-  height: 80vh;
-  width: 100%;
+  height: 85vh;
+  width: 100vw;
 }
 
 /*===========================================================*/
 
 /* seção Produções*/
 .Producoes {
-  height: 85vh;
+  height: 105vh;
   width: 100vw;
 }
 
@@ -45,8 +48,8 @@ html, body {
 
 /* Pagina do Tutor */
 .PaginaTutor {
-  height: 65vh;
-  width: 100%;
+  height: 70vh;
+  width: 100vw;
 }
 
 /*===========================================================*/
@@ -65,28 +68,27 @@ html, body {
   background: gray;
 }
 /*===========================================================*/
-/* TRANSIÇÃO DOS CONTAINERS */
-
-.container {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.container.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-/*===========================================================*/
 
 /* Responsividade MOBILE */
 
 @media (max-width: 768px) {
-  
+  .header{
+  height: 8vh;
+  width: 100%;
 }
- 
-@media (max-width: 380px) {
-  
+
+.paginaInicial{
+  height: 105vh;
+  width: 100vw;
+}
+
+.Sobre {
+  height: 100vh;
+  width: 100vw;
+}
+.PaginaTutor {
+  height: 65vh;
+  width: 100vw;
+}
+
 }

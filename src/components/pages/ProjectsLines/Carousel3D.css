@@ -1,0 +1,121 @@
+/* Container geral do carrossel */
+.carousel-container {
+  width: 100%; 
+  height: 100%; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container que envolve os slides do Swiper */
+.swiper-wrapper {
+  width: 100%;
+}         
+
+/* Estilo base dos slides */
+.slide {
+  height: 300px;             /* Altura fixa */
+  padding: 20px;             /* Espaçamento interno */
+  border-radius: 16px;       /* Bordas arredondadas */
+  transition: all 0.3s ease; /* Animação suave */
+  text-align: center;        /* Texto centralizado */
+  display: flex;             /* Alinhamento vertical */
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Slide que está no centro (ativo) */
+.slide.active {
+  background-color: white;                     /* Fundo branco */
+  transform: scale(0.95);                      /* Levemente maior */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  /* Sombra forte */
+  border: 1px solid black;                             
+}
+
+/* Slides laterais (não ativos) */
+.slide.inactive {
+  background-color: #f3f5fc;                    /* Cinza claro */
+  transform: scale(0.85);                       /* Menor */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);     /* Sombra leve */
+}
+
+/* Título do slide */
+.slide-title {
+  font-size: 1.8rem;
+  color: #000000;
+  margin-bottom: 3%;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+}
+
+/* Texto do corpo do slide */
+.slide-body {
+  font-size: 1rem;
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {        
+
+/* Estilo base dos slides */
+.slide {
+  height: 500px;             /* Altura fixa */
+  padding: 20px;             /* Espaçamento interno */
+  border-radius: 8px;       /* Bordas arredondadas */
+  transition: all 0.3s ease; /* Animação suave */
+}
+
+/* Slide que está no centro (ativo) */
+.slide.active {
+  transform: scale(1);                      /* Levemente maior */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);  /* Sombra forte */
+}
+
+/* Slides laterais (não ativos) */
+.slide.inactive {
+  transform: scale(0.75);                       /* Menor */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);     /* Sombra leve */
+}
+
+/* Título do slide */
+.slide-title {
+  font-size: 1.6rem;
+}
+
+/* Texto do corpo do slide */
+.slide-body {
+  font-size: 0.95rem;
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  text-align: justify;
+}
+}
+
+@media (max-width: 380px) {
+/* Estilo base dos slides */
+.slide {
+  height: 350px;             /* Altura fixa */
+  padding: 5px;             /* Espaçamento interno */
+}
+
+
+/* Título do slide */
+.slide-title {
+  font-size: 1rem;
+}
+
+/* Texto do corpo do slide */
+.slide-body {
+  font-size: 0.7rem;
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  text-align: justify;
+}
+}
