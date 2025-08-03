@@ -5,47 +5,6 @@
   z-index: 0;
 }
 
-<<<<<<< HEAD
-.container-sobre__aurora {
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  margin-top: 20%;
-}
-
-.titulo__PILARES {
-  margin-top: 4%;
-  display: flex;
-  justify-content: center;
-  font-size: 2.5rem;
-  color: black;
-  font-weight: 700;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 0.5px;
-  z-index: 10;
-}
-
-.container-sobre__pilares {
-  margin-top: 5%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-  z-index: 10;
-}
-
-.pilares__pesquisa {
-  background-color: #0021de;
-}
-.pilares__ensino {
-  background-color: #021bad;
-}
-.pilares__tutoria {
-  background-color: #001487;
-}
-
-=======
 .container-sobre__pilares {
   margin-top:3%;
   width: 100%;
@@ -55,7 +14,6 @@
   z-index: 10;
 }
 
->>>>>>> v3.0/paginaInicial-sobre-linhasAtuacao
 .pesquisa-logo,
 .ensino-logo,
 .tutoria-logo {
@@ -63,34 +21,14 @@
   height: 5rem;
   display: block;
   margin: -3.1rem auto 0 auto;
-<<<<<<< HEAD
-=======
   background: #000dc9;
   padding: 0px 60px;
   border-radius: 10px;
->>>>>>> v3.0/paginaInicial-sobre-linhasAtuacao
 }
 
 .pilares__pesquisa,
 .pilares__ensino,
 .pilares__tutoria {
-<<<<<<< HEAD
-  border: 2px solid #000;
-  border-radius: 8px;
-  padding: 1rem;
-  width: 20%;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: white;
-  text-align: justify;
-  letter-spacing: 1px;
-  font-family: "Montserrat", sans-serif;
-  transition: transform 0.3s ease, 
-              box-shadow 0.3s ease, 
-              background-color 0.3s ease, 
-              color 0.3s ease;
-
-=======
   border: 1px solid #000;
   border-radius: 8px;
   padding: 1rem;
@@ -102,52 +40,27 @@
   letter-spacing: 1px;
   font-family: "Lato", sans-serif;
   transition: transform 0.3s ease;
->>>>>>> v3.0/paginaInicial-sobre-linhasAtuacao
 }
 
 .pesquisa__titulo,
 .ensino__titulo,
 .tutoria__titulo {
   text-align: center;
-<<<<<<< HEAD
-=======
   font-family: 'Playfair Display', serif;
->>>>>>> v3.0/paginaInicial-sobre-linhasAtuacao
 }
 
 /* vai da esquerda pra direita*/
 .pilares__pesquisa:hover {
-<<<<<<< HEAD
-    transform: translate(20px, -8px) scale(1.15);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
-    background-color: #ffffff;
-    color: #101012;
-=======
     transform: translate(3px, -1px) scale(1.05);
->>>>>>> v3.0/paginaInicial-sobre-linhasAtuacao
 }
 
 /*vai pra cima*/
 .pilares__ensino:hover {
-<<<<<<< HEAD
-    transform: translateY(-8px) scale(1.15);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
-    background-color: #ffffff;
-    color: #101012;
-=======
     transform: translateY(-1px) scale(1.05);
->>>>>>> v3.0/paginaInicial-sobre-linhasAtuacao
 }
 
 /*vai da direita pra esqierda*/
 .pilares__tutoria:hover {
-<<<<<<< HEAD
-    transform: translate(-20px, -8px) scale(1.15);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 1.5);
-    background-color: #ffffff;
-    color: #101012;
-}
-=======
     transform: translate(-3px, -1px) scale(1.05);
 }
 
@@ -222,4 +135,3 @@
   font-size: 1.3rem; /* Tamanho ajustado */
 }
 }
->>>>>>> v3.0/paginaInicial-sobre-linhasAtuacao
