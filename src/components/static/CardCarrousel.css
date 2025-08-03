@@ -5,7 +5,7 @@
 }
 
 .carrousel__card {
-    /* temporario ate a insercao do conteudo real do insta*/
+    /* temporario ate a insercao do conteudo real do instagram */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,12 +19,12 @@
     transition: transform 0.3s ease, left 0.3s ease, background 0.3s ease;
 }
 
-.carrousel__card:not(:first-child) {
-    margin-left: -50px;
+.carrousel__card:hover {
+    transform: translateY(-5px);
 }
 
-.carrousel__card:hover {
-    transform: translateY(-10px);
+/* .carrousel__card:not(:first-child) {
+    margin-left: -50px;
 }
 
 .carrousel__card:hover:not(:first-child) {
@@ -46,4 +46,4 @@
 }
 .container__carrousel .carrousel__card:nth-child(4) {
     z-index: 1;
-}
+} */
