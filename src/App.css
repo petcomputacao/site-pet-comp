@@ -23,7 +23,7 @@ html, body {
 
 /* seção Sobre */
 .Sobre {
-  height: 45vh;
+  height: 55vh;
   width: 100vw;
 }
 
@@ -31,7 +31,7 @@ html, body {
 
 /* seção Projetos */
 .Projetos {
-  height: 75vh;
+  height: 95vh;
   width: 100vw;
 }
 
@@ -39,7 +39,7 @@ html, body {
 
 /* seção Produções*/
 .Producoes {
-  height: 84vh;
+  height: 110vh;
   width: 100vw;
 }
 
@@ -83,15 +83,22 @@ html, body {
   }
 
   .Sobre {
-    height: 120vh;
+    height: 110vh;
     width: 100vw;
   }
 
   .Projetos {
-    height: min-content;
+    height: 85vh;
   }
   .PaginaTutor {
     height: 65vh;
     width: 100vw;
   } 
 } 
+
+@media (max-width: 380px){
+  .PaginaTutor {
+    height: vh;
+    width: 100vw;
+  } 
+}

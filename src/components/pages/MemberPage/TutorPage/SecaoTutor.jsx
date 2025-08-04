@@ -10,6 +10,7 @@ export default function SecaoTutor() {
                 <div className="nome-tutor-container">
                     <div className="nome-tutor">
                         <p>
+                            <span className="destaque-titulo">TUTORA DO PET</span><br />
                             Lívia Maria Rodrigues Sampaio Campos
                         </p>
                     </div>
