@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 
 function Header() {
-  const [activeSection, setActiveSection] = useState('home');
+  const [setActiveSection] = useState('home');
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);

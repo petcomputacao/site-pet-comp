@@ -62,7 +62,8 @@
 
 /* Estilo base dos slides */
 .slide {
-  height: 500px;             /* Altura fixa */
+  height: 400px;             /* Altura fixa */
+  width: 220px;
   padding: 20px;             /* Espaçamento interno */
   border-radius: 8px;       /* Bordas arredondadas */
   transition: all 0.3s ease; /* Animação suave */

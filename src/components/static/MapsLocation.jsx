@@ -7,6 +7,7 @@ export default function MapsLocation() {
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa da localização da UFCG"
                     />
         </div>
     );
