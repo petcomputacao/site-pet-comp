@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 
 
 function Header() {
-  const [setActiveSection] = useState('home');
+  // eslint-disable-next-line no-unused-vars
+  const [_function, setActiveSection] = useState('home');
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
