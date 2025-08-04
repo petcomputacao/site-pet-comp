@@ -58,10 +58,8 @@ function App() {
       {/* Rodapé da pagina */}
       <footer className='Footer'>
         <div className='Footer__logo-computacao-ufcg'>
-          <img 
-            src={process.env.PUBLIC_URL + 'images/logos/computacaoufcg_sem_fundo.png'}
-            alt='logo-computacao-ufcg'
-            className='logo-computacao-ufcg'/>
+          <img src={process.env.PUBLIC_URL + 'images/logos/computacaoufcg_sem_fundo.png'} alt='logo-computacao-ufcg' className='logo-computacao-ufcg'/>
+          <img src={process.env.PUBLIC_URL + "/images/logos/logo-ufcg.png"} alt="logo-ufcg" className='logo-ufcg' />
         </div>
         <Footer />
       </footer>

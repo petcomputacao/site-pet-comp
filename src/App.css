@@ -39,15 +39,16 @@ html, body {
 
 /* seção Produções*/
 .Producoes {
-  height: 84vh;
+  height: min-content;
   width: 100vw;
 }
+
 
 /*===========================================================*/
 
 /* Pagina do Tutor */
 .PaginaTutor {
-  height: 70vh;
+  height: min-content;
   width: 100vw;
 }
 
@@ -55,7 +56,7 @@ html, body {
 
 /* Pagina dos Membros */
 .PaginaMembros {
-  height: 167vh;
+  height: min-content;
   width: 100vw;
 }
 

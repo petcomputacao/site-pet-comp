@@ -16,7 +16,7 @@ export default function SecaoMembrosAtivos() {
                             className="item__foto-membro-ativo" />
                     <Reveal>
                     <div className="item__info">
-                        <p className="info__nome">Arthur Campos Arruda de Freitas</p>
+                        <p className="info__nome">Arthur Campos</p>
                         <div className="info__icones--redes">
                             <a
                                 href="https://www.linkedin.com/in/arthur-freitas-016775213/"
@@ -63,7 +63,7 @@ export default function SecaoMembrosAtivos() {
                             className="item__foto-membro-ativo" />
                     <Reveal>
                     <div className="item__info">
-                        <p className="info__nome">Carlos Artur Santana Sales</p>
+                        <p className="info__nome">Carlos Artur</p>
                         <div className="info__icones--redes">
                             <a
                                 href="https://www.linkedin.com/in/carlos-artur-438557264/"
@@ -109,7 +109,7 @@ export default function SecaoMembrosAtivos() {
                             className="item__foto-membro-ativo" />
                     <Reveal>
                     <div className="item__info">
-                        <p className="info__nome">Arthur Fernandes Vieira</p>
+                        <p className="info__nome">Arthur Fernandes</p>
                         <div className="info__icones--redes">
                             <a
                                 href="www.linkedin.com/in/arthur-fernandes-67a2032b6"
@@ -155,7 +155,7 @@ export default function SecaoMembrosAtivos() {
                             className="item__foto-membro-ativo" />
                     <Reveal>
                     <div className="item__info">
-                        <p className="info__nome">Guilherme Jose Araujo Oliveira</p>
+                        <p className="info__nome">Guilherme Jose</p>
                         <div className="info__icones--redes">
                             <a
                                 href="https://www.linkedin.com/in/guilhermejose05/"
@@ -201,7 +201,7 @@ export default function SecaoMembrosAtivos() {
                             className="item__foto-membro-ativo" />
                     <Reveal>    
                     <div className="item__info">
-                        <p className="info__nome">Denilson Deivid Lima Silva</p>
+                        <p className="info__nome">Denilson Deivid</p>
                         <div className="info__icones--redes">
                             <a
                                 href="https://www.linkedin.com/in/denilson-silva-75b170206/"
@@ -247,7 +247,7 @@ export default function SecaoMembrosAtivos() {
                             className="item__foto-membro-ativo" />
                     <Reveal>
                     <div className="item__info">
-                        <p className="info__nome">Fabiana Simplício da Silva</p>
+                        <p className="info__nome">Fabiana Simplício</p>
                         <div className="info__icones--redes">
                             <a
                                 href="https://www.linkedin.com/in/fabiana-simpl%C3%ADcio-a83b922b0/"
@@ -294,7 +294,7 @@ export default function SecaoMembrosAtivos() {
                     <Reveal>
 
                     <div className="item__info">
-                        <p className="info__nome">Gabriel Oliveira Rodrigues</p>
+                        <p className="info__nome">Gabriel Oliveira</p>
                         <div className="info__icones--redes">
                             <a
                                 href="https://www.linkedin.com/in/gabrieloliveira42/"
@@ -341,7 +341,7 @@ export default function SecaoMembrosAtivos() {
                     <Reveal>
 
                     <div className="item__info">
-                        <p className="info__nome">Júlia Cruz de Araújo Andrade</p>
+                        <p className="info__nome">Júlia Cruz</p>
                         <div className="info__icones--redes">
                             <a
                                 href="https://www.linkedin.com/in/j%C3%BAlia-cruz-1699262b4/"
@@ -388,7 +388,7 @@ export default function SecaoMembrosAtivos() {
                     <Reveal>
 
                     <div className="item__info">
-                        <p className="info__nome">Rafael Antonio de Lucena Serey</p>
+                        <p className="info__nome">Rafael Antonio</p>
                         <div className="info__icones--redes">
                             <a
                                 href=""
@@ -435,7 +435,7 @@ export default function SecaoMembrosAtivos() {
                     <Reveal>
 
                     <div className="item__info">
-                        <p className="info__nome">Erik Luan Rodrigues Florêncio</p>
+                        <p className="info__nome">Erik Luan</p>
                         <div className="info__icones--redes">
                             <a
                                 href="https://www.linkedin.com/in/erik-luan/"
@@ -482,7 +482,7 @@ export default function SecaoMembrosAtivos() {
                     <Reveal>
 
                     <div className="item__info">
-                        <p className="info__nome">Lorena Nascimento Carvalho Gama</p>
+                        <p className="info__nome">Lorena Nascimento</p>
                         <div className="info__icones--redes">
                             <a
                                 href=""
@@ -529,7 +529,7 @@ export default function SecaoMembrosAtivos() {
                     <Reveal>
 
                     <div className="item__info">
-                        <p className="info__nome">Ryan V. Tielles Almeida da Silva</p>
+                        <p className="info__nome">Ryan Vinnícius</p>
                         <div className="info__icones--redes">
                             <a
                                 href="https://www.linkedin.com/in/ryanvinnicius/"

@@ -4,10 +4,8 @@ import MapsLocation from '../MapsLocation';
 
 const Footer = () => {
   return (
-    <>  
-        
-        <footer className="container-footer">
-          <div className='footer__infos'>
+    <footer className="container-footer">
+        <div className='footer__infos'>
               <div className='infos__contatos'>
                   <img src={process.env.PUBLIC_URL + "/images/logos/logo-pet-branco.png"}
                       alt="logo-pet"
@@ -80,12 +78,11 @@ const Footer = () => {
               <div className='infos__maps'>
                   <MapsLocation />
               </div>
-          </div>
-          <div className='footer_copyright'>
-              <p className='footer__copyright'>&copy; 2025 PET Computação UFCG. Todos os direitos reservados.</p>
-          </div>
-
-      </footer></>
+        </div>
+        <div className='footer__copyright'>
+            <p className='footer__copyright'>&copy; 2025 PET Computação UFCG. Todos os direitos reservados.</p>
+        </div>
+    </footer>
   );
 };
 

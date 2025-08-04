@@ -1,5 +1,6 @@
 .Footer__logo-computacao-ufcg {
   width: 99%;
+  height: 70px;
   display: flex;
   justify-content: end;
 }
@@ -9,21 +10,29 @@
   height: 100%;
   display: flex;
   flex-direction: column; 
-  background: linear-gradient(to right, #0B1D51, #000a96,#0b3a82, #0f4b7f);
+  background: linear-gradient(to right, #0B1D51, #0D47A1, #1565C0, #1E88E5, #42A5F5);
+  overflow-x: hidden;
 }
 
 .footer__infos {
   width: 100%;
-  height: 72%;
+  height: 75%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+}
+
+.infos__contatos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .imagem-footer--pet {
   width: 200px;
   height: 200px;
-  margin-left: 10px;
 }
 
 .footer__social-links {
@@ -61,29 +70,75 @@
 .footer__social-icon--linkedin:hover,
 .footer__social-icon--instagram:hover,
 .footer__social-icon--email:hover {
-  transform: scale(1.1);
   transform: translateY(-2px);
-}
-
-.imagem-footer {
-  width: 50px;
 }
 
 .infos__maps {
   width: 50%;
-  height: 95%;
+  height: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
 }
 
 .container-maps {
-  width: 70%;
+  width:  70%;
   height: 90%;
 }
 
-.footer_copyright {
+.footer__copyright {
   width: 100%;
   height: min-content;
   text-align: center;
+}
+
+@media (max-width: 1023px) {
+  .Footer {
+    height: min-content;
+  }
+
+  .Footer__logo-computacao-ufcg {
+    height: 50px;
+  }
+
+  .footer__infos {
+    flex-direction: column;
+  }
+
+  .infos__contatos {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imagem-footer--pet {
+    width: 120px;
+    height: 120px;
+  }
+
+  .infos__maps {
+    width: 100%;
+    height: 90%;
+  }
+
+  .container-maps {
+    width:  70%;
+  }
+
+  .footer__copyright {
+    font-size: small;
+  }
+
+  .footer__social-links {
+    gap: 15%;
+    margin-bottom: 10%;
+  }
+
+  .footer__social-icon--github,
+  .footer__social-icon--linkedin,
+  .footer__social-icon--instagram,
+  .footer__social-icon--email {
+    width: 30px;
+  }
 }
