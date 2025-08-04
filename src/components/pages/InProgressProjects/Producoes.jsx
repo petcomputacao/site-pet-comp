@@ -1,7 +1,7 @@
 import "./producoes.css"
 
-import SliderImages from "../../static/Slider"
-import AutoPlay from "../../static/InfiteAutoplay"
+import CardCarrousel from "../../static/CardCarrousel";
+import AutoPlay from "../../static/InfiteAutoplay";
 
 export default function Producoes () {
     return (
@@ -14,7 +14,7 @@ export default function Producoes () {
                     </h1>
                 </div>
                 <div className="superior__carrossel-instagram">
-                    <SliderImages />
+                    <CardCarrousel />
                 </div>
             </div>
             <div className="container-producoes__inferior">

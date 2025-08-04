@@ -25,6 +25,20 @@
 }
 
 .content__logo {
-    width: 200px;
-    height: 100%;
+    width: 230px;
+    height: 230px;
+}
+
+@media (max-width: 375px) {
+    .content__logo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 540px) {
+    .content__logo {
+        width: 150px;
+        height: 150px;
+    }
 }

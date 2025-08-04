@@ -6,7 +6,6 @@ html, body {
   overflow-x: hidden;
 }
 
-
 .header{
   height: 0vh;
   width: 75vw;
@@ -40,15 +39,16 @@ html, body {
 
 /* seção Produções*/
 .Producoes {
-  height: 105vh;
+  height: min-content;
   width: 100vw;
 }
+
 
 /*===========================================================*/
 
 /* Pagina do Tutor */
 .PaginaTutor {
-  height: 70vh;
+  height: min-content;
   width: 100vw;
 }
 
@@ -56,16 +56,16 @@ html, body {
 
 /* Pagina dos Membros */
 .PaginaMembros {
-  height: 180vh;
+  height: min-content;
   width: 100vw;
 }
 
 /*===========================================================*/
 
 .Footer {
-  height: 70vh;
+  height: 60vh;
   width: 100vw;
-  background: gray;
+  overflow-y: hidden;
 }
 /*===========================================================*/
 
