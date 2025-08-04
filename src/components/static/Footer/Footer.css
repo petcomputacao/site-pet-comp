@@ -90,15 +90,18 @@
   width: 100%;
   height: min-content;
   text-align: center;
+  color: white;
 }
 
 @media (max-width: 1023px) {
   .Footer {
+    margin-top: 10%;
     height: min-content;
   }
 
   .Footer__logo-computacao-ufcg {
     height: 50px;
+    justify-content: center;
   }
 
   .footer__infos {
