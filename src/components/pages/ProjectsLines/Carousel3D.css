@@ -44,7 +44,7 @@
   font-size: 1.8rem;
   color: #000000;
   margin-bottom: 3%;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--fonte-titulo);
   letter-spacing: 2px;
 }
 
@@ -52,7 +52,7 @@
 .slide-body {
   font-size: 1rem;
   color: #000000;
-  font-family: "Lato", sans-serif;
+  font-family: var(--fonte-corpo);
   letter-spacing: 1px;
   line-height: 1.4;
   text-align: justify;
@@ -90,7 +90,7 @@
   .slide-body {
     font-size: 0.95rem;
     color: #000000;
-    font-family: "Lato", sans-serif;
+    font-family: var(--fonte-corpo);
     letter-spacing: 1px;
     line-height: 1.6;
     text-align: justify;
@@ -114,7 +114,7 @@
   .slide-body {
     font-size: 0.7rem;
     color: #000000;
-    font-family: "Lato", sans-serif;
+    font-family: var(--fonte-corpo);
     letter-spacing: 1px;
     line-height: 1.6;
     text-align: justify;

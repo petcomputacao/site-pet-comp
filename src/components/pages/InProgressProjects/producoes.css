@@ -19,8 +19,8 @@
     color: black;
     font-weight: 700;
     text-align: center;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 0.5px;
+    font-family: var(--fonte-titulo);
+    letter-spacing: 1px;
 }
 
 .superior__carrossel-instagram {

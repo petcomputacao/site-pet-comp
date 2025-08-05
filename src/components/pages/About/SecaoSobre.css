@@ -38,7 +38,7 @@
   color: rgb(0, 0, 0);
   text-align: justify;
   letter-spacing: 1px;
-  font-family: "Lato", sans-serif;
+  font-family: var(--fonte-corpo);
   transition: transform 0.3s ease;
 }
 
@@ -46,7 +46,7 @@
 .ensino__titulo,
 .tutoria__titulo {
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--fonte-titulo);
 }
 
 /* vai da esquerda pra direita*/
@@ -109,7 +109,7 @@
 .ensino__titulo,
 .tutoria__titulo {
   text-align: center;
-  font-family: 'Playfair Display', serif;
+  font-family: var(--fonte-titulo);
   font-size: 1.4rem; /* Tamanho ajustado */
 }
 

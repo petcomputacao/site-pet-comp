@@ -1,170 +1,157 @@
+/* ===== Container principal ===== */
 .container-membros {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* ===== Título ===== */
 .membros__titulo {
-    width: 75%;
-    height: 15%;
-    display: flex;
-    justify-content: start;
-    font-size: 3rem;
-    color: black;
-    font-weight: 700;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 0.5px;
+  width: 75%;
+  height: 15%;
+  display: flex;
+  justify-content: start;
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  font-size: 3rem;
+  color: black;
+  letter-spacing: 2px;
 }
 
+/* ===== Galeria ===== */
 .membros__galeria {
-    width: 80%;
-    height: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
+  width: 80%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 
+/* ===== Item da galeria ===== */
 .galeria__item {
-    width: 80%;
-    height: max-content;
-    margin-bottom: 12%;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    gap: 1%;
+  width: 80%;
+  margin-bottom: 12%;
+  display: flex;
+  align-items: center;
+  gap: 1%;
+  height: max-content;
+  border-radius: 10px;
 }
 
+/* ===== Foto do membro ===== */
 .item__foto-membro-ativo {
-    width: 120px;
-    height: 120px;
-    border-radius: 10%;
-    object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 5%;
+  object-fit: cover;
+  border: 1px solid black;
 }
 
+/* ===== Info do membro ===== */
 .item__info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
+/* ===== Nome ===== */
 .info__nome {
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 1.8rem;
-    margin-bottom: 1%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  font-family: var(--fonte-corpo);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
 }
 
+/* ===== Ícones de redes ===== */
 .info__icones--redes {
-    display: flex;
-    gap: 1.1%;
+  display: flex;
+  gap: 5%;
+  margin-left: 15%;
 }
 
 .redes__link--github {
-    color: black;
+  color: black;
 }
 
 .redes__link--linkedin {
-    color: #0c7fbd;
+  color: #0c7fbd;
 }
 
 .redes__link--linkedin,
 .redes__link--github {
-    transition: transform 0.4s;
+  transition: transform 0.4s;
 }
 
 .redes__link--linkedin:hover,
 .redes__link--github:hover {
-    transform: translateY(2px);
+  transform: translateY(2px);
 }
 
+/* ================== MEDIA QUERIES ================== */
 
-@media (max-width: 375px) {
-    .membros__titulo {
-        justify-content: center;
-        font-size: 2rem;
-    }
-    
-    .membros__galeria {
-        width: 80%;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-    }
+/* ===== Telas até 540px (mobile) ===== */
+@media (max-width: 540px) {
+  .membros__titulo {
+    justify-content: center;
+    font-size: 2rem;
+  }
 
-    .galeria__item {
-        width: 100%;
-        height: max-content;
-        margin-bottom: 12%;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        gap: 1%;
-    }
-    .item__foto-membro-ativo {
-        width:  80px;
-        height: 80px;
-        border-radius: 10%;
-        object-fit: cover;
-    }
-    
-    .info__nome {
-        font-size: 1.3rem;
-    }
+  .membros__galeria {
+    width: 85%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .galeria__item {
+    width: 100%;
+    margin-bottom: 12%;
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    height: max-content;
+    border-radius: 10px;
+  }
+
+  .item__foto-membro-ativo {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+
+  .info__nome {
+    font-size: 1.4rem;
+    margin-left: 10%;
+  }
+
+  .info__icones--redes {
+  display: flex;
+  gap: 5%;
+  margin-left: 15%;
+}
 }
 
-@media (min-width: 376px) and (max-width: 540px) {
-    .membros__titulo {
-        justify-content: center;
-        font-size: 2rem;
-    }
-    
-    .membros__galeria {
-        width: 80%;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .galeria__item {
-        width: 100%;
-        height: max-content;
-        margin-bottom: 12%;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        gap: 1%;
-    }
-    .item__foto-membro-ativo {
-        width:  80px;
-        height: 80px;
-        border-radius: 10%;
-        object-fit: cover;
-    }
-    
-    .info__nome {
-        font-size: 1.5rem;
-    }
-}
-
+/* ===== Telas entre 541px e 1024px (tablet) ===== */
 @media (min-width: 541px) and (max-width: 1024px) {
-    .membros__titulo {
-        justify-content: center;
-        font-size: 2rem;
-    }
+  .membros__titulo {
+    justify-content: center;
+    font-size: 2rem;
+  }
 
-    .membros__galeria {
-        width: 90%;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .galeria__item {
-        width: 100%;
-    }
+  .membros__galeria {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .info__nome {
-        font-size: 1.6rem;
-    }
+  .galeria__item {
+    width: 100%;
+  }
+
+  .info__nome {
+    font-size: 1.6rem;
+  }
 }

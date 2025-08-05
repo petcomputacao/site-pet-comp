@@ -20,7 +20,7 @@
 .titulo-vertentes h1 {
   font-size: 2.2rem;
   color: rgb(40, 40, 104);
-  font-family: 'Playfair Display', serif;
+  font-family: var(--fonte-titulo);
   letter-spacing: 2px;
 }
 

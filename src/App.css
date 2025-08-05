@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 
+:root {
+  --fonte-titulo: 'Playfair Display', serif;
+  --fonte-corpo: "Lato", sans-serif;
+}
+
 html, body {
   background: #ffffff;
   overflow-x: hidden;

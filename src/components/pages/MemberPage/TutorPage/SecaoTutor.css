@@ -21,20 +21,20 @@
     font-size: 1.5rem;
     color: #1f1f1f;
     text-align: center;
-    font-family: "Lato", sans-serif;
-    letter-spacing: 1px;
+    font-family: var(--fonte-corpo);
+    letter-spacing: 2px;
 }
 
 .descricao-tutor-container{
     width: 90%;
     margin: 0px auto;
     height: 65%;
-    padding: 10px;
+    padding: 5px;
 }
 
 .descricao-tutor {
   font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: justify;
   color: #333;
 }
@@ -77,16 +77,16 @@
     font-size: 0.9rem;
     color: #1f1f1f;
     text-align: center;
-    font-family: "Lato", sans-serif;
-    letter-spacing: 0.5px;
+    font-family: var(--fonte-corpo);
+    letter-spacing: 1px;
 }
 
 .link-professora{
     font-size: 0.9rem;
     color: #274c9eff;
     text-align: center;
-    font-family: "Lato", sans-serif;
-    letter-spacing: 0.5px;
+    font-family: var(--fonte-corpo);
+    letter-spacing: 1px;
     font-weight: 600;
 }
 
@@ -99,6 +99,8 @@
   color: #000661; /* Azul PET */
   text-transform: uppercase;
   font-size: 1.3rem;
+  font-family: var(--fonte-titulo);
+  letter-spacing: 1px;
 }
 
 
