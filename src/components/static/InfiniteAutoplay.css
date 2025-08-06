@@ -42,3 +42,10 @@
         height: 150px;
     }
 }
+
+@media (min-width: 541px) and (max-width: 1024px) {
+    .content__logo {
+        width: 150px;
+        height: 150px;
+    }
+}

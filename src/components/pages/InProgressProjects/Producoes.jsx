@@ -1,11 +1,11 @@
-import "./producoes.css"
+import "./Producoes.css"
 
+import Teste from "../../static/teste/Teste";
 import CardCarrousel from "../../static/CardCarrousel";
 import AutoPlay from "../../static/InfiteAutoplay";
 
 export default function Producoes () {
     return (
-        <>
         <div className="container-producoes">
             <div className="container-producoes__superior">
                 <div className="superior__titulo">
@@ -21,6 +21,5 @@ export default function Producoes () {
                 <AutoPlay />
             </div>
         </div> 
-        </>
     );
 };

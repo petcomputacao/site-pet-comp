@@ -390,7 +390,7 @@ export default function SecaoMembrosAtivos() {
                     <div className="item__info">
                         <p className="info__nome">Rafael Antonio</p>
                         <div className="info__icones--redes">
-                            <a
+                            {/* <a
                                 href=""
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -406,7 +406,7 @@ export default function SecaoMembrosAtivos() {
                                     >
                                     <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5V24H0V8zm7.5 0h4.5v2.9h.06c.63-1.2 2.17-2.48 4.44-2.48 4.75 0 5.62 3.13 5.62 7.2V24h-5V15c0-2.16-.04-4.94-3-4.94-3 0-3.46 2.35-3.46 4.78V24h-5V8z"/>
                                 </svg>
-                            </a>
+                            </a> */}
                             <a
                                 href="https://github.com/rafaelserey"
                                 target="_blank"

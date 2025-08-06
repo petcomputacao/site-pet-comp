@@ -22,13 +22,15 @@ html, body {
 .paginaInicial{
   height: 85vh;
   width: 100vw;
+  margin-top: 8vh;
+
 }
 
 /*===========================================================*/
 
 /* seção Sobre */
 .Sobre {
-  height: 55vh;
+  height: min-content;
   width: 100vw;
 }
 
@@ -36,7 +38,7 @@ html, body {
 
 /* seção Projetos */
 .Projetos {
-  height: 95vh;
+  height: 70vh;
   width: 100vw;
 }
 
@@ -44,8 +46,9 @@ html, body {
 
 /* seção Produções*/
 .Producoes {
-  height: 110vh;
+  height: min-content;
   width: 100vw;
+  margin-bottom: 5vh;
 }
 
 
@@ -83,27 +86,27 @@ html, body {
   }
 
   .paginaInicial{
-    height: 110vh;
-    width: 100vw;
+    /* margin-top: 8vh; */
+    height: min-content;
   }
 
   .Sobre {
-    height: 110vh;
-    width: 100vw;
+    height: min-content;
   }
 
   .Projetos {
     height: 85vh;
   }
-  .PaginaTutor {
-    height: 65vh;
-    width: 100vw;
-  } 
-} 
 
-@media (max-width: 380px){
+  .Producoes {
+    height: min-content;
+  }
+
   .PaginaTutor {
-    height: vh;
-    width: 100vw;
-  } 
-}
+    height: min-content;
+  }
+
+  .Footer {
+    height: min-content;
+  }
+} 

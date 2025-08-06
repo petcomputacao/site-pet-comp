@@ -31,22 +31,21 @@
 
 /* ===== Item da galeria ===== */
 .galeria__item {
-  width: 80%;
-  margin-bottom: 12%;
-  display: flex;
-  align-items: center;
-  gap: 1%;
-  height: max-content;
-  border-radius: 10px;
+    width: 90%;
+    height: max-content;
+    margin-bottom: 12%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1%;
 }
 
 /* ===== Foto do membro ===== */
 .item__foto-membro-ativo {
-  width: 100px;
-  height: 100px;
-  border-radius: 5%;
-  object-fit: cover;
-  border: 1px solid black;
+    width: 90px;
+    height: 90%;
+    border-radius: 10%;
+    object-fit: cover;
 }
 
 /* ===== Info do membro ===== */
@@ -58,11 +57,10 @@
 
 /* ===== Nome ===== */
 .info__nome {
-  margin-left: 10%;
-  margin-bottom: 10%;
-  font-family: var(--fonte-corpo);
-  font-size: 1.1rem;
-  letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1.45rem;
+    margin-bottom: 1%;
 }
 
 /* ===== Ícones de redes ===== */
@@ -99,40 +97,59 @@
     font-size: 2rem;
   }
 
-  .membros__galeria {
-    width: 85%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .galeria__item {
-    width: 100%;
-    margin-bottom: 12%;
-    display: flex;
-    align-items: center;
-    gap: 1%;
-    height: max-content;
-    border-radius: 10px;
-  }
-
-  .item__foto-membro-ativo {
-    width: 100px;
-    height: 100px;
-    border-radius: 10%;
-    object-fit: cover;
-  }
-
-  .info__nome {
-    font-size: 1.4rem;
-    margin-left: 10%;
-  }
-
-  .info__icones--redes {
-  display: flex;
-  gap: 5%;
-  margin-left: 15%;
+    .galeria__item {
+        width: 100%;
+        height: max-content;
+        margin-bottom: 12%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 1%;
+    }
+    .item__foto-membro-ativo {
+        width:  60px;
+        height: 60px;
+        border-radius: 10%;
+        object-fit: cover;
+    }
+    
+    .info__nome {
+        font-size: 1.1rem;
+    }
 }
+
+@media (min-width: 376px) and (max-width: 540px) {
+    .membros__titulo {
+        justify-content: center;
+        font-size: 2rem;
+    }
+    
+    .membros__galeria {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galeria__item {
+        width: 100%;
+        height: max-content;
+        margin-bottom: 12%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 1%;
+    }
+    .item__foto-membro-ativo {
+        width:  70px;
+        height: 70px;
+        border-radius: 10%;
+        object-fit: cover;
+    }
+    
+    .info__nome {
+        font-size: 1.4rem;
+    }
 }
 
 /* ===== Telas entre 541px e 1024px (tablet) ===== */
@@ -142,16 +159,21 @@
     font-size: 2rem;
   }
 
-  .membros__galeria {
-    width: 90%;
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .membros__galeria {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .galeria__item {
+        width: 60%;
+    }
 
-  .galeria__item {
-    width: 100%;
-  }
+    .info__nome {
+        font-size: 1.2rem;
+    }
 
-  .info__nome {
-    font-size: 1.6rem;
-  }
+    .item__foto-membro-ativo {
+        width:  70px;
+        height: 70px;
+    }
 }

@@ -6,21 +6,16 @@
 
 .carrousel__card {
     /* temporario ate a insercao do conteudo real do instagram */
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+    background: linear-gradient(to right,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5); */
     /* -------------------------------------------------- */
     border-radius: 5px;
     position: relative;
     width: 100%;
     height: 340px;
     margin: 1%;
-    transition: transform 0.3s ease, left 0.3s ease, background 0.3s ease;
-}
-
-.carrousel__card:hover {
-    transform: translateY(-5px);
 }
 
 @media (max-width: 540px) {
