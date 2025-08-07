@@ -1,5 +1,4 @@
 .container-producoes {
-    background-color: aqua;
     height: min-content;
     display: flex;
     flex-direction: column;
@@ -14,7 +13,7 @@
 }
 
 .superior__titulo {
-    width: 32%;
+    width: 19%;
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
@@ -26,8 +25,7 @@
 }
 
 .superior__carrossel-instagram {
-    background-color: tomato;
-    width: 68%;
+    width: 80%;
     height: 100%;
 }
 
@@ -37,26 +35,6 @@
     display: flex;
     margin-top: 5%;
 }
-
-/* @media (max-width: 1023px) {
-    .container-producoes__superior {
-        flex-direction: column;
-    }
-
-    .superior__titulo {
-        width: 100%;
-        font-size: 1.3rem;
-    }
-
-    .superior__carrossel-instagram {
-        width: 100%;
-        justify-content: center;
-    }
-} */
-
-/* @media (max-width: 375px) {
-
-} */
 
 @media (max-width: 430px) {
     .container-producoes__superior {
