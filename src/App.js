@@ -6,7 +6,6 @@ import Vertentes from './components/pages/ProjectsLines/VertentesProjects';
 import SecaoTutor from './components/pages/MemberPage/TutorPage/SecaoTutor';
 import SecaoSobre from './components/pages/About/SecaoSobre';
 import Producoes from './components/pages/InProgressProjects/Producoes';
-
 import MembrosAtivos from './components/pages/MemberPage/MembrosAtivosPage/MembrosAtivos';
 import Footer from './components/static/Footer/Footer';
 

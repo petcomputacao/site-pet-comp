@@ -83,7 +83,7 @@ export default function SecaoMembrosAtivos() {
                                 </svg>
                             </a>
                             <a
-                                href=""
+                                href="https://github.com/CarlosArturr"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="redes__link--github"
@@ -361,7 +361,7 @@ export default function SecaoMembrosAtivos() {
                                 </svg>
                             </a>
                             <a
-                                href=""
+                                href="https://github.com/juliacruzandrade"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="redes__link--github"
@@ -502,7 +502,7 @@ export default function SecaoMembrosAtivos() {
                                 </svg>
                             </a> */}
                             <a
-                                href=""
+                                href="https://github.com/lorenacarvalho"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="redes__link--github"
