@@ -1,6 +1,5 @@
 import "./Producoes.css"
 
-import Teste from "../../static/teste/Teste";
 import CardCarrousel from "../../static/CardCarrousel";
 import AutoPlay from "../../static/InfiteAutoplay";
 

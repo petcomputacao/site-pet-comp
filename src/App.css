@@ -12,7 +12,7 @@ html, body {
 }
 
 .header{
-  height: min-content;
+  height: 8vh;
   width: 75vw;
   margin: 0 auto;
 }
@@ -20,10 +20,9 @@ html, body {
 
 /* seção Página Inicial */
 .paginaInicial{
-  height: 85vh;
+  height: 80vh;
   width: 100vw;
-  margin-top: 8vh;
-
+  margin-top: auto;
 }
 
 /*===========================================================*/
@@ -38,8 +37,9 @@ html, body {
 
 /* seção Projetos */
 .Projetos {
-  height: 70vh;
+  height: min-content;
   width: 100vw;
+  margin-bottom: 5vh;
 }
 
 /*===========================================================*/
@@ -71,7 +71,7 @@ html, body {
 /*===========================================================*/
 
 .Footer {
-  height: 60vh;
+  height: 65vh;
   width: 100vw;
   overflow-y: hidden;
 }
@@ -81,12 +81,10 @@ html, body {
 
 @media (max-width: 768px) {
   .header{
-    height: 8vh;
     width: 100%;
   }
 
   .paginaInicial{
-    /* margin-top: 8vh; */
     height: min-content;
   }
 
@@ -95,7 +93,7 @@ html, body {
   }
 
   .Projetos {
-    height: 85vh;
+    height: min-content;
   }
 
   .Producoes {

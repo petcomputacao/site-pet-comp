@@ -1,4 +1,5 @@
 .container-producoes {
+    background-color: aqua;
     height: min-content;
     display: flex;
     flex-direction: column;
@@ -53,7 +54,11 @@
     }
 } */
 
-@media (min-width: 376px) and (max-width: 430px) {
+/* @media (max-width: 375px) {
+
+} */
+
+@media (max-width: 430px) {
     .container-producoes__superior {
         flex-direction: column;
     }
