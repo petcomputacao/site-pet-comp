@@ -74,12 +74,9 @@
 .navbar-link:hover {
   color: #838383;
   transform: translateY(-1px);
-  font-size: 1rem;
-
 }
 
-.navbar-link.active {
-  font-size: 1.2rem;
+.navbar-link:active {
   color: #838383;
 }
 
@@ -127,11 +124,6 @@
 .social-link.icon-only {
   justify-content: center;
 }
-
-
-
-
-
 
 /*responsividade mobile*/
 @media (max-width: 768px) {
@@ -181,12 +173,10 @@
 }
 
 .navbar-link:hover {
-  font-size: 1rem;
 
 }
 
-.navbar-link.active {
-  font-size: 1.1rem;
+.navbar-link:active {
 }
 
 /*parte DIREITA da navbar*/
@@ -224,8 +214,7 @@
   letter-spacing: 1px;
 }
 
-.navbar-link.active {
-  font-size: 1.1rem;
+.navbar-link:active {
 }
 
 /*parte DIREITA da navbar*/
