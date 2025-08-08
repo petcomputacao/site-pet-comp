@@ -1,113 +1,114 @@
-.secao-tutor{
-    width: 60%;
-    height: 100%;
-    margin: 0px auto;
-    display: flex;
+.secao-tutor {
+  width: 80%;
+  height: 100%;
+  margin: 0px auto;
+  display: flex;
 }
 
-.parteEsquerda-tutor-container{
-    width: 50%;
+.parteEsquerda-tutor-container {
+  width: 50%;
 }
 
-.nome-tutor-container{
-    width: 75%;
-    margin: 0px auto;
-    margin-top: 2rem;
-    margin-bottom: 0rem;
-    height: 10%;
+.nome-tutor-container {
+  width: 75%;
+  margin: 0px auto;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  height: 10%;
 }
 
-.nome-tutor{
-    font-size: 1.5rem;
-    color: #1f1f1f;
-    text-align: center;
-    font-family: var(--fonte-corpo);
-    letter-spacing: 2px;
+.nome-tutor {
+  font-size: 1.6rem;
+  color: #1f1f1f;
+  text-align: center;
+  font-family: var(--fonte-corpo);
+  letter-spacing: 2px;
 }
 
-.descricao-tutor-container{
-    width: 90%;
-    margin: 0px auto;
-    height: 65%;
-    padding: 5px;
+.descricao-tutor-container {
+  width: 90%;
+  margin: 0px auto;
+  height: 65%;
+  padding: 5px;
 }
 
 .descricao-tutor {
-  font-size: 0.9rem;
+  font-size: 1.8rem;
   line-height: 1.6;
   text-align: justify;
   color: #333;
 }
 
-.parteDireita-tutor-container{
-    width: 50%;
+.parteDireita-tutor-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 
 .fotoTutor-container {
-    width: 85%;
-    margin: 0 auto; /* Centraliza o container principal */
-    height: 75%;
-    margin-top: 0.5rem;
-
+  width: 70%;
+  margin: 0 auto; /* Centraliza o container principal */
+  height: 75%;
+  margin-top: 0.5rem;
 }
 
 .fotoTutor {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+  width: 70%;
+  height: min-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
 }
 
 .foto-tutor-image {
-    width: 80%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: min-content;
+  object-fit: cover;
 }
 
 .hiperlinkTutor-container{
-    width: 85%;
-    margin: 0px auto;
-    margin-top: 0.5rem;
-    height: 10%;
+  width: 85%;
+  margin: 0px auto;
+  margin-top: 0.5rem;
+  height: 10%;
 }
 
 .texto-hiperlink-professora{
-    font-size: 0.9rem;
-    color: #1f1f1f;
-    text-align: center;
-    font-family: var(--fonte-corpo);
-    letter-spacing: 1px;
+  font-size: 1rem;
+  color: #1f1f1f;
+  text-align: center;
+  font-family: var(--fonte-corpo);
+  letter-spacing: 1px;
 }
 
 .link-professora{
-    font-size: 0.9rem;
-    color: #274c9eff;
-    text-align: center;
-    font-family: var(--fonte-corpo);
-    letter-spacing: 1px;
-    font-weight: 600;
+  font-size: 1.3rem;
+  color: #274c9eff;
+  text-align: center;
+  font-family: var(--fonte-corpo);
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .link-professora:hover {
-    color: rgb(73, 131, 255);
+  color: rgb(73, 131, 255);
 }
 
 .destaque-titulo {
   font-weight: bold;
   color: #000661; /* Azul PET */
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-family: var(--fonte-titulo);
   letter-spacing: 1px;
 }
 
 
-
 /* Estilos para telas menores que 768px (mobile) */
-@media (max-width: 768px) {
-
+@media (max-width: 425px) {
   .secao-tutor {
     width: 90%;
     flex-direction: column; /* Empilha os elementos verticalmente */
@@ -133,14 +134,14 @@
   }
 
   .fotoTutor-container {
-    width: 60%;
-    height: auto;
+    width: 55%;
+    height: min-content;
     margin-top: 0rem;
   }
 
   .fotoTutor {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   .foto-tutor-image {
@@ -158,6 +159,123 @@
     font-size: 1.1rem;
     letter-spacing: 1px;
 }
+
+  .link-professora {
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .secao-tutor {
+    width: 90%;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center;
+  }
+
+  .parteEsquerda-tutor-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descricao-tutor-container {
+    display: none; /* Esconde o texto */
+  }
+
+  .parteDireita-tutor-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fotoTutor-container {
+    width: 40%;
+    height: min-content;
+    margin-top: 0rem;
+  }
+
+  .fotoTutor {
+    width: 100%;
+    height: 100%;
+  }
+
+  .foto-tutor-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .hiperlinkTutor-container {
+    width: 100%;
+    margin-top: 0rem;
+  }
+
+  .texto-hiperlink-professora{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+  .link-professora {
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .secao-tutor {
+    width: 90%;
+    align-items: center;
+  }
+
+  .parteEsquerda-tutor-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descricao-tutor {
+    font-size: 1.1rem;
+  }
+
+  .parteDireita-tutor-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fotoTutor-container {
+    width: 45%;
+    height: min-content;
+    margin-top: 0rem;
+  }
+
+  .fotoTutor {
+    width: 100%;
+    height: 100%;
+  }
+
+  .foto-tutor-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .hiperlinkTutor-container {
+    width: 100%;
+    margin-top: 0rem;
+  }
+
+  .texto-hiperlink-professora{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
 
   .link-professora {
     font-size: 1.2rem;
