@@ -125,6 +125,85 @@
   justify-content: center;
 }
 
+/* Estilos para monitores grandes (1440px+) - Versão Compacta */
+@media (min-width: 1440px) {
+    .navbar-container {
+        height: 7vh; /* Altura reduzida */
+        padding: 0 30px;
+    }
+    
+    .image-navbar-container {
+        width: 8%;
+    }
+    
+    .image-navbar {
+        width: 45%; /* Logo um pouco menor */
+    }
+    
+    .buttons-navbar-container {
+        width: 60%; /* Largura mantida */
+    }
+    
+    .navbar-list {
+        gap: 35px; /* Espaço entre itens reduzido */
+    }
+    
+    .navbar-link {
+        font-size: 1rem; 
+        padding: 6px 10px; /* Padding reduzido */
+        letter-spacing: 1px;
+    }
+    
+    .redeSocial-navbar-container {
+        right: 4%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar-container {
+    height: 8vh;
+    padding: 0 15px;
+  }
+  
+  .image-navbar-container {
+    width: 15%;
+  }
+  
+  .image-navbar {
+    width: 60%;
+  }
+  
+  /* parte CENTRAL da navbar */
+  .buttons-navbar-container {
+    width: 65%;
+  }
+  
+  .navbar-list {
+    gap: 15px;
+  }
+  
+  .navbar-link {
+    font-size: 1.4rem;
+    padding: 6px 8px;
+    letter-spacing: 1px;
+  }
+  
+  /*parte DIREITA da navbar*/
+  .redeSocial-navbar-container {
+    right: 2%;
+  }
+  
+  .redeSocial-navbar {
+    right: 15px;
+  }
+  
+  .social-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
 /*responsividade mobile*/
 @media (max-width: 768px) {
   .navbar-container {

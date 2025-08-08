@@ -1,7 +1,7 @@
 /* Container geral do carrossel */
 .carousel-container {
   width: 100%; 
-  height: min-content; 
+  height: 100%; 
   display: flex; 
   justify-content: center;
   align-items: center;
@@ -15,7 +15,6 @@
 /* Estilo base dos slides */
 .slide {
   height: 300px;             /* Altura fixa */
-  width: 100%;
   padding: 20px;             /* Espaçamento interno */
   border-radius: 16px;       /* Bordas arredondadas */
   transition: all 0.3s ease; /* Animação suave */
@@ -59,56 +58,13 @@
   text-align: justify;
 }
 
-@media (max-width: 375px) {
-  /* Estilo base dos slides */
-  .slide {
-    height: 350px;             /* Altura fixa */
-    padding: 5px;             /* Espaçamento interno */
-  }
+@media (max-width: 768px) {        
 
-  /* Título do slide */
-  .slide-title {
-    font-size: 1rem;
-  }
-
-  /* Texto do corpo do slide */
-  .slide-body {
-    font-size: 0.7rem;
-    color: #000000;
-    font-family: var(--fonte-corpo);
-    letter-spacing: 1px;
-    line-height: 1.6;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 425px) {
-  /* Estilo base dos slides */
-  .slide {
-    height: 310px;
-    padding: 5px;
-  }
-
-  /* Título do slide */
-  .slide-title {
-    font-size: 1rem;
-  }
-
-  /* Texto do corpo do slide */
-  .slide-body {
-    font-size: 0.7rem;
-    color: #000000;
-    font-family: var(--fonte-corpo);
-    letter-spacing: 1px;
-    line-height: 1.6;
-  }
-}
-
-@media (min-width: 426px) and (max-width: 768px) {        
   /* Estilo base dos slides */
   .slide {
     height: 400px;             /* Altura fixa */
-    width: 350px;
-    padding: 30px;             /* Espaçamento interno */
+    width: 220px;
+    padding: 20px;             /* Espaçamento interno */
     border-radius: 8px;       /* Bordas arredondadas */
     transition: all 0.3s ease; /* Animação suave */
   }
@@ -133,6 +89,30 @@
   /* Texto do corpo do slide */
   .slide-body {
     font-size: 0.95rem;
+    color: #000000;
+    font-family: var(--fonte-corpo);
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 380px) {
+  /* Estilo base dos slides */
+  .slide {
+    height: 350px;             /* Altura fixa */
+    padding: 5px;             /* Espaçamento interno */
+  }
+
+
+  /* Título do slide */
+  .slide-title {
+    font-size: 1rem;
+  }
+
+  /* Texto do corpo do slide */
+  .slide-body {
+    font-size: 0.7rem;
     color: #000000;
     font-family: var(--fonte-corpo);
     letter-spacing: 1px;
