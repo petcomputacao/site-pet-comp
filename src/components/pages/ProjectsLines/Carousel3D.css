@@ -84,7 +84,7 @@
 @media (min-width: 376px) and (max-width: 425px) {
   /* Estilo base dos slides */
   .slide {
-    height: 350px;
+    height: 310px;
     padding: 5px;
   }
 
