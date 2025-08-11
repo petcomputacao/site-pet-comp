@@ -20,16 +20,17 @@ O site reúne informações sobre o grupo, projetos, membros e oferece uma forma
 O site foi desenvolvido para apresentar informações sobre o grupo PET Computação, suas atividades, eventos, publicações e projetos.  
 Seu objetivo é ser uma vitrine para divulgar iniciativas do grupo e facilitar o contato com estudantes e a comunidade.
 
-## 🛠 Tecnologias utilizadas
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **React**
-- **Vite**
+## 🛠 Tecnologias Utilizadas
+
+- **JavaScript**, **HTML**, **CSS**
+- [React](https://react.dev/) – biblioteca para criação da interface
+- [Vite](https://vitejs.dev/) – ferramenta de build e desenvolvimento rápido
+- [React Icons](https://react-icons.github.io/react-icons/) – biblioteca de ícones
+- [React Router](https://reactrouter.com/) – roteamento entre páginas
 
 ## 📂 Estrutura do repositório
 - `src/` → Código-fonte do site  
-- `public/` → Arquivos públicos, como imagens e ícones  
+- `public/` → Arquivos estáticos (ícones, imagens, etc.)
 - `package.json` → Dependências e scripts do projeto
 
 ## 🚀 Executando localmente
