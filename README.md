@@ -31,7 +31,8 @@ Foi desenvolvido para ser **fácil de manter** e **visualmente moderno**, utiliz
 ---
 
 ## Estrutura do Projeto
- public/                # Arquivos estáticos (ícones, imagens, etc.)
+
+public/                # Arquivos estáticos (ícones, imagens, etc.)
 src/
   ├─ assets/           # Imagens e mídias
   ├─ components/       # Componentes reutilizáveis
