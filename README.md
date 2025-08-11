@@ -42,4 +42,8 @@ npm run dev
 Após executar, o projeto estará disponível em **http://localhost:5173/**.
 
 ---
-Desenvolvido com ❤️ pelo PET Computação - UFCG.
+
+## 👥 Autores
+
+- Arthur Fernandes (arthur-ccc)
+- Guilherme José (gjose05)
