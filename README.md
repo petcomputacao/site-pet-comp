@@ -1,10 +1,20 @@
-# PET Computação - UFCG
+# 🌐 Site PET Computação – UFCG
 
-Este repositório contém o código-fonte do site oficial do Programa de Educação Tutorial do curso de Ciência da Computação da Universidade Federal de Campina Grande (PET Computação - UFCG).
+[![Status](https://img.shields.io/badge/status-ativo-brightgreen)](#)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![React](https://img.shields.io/badge/react-18.0.0-61DAFB?logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/vite-4.0-646CFF?logo=vite)](https://vitejs.dev/)
+[![Contributors](https://img.shields.io/github/contributors/petcomputacao/site-pet-comp)](https://github.com/petcomputacao/site-pet-comp/graphs/contributors)
 
-## 🌐 Acesse o site
-Você pode acessar o site no link abaixo:  
-[https://petcomputacao.github.io/site-pet-comp/](https://petcomputacao.github.io/site-pet-comp/)
+---
+
+🔗 **Acesse o site:** [petcomputacao.github.io/site-pet-comp](https://petcomputacao.github.io/site-pet-comp/)
+
+---
+
+Repositório oficial do **site do PET Computação – UFCG**, desenvolvido para divulgar o Programa de Educação Tutorial em Ciência da Computação da Universidade Federal de Campina Grande.  
+O site reúne informações sobre o grupo, projetos, membros e oferece uma forma dinâmica e fácil de manutenção.
+
 
 ## 📌 Sobre o projeto
 O site foi desenvolvido para apresentar informações sobre o grupo PET Computação, suas atividades, eventos, publicações e projetos.  
