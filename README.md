@@ -44,8 +44,8 @@ cd site-pet-comp
 # Instale as dependências
 npm install
 
-# Build e deploy
-npm run deploy
+# Inicie a aplicação
+npm start
 ```
 
 ---
