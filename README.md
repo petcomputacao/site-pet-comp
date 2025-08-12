@@ -48,8 +48,6 @@ npm install
 npm run deploy
 ```
 
-Após executar, o projeto estará disponível em **http://localhost:5173/**.
-
 ---
 
 ## 👥 Autores
