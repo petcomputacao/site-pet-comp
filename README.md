@@ -3,7 +3,6 @@
 [![Status](https://img.shields.io/badge/status-ativo-brightgreen)](#)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![React](https://img.shields.io/badge/react-18.0.0-61DAFB?logo=react)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/vite-4.0-646CFF?logo=vite)](https://vitejs.dev/)
 [![Contributors](https://img.shields.io/github/contributors/petcomputacao/site-pet-comp)](https://github.com/petcomputacao/site-pet-comp/graphs/contributors)
 
 ---
@@ -24,7 +23,6 @@ Seu objetivo é ser uma vitrine para divulgar iniciativas do grupo e facilitar o
 
 - **JavaScript**, **HTML**, **CSS**
 - [React](https://react.dev/) – biblioteca para criação da interface
-- [Vite](https://vitejs.dev/) – ferramenta de build e desenvolvimento rápido
 - [React Icons](https://react-icons.github.io/react-icons/) – biblioteca de ícones
 - [React Router](https://reactrouter.com/) – roteamento entre páginas
 
