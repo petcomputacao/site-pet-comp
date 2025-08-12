@@ -46,8 +46,8 @@ cd site-pet-comp
 # Instale as dependências
 npm install
 
-# Inicie o servidor de desenvolvimento
-npm run dev
+# Build e deploy
+npm run deploy
 ```
 
 Após executar, o projeto estará disponível em **http://localhost:5173/**.
