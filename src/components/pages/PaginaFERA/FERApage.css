@@ -5,37 +5,31 @@
 
 }
 
-.header{
-  height: 4vh;
-  width: 75vw;
-  margin: 0 auto;
-}
-
 .paginaincial-FERA{
-    height: 75vh;
+    height:min-content;
 }
 
 .guia-FERA{
-    height: 75vh;
+    height: min-content;
 }
 
 .mapa-FERA{
-    height: 95vh;
+    height: min-content;
 }
 
 .dicasdeVeterano-FERA{
-    height: 100vh;
+    height: min-content;
 }
 
 .perguntasFrequentes-FERA{
-    height: 90vh;
+    height: min-content;
 }
 
 .contatosImportantes-FERA{
-    height: 50vh;
+    height: min-content;
 }
 
 .guiaAcademico-FERA{
-    height: 250vh;
+    height: min-content;
 }
 

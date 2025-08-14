@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 
+:root {
+  --fonte-titulo: 'Playfair Display', serif;
+  --fonte-corpo: "Lato", sans-serif;
+}
+
 html, body {
   background: #ffffff;
   overflow-x: hidden;
 }
 
-
 .header{
-  height: 0vh;
+  height: 8vh;
   width: 75vw;
   margin: 0 auto;
 }
@@ -16,15 +20,16 @@ html, body {
 
 /* seção Página Inicial */
 .paginaInicial{
-  height: 85vh;
+  height: 80vh;
   width: 100vw;
+  margin-top: auto;
 }
 
 /*===========================================================*/
 
 /* seção Sobre */
 .Sobre {
-  height: 60vh;
+  height: min-content;
   width: 100vw;
 }
 
@@ -32,23 +37,26 @@ html, body {
 
 /* seção Projetos */
 .Projetos {
-  height: 85vh;
+  height: min-content;
   width: 100vw;
+  margin-bottom: 5vh;
 }
 
 /*===========================================================*/
 
 /* seção Produções*/
 .Producoes {
-  height: 105vh;
+  height: min-content;
   width: 100vw;
+  margin-bottom: 1vh;
 }
+
 
 /*===========================================================*/
 
 /* Pagina do Tutor */
 .PaginaTutor {
-  height: 70vh;
+  height: min-content;
   width: 100vw;
 }
 
@@ -56,24 +64,82 @@ html, body {
 
 /* Pagina dos Membros */
 .PaginaMembros {
-  height: 180vh;
+  height: min-content;
   width: 100vw;
 }
 
 /*===========================================================*/
 
 .Footer {
-  height: 70vh;
+  height: 65vh;
   width: 100vw;
+  overflow-y: hidden;
 }
 /*===========================================================*/
 
 /* Responsividade MOBILE */
-
 @media (max-width: 768px) {
+  .header{
+    width: 100%;
+  }
+
+  .paginaInicial{
+    height: min-content;
+  }
+
+  .Sobre {
+    height: min-content;
+  }
+
+  .Projetos {
+    height: min-content;
+  }
+
+  .Producoes {
+    height: min-content;
+  }
+
+  .PaginaTutor {
+    height: min-content;
+  }
+
+  .Footer {
+    height: min-content;
+  }
+} 
+
+/* Dimensões */
+
+/* Mobile S */
+/* @media (max-width: 320px) {
   
-}
- 
-@media (max-width: 380px) {
+} */
+
+/* Mobile M */
+/* @media (min-width: 321px) and (max-width: 375px) {
   
-}
+} */
+
+/* Mobile L */
+/* @media (min-width: 376px) and (max-width: 425px) {
+  
+} */
+
+/* Tablet */
+/* @media (min-width: 426px) and (max-width: 768px) {
+  
+} */
+
+/* Laptop */
+/* @media (min-width: 769px) and (max-width: 1024px) {
+
+} */
+
+/* Laptop L */
+/* @media (min-width: 1025px) and (max-width: 1440px) {
+
+} */
+
+/* 4K */
+/* @media (min-width: 1441px) and (max-width: 2560px) {
+} */

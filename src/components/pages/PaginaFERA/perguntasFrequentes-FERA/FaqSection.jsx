@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaClipboardList, FaBookOpen, FaUserFriends, FaEnvelope } from 'react-icons/fa';
 import './FaqSection.css';
+import FAQForm from './FAQForm';
+import { FaQ } from 'react-icons/fa6';
 
 const FaqSection = () => {
   return (
@@ -45,6 +47,18 @@ const FaqSection = () => {
             <h2 className="faq-question">4. Qual a importância do e-mail institucional?</h2>
           </div>
           <p className="faq-answer">É sua identidade acadêmica oficial. Usado para acessar sistemas, receber comunicações e validar sua vinculação à UFCG.</p>
+        </div>
+      </div>
+
+      <div className='faq-pet-fera-container'>
+        <div className='faq-header-fera'>
+          <h2 className='faq-title-fera'>
+            Junte-se a nós! Sua voz é importante para o <span className="pet-azul">PET</span> continuar auxiliando os novos alunos da Computação.
+          </h2>
+          <p className='faq-subtitle-fera'>Compartilhe sua dúvida, orientação ou dificuldade com a gente!</p>
+        </div>
+        <div className='faq-form-wrapper-fera'>
+          <FAQForm />
         </div>
       </div>
     </div>
