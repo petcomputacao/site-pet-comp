@@ -68,12 +68,39 @@ html, body {
 }
 /*===========================================================*/
 
-/* Responsividade MOBILE */
 
-@media (max-width: 768px) {
+/* Dimensões */
+
+/* Mobile S */
+/* @media (max-width: 320px) {
   
-}
- 
-@media (max-width: 380px) {
+} */
+
+/* Mobile M */
+/* @media (min-width: 321px) and (max-width: 375px) {
   
-}
+} */
+
+/* Mobile L */
+/* @media (min-width: 376px) and (max-width: 425px) {
+  
+} */
+
+/* Tablet */
+/* @media (min-width: 426px) and (max-width: 768px) {
+  
+} */
+
+/* Laptop */
+/* @media (min-width: 769px) and (max-width: 1024px) {
+
+} */
+
+/* Laptop L */
+/* @media (min-width: 1025px) and (max-width: 1440px) {
+
+} */
+
+/* 4K */
+/* @media (min-width: 1441px) {
+} */

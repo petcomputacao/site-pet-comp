@@ -1,13 +1,14 @@
 .feras-guide-container {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #333;
-  line-height: 1.6;
 }
 
 .feras-header {
+  width: 90%;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .feras-main-title {
@@ -20,20 +21,20 @@
 }
 
 .feras-introduction {
+  width: 90%;
   line-height: 1.4;
   color: #464646;
-  max-width: 60%;
-  margin: 0 auto;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
 }
 
 .disciplinas-grid {
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-  margin-bottom: 40px;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .disciplina-card {
@@ -44,7 +45,7 @@
 }
 
 .disciplina-titulo {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
   color:  #000ece;
@@ -53,15 +54,15 @@
 
 .disciplina-metadata {
   display: flex;
-  gap: 15px;
+  gap: 1rem;
   margin-bottom: 0px;
   color: #555;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: "Lato", sans-serif;
 }
 
 .disciplina-descricao {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: "Lato", sans-serif;  
   margin-bottom: 0px;
   color: #444;
@@ -73,65 +74,228 @@
   margin: 10px 0;
 }
 
-.topicos-titulo, .dicas-titulo {
-  font-size: 1.3rem;
+.topicos-titulo, 
+.dicas-titulo {
+  font-size: 1.6rem;
   font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
   color:  #000769;
   margin-bottom: 0px;
 }
 
-.topicos-lista, .dicas-lista {
-  padding-left: 20px;
+.topicos-lista,
+.dicas-lista {
+  padding-left: 1.5rem;
   margin-bottom: 0px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: "Lato", sans-serif; 
 }
 
-.topicos-lista li, .dicas-lista li {
-  margin-bottom: 1px;
-  
+.topicos-lista li, 
+.dicas-lista li {
+  margin-bottom: 0.2rem;  
 }
 
 .ajuda-container {
+  width: 90%;
   background-color: rgb(0, 14, 216,0.8);
   border-radius: 8px;
-  padding: 10px;
+  padding: 1rem;
   text-align: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .ajuda-titulo {
-  font-size: 24px;
+  font-size: 2rem;
   color: #f5f5f5;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .ajuda-texto {
-  font-size: 16px;
-  margin-bottom: 10px;
-    color: #f5f5f5;
-
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #f5f5f5;
 }
 
 .dicas-rapidas {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
   width: 100%;
   align-items: center;
-    color: #f5f5f5;
-
+  color: #f5f5f5;
 }
 
 .dica-item {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 2rem;
 }
 
 .dica-icon{
     color: white;
 }
 
+
+/* Dimensões */
+
+/* Mobile S --> Mobile L*/
+@media (max-width: 425px) {
+  .disciplinas-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Tablet --> Laptop */
+@media (min-width: 426px) and (max-width: 1024px) {
+  .disciplina-titulo {
+    font-size: 2rem;
+  }
+
+  .topicos-titulo, 
+  .dicas-titulo {
+    font-size: 1.9rem;
+  }
+
+  .topicos-lista,
+  .dicas-lista {
+    font-size: 1.3rem;
+  }
+
+  .ajuda-container {
+    text-align: center;
+  }
+
+  .ajuda-titulo {
+    font-size: 2.5rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .ajuda-texto {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+  }
+
+  .dicas-rapidas {
+    font-size: 1.3rem;
+    gap: 1.2rem;
+  }
+
+  .dica-item {
+    gap: 2rem;
+  }
+}
+
+/* Laptop L */
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+  .feras-main-title {
+    font-size: 3.5rem;
+  }
+
+  .feras-introduction {
+    font-size: 2rem;
+  }
+
+  .disciplina-titulo {
+    font-size: 2.5rem;
+  }
+
+  .disciplina-metadata {
+    font-size: 1.5rem;
+  }
+
+  .disciplina-descricao {
+    font-size: 1.4rem;
+  }
+
+  .topicos-titulo, 
+  .dicas-titulo {
+    font-size: 2rem;
+  }
+
+  .topicos-lista,
+  .dicas-lista {
+    font-size: 1.5rem;
+  }
+
+  .ajuda-container {
+    text-align: center;
+  }
+
+  .ajuda-titulo {
+    font-size: 2.8rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .ajuda-texto {
+    font-size: 1.8em;
+    margin-bottom: 1rem;
+  }
+
+  .dicas-rapidas {
+    font-size: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .dica-item {
+    gap: 2rem;
+  }
+}
+
+/* 4K */
+@media (min-width: 1441px) {
+  
+  .feras-main-title {
+    font-size: 3.5rem;
+  }
+
+  .feras-introduction {
+    font-size: 2rem;
+  }
+
+  .disciplina-titulo {
+    font-size: 2.5rem;
+  }
+
+  .disciplina-metadata {
+    font-size: 1.5rem;
+  }
+
+  .disciplina-descricao {
+    font-size: 1.4rem;
+  }
+
+  .topicos-titulo, 
+  .dicas-titulo {
+    font-size: 2rem;
+  }
+
+  .topicos-lista,
+  .dicas-lista {
+    font-size: 1.5rem;
+  }
+
+  .ajuda-container {
+    text-align: center;
+  }
+
+  .ajuda-titulo {
+    font-size: 2.8rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .ajuda-texto {
+    font-size: 1.8em;
+    margin-bottom: 1rem;
+  }
+
+  .dicas-rapidas {
+    font-size: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .dica-item {
+    gap: 2rem;
+  }
+}

@@ -5,17 +5,17 @@ const PaginaInicialFERA = () => {
     <div className='paginaInicial-FERA-container'>
         <div className="paginaInicial-FERA-conteudo">
             <div className='titulo-FERA-container'>
-                <h1 className="titulo-FERA-paginaInicial">Bem vindo a Página do Fera - Comp!</h1>
+                <h1 className="titulo-FERA-paginaInicial">Bem vindo a Página do Fera | Comp!</h1>
             </div>
             
             <div className='box-paginaInicial-container'>
-                <div className='titulo-paginaInicial-FERA-container'>
+                {/* <div className='titulo-paginaInicial-FERA-container'>
                     <div className='titulo-paginaInicial-FERA'>
                         <h1>
                             Informações sobre o Curso
                         </h1>
                     </div>
-                </div>
+                </div> */}
 
                 <div className='sobre-paginaInicial-FERA-container'>
                     <div className='sobre-paginaInicial-FERA-titulo-container'>

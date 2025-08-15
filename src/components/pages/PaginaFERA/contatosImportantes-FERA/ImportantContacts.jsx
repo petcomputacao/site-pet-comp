@@ -7,13 +7,15 @@ import { Reveal } from '../../../static/Transicao/Transicaocontainer.tsx';
 const ImportantContacts = () => {
   return (
     <div className="contacts-container">
-      <Reveal>
+      {/* <Reveal> */}
+      <div className='contacts__title-container'>
         <h1>Contatos Importantes</h1>
-      </Reveal>
+      </div>
+      {/* </Reveal> */}
       
       
       <div className="contacts-grid">
-        <Reveal>
+        {/* <Reveal> */}
         <div className="contact-card">
           <h2>Coordenação do Curso</h2>
           <p>Prof. Dr. Coordenador</p>
@@ -26,8 +28,8 @@ const ImportantContacts = () => {
             (83) 2101-1234
           </p>
         </div>
-        </Reveal>
-        <Reveal>
+        {/* </Reveal> */}
+        {/* <Reveal> */}
         <div className="contact-card">
           <h2>Secretaria Acadêmica</h2>
           <p>Secretaria CCC</p>
@@ -40,8 +42,8 @@ const ImportantContacts = () => {
             (83) 2101-1200
           </p>
         </div>
-        </Reveal>
-        <Reveal>
+        {/* </Reveal> */}
+        {/* <Reveal> */}
         <div className="contact-card">
           <h2>Suporte Técnico</h2>
           <p>TI - UFCG</p>
@@ -54,7 +56,7 @@ const ImportantContacts = () => {
             (83) 2101-1100
           </p>
         </div>
-        </Reveal>
+        {/* </Reveal> */}
       </div>
     </div>
   );

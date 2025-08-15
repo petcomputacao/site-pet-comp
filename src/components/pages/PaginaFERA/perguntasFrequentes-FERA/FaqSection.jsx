@@ -14,8 +14,7 @@ const FaqSection = () => {
             <FaClipboardList className="faq-icon" />
             <h2 className="faq-question">1. Como me matricular nas disciplinas?</h2>
           </div>
-          <p className="faq-answer">Acesse o SIGAA, vá em Portal do (Discente/Ensino/Matrícula Online/Realizar Matricula). Preste atenção nos pré-requisitos e horários.</p>
-          <div className="divider"></div>
+          <p className="faq-answer">Acesse o SIGAA, clique em Portal do Discente {'>'} Ensino {'>'} Matrícula Online {'>'} Realizar Matrícula. Preste atenção nos pré-requisitos das disciplinas e conflitos de horários.</p>
         </div>
 
         {/* Item 2 */}
@@ -24,8 +23,7 @@ const FaqSection = () => {
             <FaBookOpen className="faq-icon" />
             <h2 className="faq-question">2. Onde encontro o material das aulas?</h2>
           </div>
-          <p className="faq-answer">Os professores disponibilizam no SIGAA (Portal do Discente/Componente Curricular) ou em plataformas específicas como Google Classroom.</p>
-          <div className="divider"></div>
+          <p className="faq-answer">Os professores podem disponibilizar no SIGAA (Portal do Discente {'>'} Componente Curricular) ou em plataformas específicas como Google Classroom.</p>
         </div>
 
         {/* Item 3 */}
@@ -34,8 +32,7 @@ const FaqSection = () => {
             <FaUserFriends className="faq-icon" />
             <h2 className="faq-question">3. Como participar dos grupos extracurriculares?</h2>
           </div>
-          <p className="faq-answer">Fique atento aos processos seletivos do PET, monitoria, projetos de pesquisa e extensão divulgados no curson através do email institucional.</p>
-          <div className="divider"></div>
+          <p className="faq-answer">Fique atento aos processos seletivos do PET, monitoria, projetos de pesquisa e extensão divulgados no curso através do email institucional.</p>
         </div>
 
         {/* Item 4 */}

@@ -5,7 +5,11 @@
   align-items: center;
   width: 100%;
   font-family: 'Arial', sans-serif;
-  margin-top: 3rem;
+  margin-top: 1rem;
+}
+
+.titulo-descricao-guia-FERA-container {
+  width: 70%;
 }
 
 /* Título da seção */
@@ -28,7 +32,6 @@ letter-spacing: 2px;
 .descricao-guia-FERA p {
   font-size: 0.9rem;
   text-align: center;
-  max-width: 600px;
   color: #555;
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
@@ -45,8 +48,7 @@ letter-spacing: 2px;
 
 /* Título dos passos */
 .titulo-primeiros-passos {
-  font-size: 24px;
-  margin-bottom: 3rem;
+  font-size: 1.7rem;
   color: #000000;
   font-family: 'Playfair Display', serif;
   letter-spacing: 2px;
@@ -72,21 +74,18 @@ letter-spacing: 2px;
 
 /* Ícone no topo do card */
 .icone-card {
-    color: rgb(255, 255, 255);
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
   background: #000fda;
+  color: rgb(255, 255, 255);
   width: 50%;
-  margin-left: 25%;
+  justify-self: center;
+  font-size: 1.5rem;
   padding: 4px;
-    margin: -3rem auto 0 auto;
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 /* Título do card */
 .titulo-card {
   font-size: 1.1rem;
-  margin-bottom: 0.5rem;
   font-family: 'Playfair Display', serif;
 letter-spacing: 1px;
 }
@@ -98,4 +97,131 @@ letter-spacing: 1px;
     letter-spacing: 1px;
     font-family: "Lato", sans-serif;
     text-align: justify;
+}
+
+/* Dimensões */
+
+/* Mobile S --> Mobile L */
+@media (max-width: 425px) {
+  .titulo-guia-FERA h1 {
+    font-size: 1.8rem;
+  }
+
+  .descricao-guia-FERA p {
+    font-size: 1rem;
+  }
+  
+  .cards-passos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-passo {
+    width: 80%;
+  }
+
+  .titulo-card {
+    font-size: 1.4rem;
+  }
+
+  .texto-card {
+    font-size: 1.25rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 426px) and (max-width: 1024px) {
+  
+  .titulo-guia-FERA h1 {
+    font-size: 2.4rem;
+  }
+
+  .descricao-guia-FERA p {
+    font-size: 1.4rem;
+  }
+
+  .titulo-primeiros-passos {
+    font-size: 1.8rem;
+  }
+
+  .icone-card {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+
+  .titulo-card {
+    font-size: 1.3rem;
+  }
+
+  .texto-card {
+    font-size: 1.1rem;
+  }
+}
+
+/* Laptop --> Laptop L */
+@media (min-width: 769px) and (max-width: 1440px) {
+  
+  .titulo-guia-FERA h1 {
+    font-size: 2.5rem;
+  }
+
+  .descricao-guia-FERA p {
+    font-size: 1.5rem;
+  }
+
+  .titulo-primeiros-passos {
+    font-size: 2rem;
+  }
+
+  .icone-card {
+    font-size: 2rem;
+  }
+
+  .titulo-card {
+    font-size: 1.5rem;
+  }
+
+  .texto-card {
+    font-size: 1.3rem;
+  }
+}
+
+/* 4K */
+@media (min-width: 1441px) {
+
+  .titulo-guia-FERA h1 {
+    font-size: 4rem;
+  }
+
+  .titulo-descricao-guia-FERA-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descricao-guia-FERA {
+    width: 100%;
+  }
+
+  .descricao-guia-FERA p {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+
+  .titulo-primeiros-passos {
+    font-size: 2rem;
+  }
+
+  .icone-card {
+    font-size: 2rem;
+  }
+
+  .titulo-card {
+    font-size: 1.5rem;
+  }
+
+  .texto-card {
+    font-size: 1.3rem;
+  }
 }

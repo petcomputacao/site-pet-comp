@@ -1,11 +1,12 @@
 .dicas-container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #333;
 }
 
 .dicas-header {
+  width: 90%;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -26,15 +27,21 @@
 .dicas-intro {
   line-height: 1.4;
   color: #464646;
-  max-width: 60%;
   margin: 0 auto;
   font-size: 0.9rem;
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
 }
 
+.dicas-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .dicas-content h2 {
-  font-size: 24px;
+  font-size: 2rem;
   margin-bottom: 15px;
   color: #000;
   text-align: left;
@@ -45,13 +52,18 @@
 .dicas-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  justify-items: center;
+  gap: 1rem;
 }
 
 .dica-card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 20rem;
   background-color: #fff;
   border-radius: 8px;
-  padding: 10px;
+  padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
@@ -60,16 +72,21 @@
   transform: translateY(-5px);
 }
 
-.dica-icon {
-  font-size: 22px;
+.card__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.header__icon {
+  font-size: 1.5rem;
   color: #000769;
-  margin-bottom: 5px;
 }
 
 .dica-card h3 {
   font-size: 18px;
   color: #000769;
-  margin-bottom: 10px;
   font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
 }
@@ -80,4 +97,110 @@
   color: #555;
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
+}
+
+/* Dimensões */
+
+/* Mobile S --> Mobile L */
+@media (max-width: 425px) {
+  .dicas-header {
+    width: 100%;
+  }
+  
+  .dicas-header h1 {
+    font-size: 2rem;
+  }
+
+  .dicas-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .dica-card {
+    height: 16rem;
+  }
+  
+  .dica-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .dica-card p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet --> Laptop */
+@media (min-width: 426px) and (max-width: 1024px) {
+  .dicas-intro {
+    font-size: 1.3rem;
+  }
+
+  .dica-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .dica-card p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Laptop L */
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+  .dicas-header h1 {
+    font-size: 2.5rem;
+  }
+  .dicas-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .dicas-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .dicas-intro {
+    font-size: 1.5rem;
+  }
+
+  .dica-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .dica-card p {
+    font-size: 1.4rem;
+  }
+}
+
+/* 4K */
+@media (min-width: 1441px) {
+
+  .dicas-header h1 {
+    font-size: 3.8rem;
+  }
+
+  .dicas-intro {
+    font-size: 2.7rem;
+  }
+
+  .dicas-content h2 {
+    font-size: 3.2rem;
+  }
+
+  .dicas-grid {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .dica-card {
+    height: 100%;
+  }
+
+  .dica-card h3 {
+    font-size: 2.4rem;
+  }
+
+  .dica-card p {
+    font-size: 1.8rem;
+  }
 }
