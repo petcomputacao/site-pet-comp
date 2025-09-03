@@ -1,4 +1,4 @@
-import "./MembrosAtivos.css"
+import "./membros.css"
 
 export default function SecaoMembrosAtivos() {
     return (

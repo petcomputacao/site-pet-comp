@@ -1,5 +1,4 @@
-import "./SecaoSobre.css"
-import { Reveal } from '../../static/Transicao/Transicaocontainer.tsx';
+import "./sobre.css"
 
 
 export default function SecaoSobre() {

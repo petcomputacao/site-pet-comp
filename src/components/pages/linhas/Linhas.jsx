@@ -1,6 +1,6 @@
-import './VertentesProjects.css';
-import { Reveal } from '../../static/Transicao/Transicaocontainer.tsx';
+import './linhas.css';
 
+import { Reveal } from '../../static/Transicao/Transicaocontainer.tsx';
 import Carousel3D from './Carousel3D.jsx';
 
 

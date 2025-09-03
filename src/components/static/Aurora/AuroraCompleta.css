@@ -1,9 +1,0 @@
-.container-aurora-completa {
-    display: flex;
-    flex-direction: column;
-    line-height: 0;
-}
-
-.container-aurora-completa .aurora-inferior{
-    transform: rotateX(180deg);
-}

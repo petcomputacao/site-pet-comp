@@ -4,7 +4,7 @@ import { useSwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
-import './Carousel3D.css';
+import './carousel3D.css';
 
 const slides = [
   { titulo: 'Computação e Comunicação', corpo: 'Os estudantes de computação, apresentam dificuldades na comunicação por meio de diferentes mídias. Considerando a importância de divulgar à sociedade o trabalho realizado na UFCG, esta atividade visa aprimorar essas habilidades por meio do uso de podcasts, blogs, redes sociais e do site do PET Computação.' },

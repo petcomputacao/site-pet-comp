@@ -1,7 +1,7 @@
 import "./producoes.css"
 
 import SliderImages from "../../static/Slider"
-import AutoPlay from "../../static/InfiteAutoplay"
+import AutoPlay from "../../static/Autoplay"
 
 export default function Producoes () {
     return (

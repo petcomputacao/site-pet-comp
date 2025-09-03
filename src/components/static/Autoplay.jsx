@@ -1,4 +1,4 @@
-import './InfiniteAutoplay.css';
+import './autoplay.css';
 
 function AutoPlay(){
     return(

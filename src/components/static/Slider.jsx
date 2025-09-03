@@ -1,5 +1,5 @@
-import './Slider.css';
-import React, { useState } from 'react';
+import './slider.css';
+import { useState } from 'react';
 
 const SliderImages = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

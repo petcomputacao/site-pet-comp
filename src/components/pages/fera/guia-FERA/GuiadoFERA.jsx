@@ -1,6 +1,6 @@
 import './GuiadoFERA.css';
 import { FiClock, FiWifi, FiMapPin } from 'react-icons/fi'; // importa os ícones
-import { Reveal } from '../../../static/Transicao/Transicaocontainer.tsx';
+import { Reveal } from '../../../static/Transicaocontainer.tsx';
 
 const GuiadoFERA = () => {
   return (
@@ -9,9 +9,9 @@ const GuiadoFERA = () => {
       {/* Título e descrição */}
       <div className='titulo-descricao-guia-FERA-container'>
         <div className='titulo-guia-FERA'>
-            <h1>
-                GUIA DO <span className='destaque-FERA'>FERA</span>
-            </h1>
+          <h1>
+            GUIA DO <span className='destaque-FERA'>FERA</span>
+          </h1>
         </div>
         <div className='descricao-guia-FERA'>
           <p>
