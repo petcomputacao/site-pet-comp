@@ -1,7 +1,9 @@
-import './HomePET.css';
-import { Reveal } from '../../static/Transicao/Transicaocontainer.tsx';
+import './SecaoHome.css';
+import { Reveal } from '../../static/Reveal.tsx';
 
-function HomePet(){
+
+
+export default function SecaoHome () {
     return(
         <div className='paginaInicial-container'>          
             <div className='imagemFundo-container'>
@@ -43,5 +45,3 @@ function HomePet(){
         </div>
     )
 }
-
-export default HomePet;

@@ -1,9 +1,9 @@
-import "./producoes.css"
+import "./SecaoPetCompAcao.css"
 
 import SliderImages from "../../static/Slider"
 import AutoPlay from "../../static/Autoplay"
 
-export default function Producoes () {
+export default function SecaoPetCompAcao () {
     return (
         <>
         <div className="container-producoes">

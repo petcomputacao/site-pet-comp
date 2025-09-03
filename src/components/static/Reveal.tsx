@@ -16,7 +16,7 @@ export const Reveal = ({ children }: Props) => {
       mainControls.start("visible");
       slideControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControls, slideControls]);
 
   return (
     <div ref={ref} style={{ position: "relative", display: "inline-block" }}>

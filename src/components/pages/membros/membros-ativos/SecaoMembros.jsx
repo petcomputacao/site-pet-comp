@@ -1,6 +1,6 @@
-import "./membros.css"
+import "./SecaoMembros.css"
 
-export default function SecaoMembrosAtivos() {
+export default function SecaoMembros() {
     return (
         <div className="container-membros">
             <div className="membros__titulo">

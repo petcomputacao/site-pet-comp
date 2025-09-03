@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaEnvelope, FaWhatsapp, FaBook, FaLaptop } from 'react-icons/fa';
 import './DicasVeterano.css';
-import { Reveal } from '../../../static/Transicaocontainer.tsx';
+import { Reveal } from '../../../static/Reveal.tsx';
 
 
 const DicasVeterano = () => {

@@ -1,5 +1,5 @@
-import "./tutor.css"
-import { Reveal } from '../../../static/Transicaocontainer.tsx';
+import "./SecaoTutor.css"
+import { Reveal } from '../../../static/Reveal.tsx';
 
 
 export default function SecaoTutor() {

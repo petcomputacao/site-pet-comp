@@ -1,10 +1,10 @@
-import './linhas.css';
+import './SecaoLinhas.css';
 
-import { Reveal } from '../../static/Transicao/Transicaocontainer.tsx';
 import Carousel3D from './Carousel3D.jsx';
+import { Reveal } from '../../static/Reveal.tsx';
 
 
-function Vertentes(){
+export default function SecaoLinhas() {
     return(
         <div className='paginaVertentes-container'>
                 <div className='titulo-vertentes-container'>
@@ -32,5 +32,3 @@ function Vertentes(){
         </div>
     )
 }
-
-export default Vertentes;

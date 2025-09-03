@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
 import './ImportantContacts.css';
-import { Reveal } from '../../../static/Transicaocontainer.tsx';
+import { Reveal } from '../../../static/Reveal.tsx';
 
 
 const ImportantContacts = () => {

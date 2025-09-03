@@ -1,4 +1,4 @@
-import "./sobre.css"
+import "./SecaoSobre.css"
 
 
 export default function SecaoSobre() {
