@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
-
 import './CardCarrousel.css';
+import { useEffect, useState } from 'react';
 
 
 const URL = 'https://instagram-api-gamma.vercel.app/';
@@ -14,7 +13,7 @@ async function Fetch() {
     }
 }
 
-export default function CardCarrousel() {
+function CardCarrousel() {
 
   const [dados, setDados] = useState([]);
 
@@ -134,3 +133,5 @@ export default function CardCarrousel() {
   // </div>
   // );
 };
+
+export default CardCarrousel;

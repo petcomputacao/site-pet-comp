@@ -1,0 +1,58 @@
+/* Container principal da página */
+.mapa-campus-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* Título centralizado */
+.titulo-mapa {
+  width: 100%;
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 2rem;
+  color: #222;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+}
+
+.box-mapa-FERA {
+  display: flex;
+  background: rgb(240, 240, 240);
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.alerta-mapbox-card {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+
+/* Imagem genérica no lugar do Mapbox */
+.imagem-mapa {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* mostra a mãozinha ao passar o mouse */
+}
+
+.imagem-mapa:hover {
+  transform: scale(1.01); /* leve aumento ao passar o mouse */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* sombra suave */
+}
+
+/* Link */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
