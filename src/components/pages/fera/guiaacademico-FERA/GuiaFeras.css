@@ -1,5 +1,5 @@
 .feras-guide-container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   color: #333;
   line-height: 1.6;
@@ -30,17 +30,21 @@
 }
 
 .disciplinas-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 25px;
   margin-bottom: 40px;
 }
 
 .disciplina-card {
+  display: flex;           /* ativa flexbox */
+  flex-direction: row;     /* orienta os filhos na horizontal */
+  gap: 20px;               /* espaço entre colunas */
   background-color: #fff;
   border-radius: 8px;
-  padding: 5px;
+  padding: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  align-items: flex-start; /* alinha topo dos elementos */
 }
 
 .disciplina-titulo {
@@ -60,7 +64,10 @@
   font-family: "Lato", sans-serif;
 }
 
-.disciplina-descricao {
+.disciplina-info,
+.disciplina-principais-topicos,
+.disciplina-dicas-veterano {
+  flex: 1;
   font-size: 0.9rem;
   font-family: "Lato", sans-serif;  
   margin-bottom: 0px;

@@ -30,6 +30,12 @@
   font-size: 14px;
 }
 
+.faq-form .sucesso {
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .faq-form button {
   background: #0077ff;
   color: white;
@@ -37,8 +43,15 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
 .faq-form button:hover {
   background: #0054bb;
+}
+
+.faq-form button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  color: #666;
 }

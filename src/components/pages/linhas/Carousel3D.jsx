@@ -26,7 +26,7 @@ function Slide({ titulo, corpo }) {
   );
 }
 
-export default function Carousel3D() {
+function Carousel3D() {
   return (
     <div className="carousel-container">
       <Swiper
@@ -54,3 +54,5 @@ export default function Carousel3D() {
     </div>
   );
 }
+
+export default Carousel3D;

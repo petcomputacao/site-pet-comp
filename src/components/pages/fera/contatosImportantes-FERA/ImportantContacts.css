@@ -23,6 +23,7 @@
 }
 
 .contact-card {
+  width: 100%;
   flex: 1;
   padding: 15px 60px;
   border-radius: 8px;

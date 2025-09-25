@@ -1,33 +1,32 @@
 .paginaInicial-FERA-container {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
-
 
 .paginaInicial-FERA-conteudo {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
-
 
 .titulo-FERA-container{
-    width: 50%;
+    width: 80%;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 5%;
-
 }
+
 /* Estilo do título principal */
 .titulo-FERA-paginaInicial {
     font-size: 2.9rem;
     color: #000835;
     font-family: 'Playfair Display', serif;
     letter-spacing: 2px;
-    margin-left: 10%;
 }
 
 .box-paginaInicial-container{
@@ -87,18 +86,16 @@
 }
 
 .paginaInicial-FERA-images {
+  margin-right: 2%;
+  width: 80%;
   display: flex;               
   justify-content: center;    
   align-items: center;         
   gap: 3rem;                   
   margin-top: 3rem;            
-  flex-wrap: wrap;   
 }
 
 .paginaInicial-FERA-images img {
   width: 40px;                
   height: auto;
 }
-
-
-

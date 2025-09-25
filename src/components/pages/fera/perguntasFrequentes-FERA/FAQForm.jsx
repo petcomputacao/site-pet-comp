@@ -1,69 +1,84 @@
-import React, { useState } from 'react';
-import './FAQForm.css';
+import "./FAQForm.css"
 
-function FAQForm() {
-  const [email, setEmail] = useState('');
-  const [matricula, setMatricula] = useState('');
-  const [pergunta, setPergunta] = useState('');
-  const [erro, setErro] = useState('');
+import { useState } from "react";
 
-  const handleSubmit = (e) => {
+export default function FAQForm() {
+  const [email, setEmail] = useState("");
+  const [matricula, setMatricula] = useState("");
+  const [pergunta, setPergunta] = useState("");
+  const [erro, setErro] = useState(null);
+  const [enviando, setEnviando] = useState(false);
+  const [sucesso, setSucesso] = useState(false);
+
+  async function handleSubmit(e) {
     e.preventDefault();
+    setErro(null);
+    setEnviando(true);
 
-    // Validação do e-mail
-    if (!email.includes('@ccc')) {
-      setErro('O email de envio precisa ser o institucional (conter o @ccc)');
-      return;
+    const scriptURL = "https://script.google.com/macros/s/AKfycbwgbDWxq_b3Ap3KXmrFz8h9denay3WE-kYM99a--Mgdnavgn70m1NlaqgUJqEyoWuGn/exec";
+
+    try {
+
+      
+      console.log("Enviando dados:", { email, matricula, pergunta });
+      
+      await fetch(scriptURL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, matricula, pergunta }),
+        mode: "no-cors"
+      });
+      
+      setSucesso(true);
+      setEmail("");
+      setMatricula("");
+      setPergunta("");
+
+    } catch (err) {
+      console.error("❌ Erro no fetch:", err);
+      setErro("Erro ao enviar. Tente novamente.");
+    } finally {
+      setEnviando(false);
+      setSucesso(false);
     }
-    setErro('');
+  }
 
-    // Envio para Google Sheets (troque pela URL do seu Web App)
-    fetch('https://script.google.com/macros/s/AKfycbzYBa48_f69YQzQ1iUE2JNAxpcZfA28quGP3daFg6wEsAEpb4QxYDyjAukmSFYajcC4/exec', {
-      method: 'POST',
-      body: JSON.stringify({ email, matricula, pergunta }),
-      headers: { 'Content-Type': 'application/json' }
-    }).then(res => {
-      if (res.ok) {
-        alert('Pergunta enviada com sucesso!');
-        setEmail('');
-        setMatricula('');
-        setPergunta('');
-      } else {
-        alert('Erro ao enviar pergunta.');
-      }
-    });
-  };
+return (
+  <form className="faq-form" onSubmit={handleSubmit}>
+    <label>Email:</label>
+    <input
+      type="email"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      required
+      disabled={enviando}
+    />
 
-  return (
-    <form className="faq-form" onSubmit={handleSubmit}>
-      <label>Email:</label>
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
+    <label>Matrícula:</label>
+    <input
+      type="text"
+      value={matricula}
+      onChange={(e) => setMatricula(e.target.value)}
+      required
+      disabled={enviando}
+    />
 
-      <label>Matrícula:</label>
-      <input
-        type="text"
-        value={matricula}
-        onChange={(e) => setMatricula(e.target.value)}
-        required
-      />
+    <label>Pergunta/Dúvida:</label>
+    <textarea
+      value={pergunta}
+      onChange={(e) => setPergunta(e.target.value)}
+      required
+      disabled={enviando}
+    ></textarea>
 
-      <label>Pergunta/Dúvida:</label>
-      <textarea
-        value={pergunta}
-        onChange={(e) => setPergunta(e.target.value)}
-        required
-      ></textarea>
+    {erro && <p className="erro">{erro}</p>}
+    {sucesso && <p className="sucesso">✅ Pergunta enviada com sucesso!</p>}
 
-      {erro && <p className="erro">{erro}</p>}
-
-      <button type="submit">Enviar</button>
-    </form>
-  );
+    <button type="submit" disabled={enviando}>
+      {enviando ? "Enviando..." : "Enviar"}
+    </button>
+  </form>
+);
 }
-
-export default FAQForm;

@@ -1,12 +1,15 @@
 /* Container principal da página */
 .mapa-campus-container {
-  padding: 0.5rem;
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
   margin: 0 auto;
+  align-items: center;
 }
 
 /* Título centralizado */
 .titulo-mapa {
+  width: 100%;
   font-size: 24px;
   text-align: left;
   margin-bottom: 2rem;
@@ -15,15 +18,26 @@
   letter-spacing: 2px;
 }
 
+.box-mapa-FERA {
+  display: flex;
+  background: rgb(240, 240, 240);
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
 .alerta-mapbox-card {
-  border-radius: 12px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 
 /* Imagem genérica no lugar do Mapbox */
 .imagem-mapa {
   width: 100%;
-  height: 100%;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer; /* mostra a mãozinha ao passar o mouse */
@@ -32,62 +46,6 @@
 .imagem-mapa:hover {
   transform: scale(1.01); /* leve aumento ao passar o mouse */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* sombra suave */
-}
-
-.box-mapa-FERA{
-    background: rgb(240, 240, 240);
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-    display: flex;
-}
-/* Container dos blocos */
-.blocos-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-}
-
-/* Estilo geral de cada card de bloco */
-.bloco-card {
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.2);
-  max-width: 250px;
-}
-
-/* Título do bloco com ícone */
-.bloco-card h3 {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1rem;
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 1px;
-}
-
-/* Texto do bloco */
-.bloco-card p {
-  font-size: 0.8rem;
-  color: #333;
-  font-family: "Lato", sans-serif;
-  line-height: 1.3;
-    letter-spacing: 1px;
-}
-
-/* Cores específicas para cada bloco */
-.bloco-azul h3 {
-  color: #1A40FF;
-}
-
-.bloco-vermelho h3 {
-  color: #c70000;
-}
-
-.bloco-verde h3 {
-  color: #0A9A42;
 }
 
 /* Link */

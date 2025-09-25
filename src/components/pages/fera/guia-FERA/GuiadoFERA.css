@@ -37,7 +37,7 @@ letter-spacing: 2px;
 
 /* Bloco dos "Primeiros Passos" */
 .box-primeirospassos-guia-FERA {
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;

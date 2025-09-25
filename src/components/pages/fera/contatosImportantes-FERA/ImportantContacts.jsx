@@ -1,19 +1,14 @@
-import React from 'react';
-import { FaPhone, FaEnvelope } from 'react-icons/fa';
 import './ImportantContacts.css';
-import { Reveal } from '../../../static/Reveal.tsx';
+import { FaPhone, FaEnvelope } from 'react-icons/fa';
 
 
-const ImportantContacts = () => {
+export default function ImportantContacts() {
   return (
     <div className="contacts-container">
-      <Reveal>
         <h1>Contatos Importantes</h1>
-      </Reveal>
 
 
       <div className="contacts-grid">
-        <Reveal>
           <div className="contact-card">
             <h2>Coordenação do Curso</h2>
             <p>Prof. Dr. Coordenador</p>
@@ -26,8 +21,6 @@ const ImportantContacts = () => {
               (83) 2101-1234
             </p>
           </div>
-        </Reveal>
-        <Reveal>
           <div className="contact-card">
             <h2>Secretaria Acadêmica</h2>
             <p>Secretaria CCC</p>
@@ -40,8 +33,6 @@ const ImportantContacts = () => {
               (83) 2101-1200
             </p>
           </div>
-        </Reveal>
-        <Reveal>
           <div className="contact-card">
             <h2>Suporte Técnico</h2>
             <p>TI - UFCG</p>
@@ -54,10 +45,7 @@ const ImportantContacts = () => {
               (83) 2101-1100
             </p>
           </div>
-        </Reveal>
       </div>
     </div>
   );
 };
-
-export default ImportantContacts;

@@ -13,47 +13,8 @@
   letter-spacing: 1px;
 }
 
-.faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-bottom: 2rem;
-}
-
-.faq-item {
-  background-color: #fff;
-  padding: 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-}
-
-.faq-header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 10px;
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 1px;
-}
-
-.faq-icon {
-  font-size: 20px;
-  color: #000769;
-  padding: 2px;
-}
-
-.faq-question {
-  font-size: 18px;
-  margin: 0;
-  color: #000769;
-}
-
-.faq-answer {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  margin-left: 35px; /* Alinhar com o ícone */
-  margin-bottom: 20px;
-  font-family: "Lato", sans-serif;
+.accordeon-wrapper {
+  margin-bottom: 2%;
 }
 
 .divider {
@@ -61,7 +22,6 @@
   background-color: #e0e0e0;
   margin: 0;
 }
-
 
 .faq-pet-fera-container {
   max-width: 90%;

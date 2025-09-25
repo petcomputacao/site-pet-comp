@@ -1,4 +1,3 @@
-import React from 'react';
 import './FERApage.css';
 import PaginaInicialFERA from './paginaInicial-FERA/paginaInicialFERA';
 import GuiadoFERA from './guia-FERA/GuiadoFERA';
@@ -7,6 +6,8 @@ import ImportantContacts from './contatosImportantes-FERA/ImportantContacts';
 import FaqSection from './perguntasFrequentes-FERA/FaqSection';
 import DicasVeterano from './dicasdeVeterano-FERA/DicasVeterano';
 import GuiaFeras from './guiaacademico-FERA/GuiaFeras';
+import AutoPlay from '../../static/Autoplay';
+
 
 const FeraPage = () => {
   return (
@@ -19,6 +20,10 @@ const FeraPage = () => {
             <GuiadoFERA/>
         </div>
 
+        <div className='contatosImportantes-FERA'>
+            <ImportantContacts/>
+        </div>
+
         <div className='mapa-FERA'>
             <MapaPage/>
         </div>
@@ -27,20 +32,18 @@ const FeraPage = () => {
             <DicasVeterano/>
         </div>
 
+        <div className='guiaAcademico-FERA'>
+            <GuiaFeras/>
+        </div>
+
         <div className='perguntasFrequentes-FERA'>
             <FaqSection/>
         </div>
 
-        <div className='contatosImportantes-FERA'>
-            <ImportantContacts/>
-        </div>
-
-        <div className='guiaAcademico-FERA'>
-            <GuiaFeras/>
+        <div className='carrossel-comunidades'>
+            <AutoPlay />
         </div>
     </div>
-    
-
   );
 };
 

@@ -1,31 +1,22 @@
-import React from 'react';
-import { FaEnvelope, FaWhatsapp, FaBook, FaLaptop } from 'react-icons/fa';
 import './DicasVeterano.css';
-import { Reveal } from '../../../static/Reveal.tsx';
+import { FaEnvelope, FaWhatsapp, FaBook, FaLaptop } from 'react-icons/fa';
 
 
-const DicasVeterano = () => {
+export default function DicasVeterano() {
   return (
     <div className="dicas-container">
       <div className="dicas-header">
-        <Reveal>
           <h1>Dicas de <span className="veterano-text">Veterano</span></h1>
-        </Reveal>
-        <Reveal>
           <p className="dicas-intro">
             Informações essenciais para te ajudar a navegar pela vida acadêmica na UFCG.
             Desde o básico até dicas avançadas de quem já passou por isso.
           </p>
-        </Reveal>
       </div>
 
       <div className="dicas-content">
-        <Reveal>
           <h2>Dicas Essenciais</h2>
-        </Reveal>
 
         <div className="dicas-grid">
-          <Reveal>
             <div className="dica-card">
               <div className="dica-icon">
                 <FaEnvelope />
@@ -36,9 +27,7 @@ const DicasVeterano = () => {
                 acadêmicas e acesso aos sistemas da universidade.
               </p>
             </div>
-          </Reveal>
 
-          <Reveal>
             <div className="dica-card">
               <div className="dica-icon">
                 <FaWhatsapp />
@@ -49,8 +38,6 @@ const DicasVeterano = () => {
                 avisos importantes e se conectar com os colegas.
               </p>
             </div>
-          </Reveal>
-          <Reveal>
             <div className="dica-card">
               <div className="dica-icon">
                 <FaBook />
@@ -61,8 +48,6 @@ const DicasVeterano = () => {
                 espaços para estudar no campus.
               </p>
             </div>
-          </Reveal>
-          <Reveal>
             <div className="dica-card">
               <div className="dica-icon">
                 <FaLaptop />
@@ -73,11 +58,8 @@ const DicasVeterano = () => {
                 em disciplinas e acessa informações do curso.
               </p>
             </div>
-          </Reveal>
         </div>
       </div>
     </div>
   );
 };
-
-export default DicasVeterano;

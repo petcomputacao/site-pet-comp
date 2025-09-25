@@ -1,6 +1,6 @@
 import './GuiadoFERA.css';
-import { FiClock, FiWifi, FiMapPin } from 'react-icons/fi'; // importa os ícones
-import { Reveal } from '../../../static/Reveal.tsx';
+import { FiClock, FiWifi, FiMapPin } from 'react-icons/fi';
+
 
 const GuiadoFERA = () => {
   return (

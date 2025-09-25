@@ -4,6 +4,7 @@ import Carousel3D from './Carousel3D.jsx';
 import { Reveal } from '../../static/Reveal.tsx';
 
 
+
 export default function SecaoLinhas() {
     return(
         <div className='paginaVertentes-container'>
@@ -27,7 +28,7 @@ export default function SecaoLinhas() {
                     
                 </div>
                 <div className='linhasAtuação-container'>
-                    <Carousel3D/>
+                    <Carousel3D />
                 </div>
         </div>
     )

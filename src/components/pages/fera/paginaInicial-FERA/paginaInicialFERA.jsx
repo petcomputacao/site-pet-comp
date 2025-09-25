@@ -5,9 +5,9 @@ const PaginaInicialFERA = () => {
     <div className='paginaInicial-FERA-container'>
         <div className="paginaInicial-FERA-conteudo">
             <div className='titulo-FERA-container'>
-                <h1 className="titulo-FERA-paginaInicial">Bem vindo a Página do Fera - Comp!</h1>
+                <h1 className="titulo-FERA-paginaInicial">Bem vindo a Página do Fera - Computação!</h1>
             </div>
-            
+{/*             
             <div className='box-paginaInicial-container'>
                 <div className='titulo-paginaInicial-FERA-container'>
                     <div className='titulo-paginaInicial-FERA'>
@@ -49,7 +49,7 @@ const PaginaInicialFERA = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
         
         <div className='paginaInicial-FERA-images'>
