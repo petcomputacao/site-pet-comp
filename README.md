@@ -31,7 +31,7 @@ Seu objetivo é ser uma vitrine para divulgar iniciativas do grupo e facilitar o
 - `public/` → Arquivos estáticos (ícones, imagens, etc.)
 - `package.json` → Dependências e scripts do projeto
 
-## 🚀 Executando localmente
+## Executando localmente
 Para rodar o projeto localmente:
 
 ```bash
@@ -47,6 +47,22 @@ npm install
 # Inicie a aplicação
 npm start
 ```
+
+---
+
+## Deploy
+
+### sem commits que quebrem o código por favor.
+
+```bash
+# dependências
+npm install gh-pages --save-dev
+
+# hora o deploy
+npm run deploy
+```
+
+Isso fará com que o deploy esteja associado a branch `gh-pages`. Mais detalhes em package.json
 
 ---
 
