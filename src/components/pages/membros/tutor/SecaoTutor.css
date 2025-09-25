@@ -1,16 +1,20 @@
 .secao-tutor{
-    width: 60%;
+    width: 80%;
     height: 100%;
     margin: 0px auto;
     display: flex;
 }
 
 .parteEsquerda-tutor-container{
-    width: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .nome-tutor-container{
-    width: 75%;
+    width: 100%;
     margin: 0px auto;
     margin-top: 2rem;
     margin-bottom: 0rem;
@@ -40,7 +44,7 @@
 }
 
 .parteDireita-tutor-container{
-    width: 50%;
+    width: 30%;
 }
 
 .fotoTutor-container {
@@ -155,20 +159,19 @@
 /* Media Query para Tablets (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     .secao-tutor {
-        width: 85%;
+        width: 100%;
         flex-direction: column;
         height: auto;
+        align-items: center;
+        justify-content: center;
     }
-    
-    .parteEsquerda-tutor-container,
+
     .parteDireita-tutor-container {
         width: 100%;
-    }
-    
-    .nome-tutor-container {
-        width: 90%;
-        margin-top: 1.5rem;
-        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
     .nome-tutor {
@@ -187,8 +190,7 @@
     }
     
     .fotoTutor-container {
-        width: 70%;
-        height: 300px;
+        width: 100%;
         margin-top: 1rem;
     }
     

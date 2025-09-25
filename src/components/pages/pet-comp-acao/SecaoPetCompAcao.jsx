@@ -2,15 +2,18 @@ import "./SecaoPetCompAcao.css"
 
 import CardCarrousel from "../../static/CardCarrousel"
 import AutoPlay from "../../static/Autoplay"
+import { Reveal } from "../../static/Reveal.tsx";
 
 export default function SecaoPetCompAcao () {
     return (
         <div className="container-producoes">
             <div className="container-producoes__superior">
                 <div className="superior__titulo">
+                    <Reveal>
                     <h1 className="titulo_PETCOMPACAO">
                         PET COMP | AÇÃO
                     </h1>
+                    </Reveal>
                 </div>
                 <div className="superior__carrossel-instagram">
                     <CardCarrousel />

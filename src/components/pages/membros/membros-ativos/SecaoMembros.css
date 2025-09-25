@@ -1,4 +1,4 @@
-/* ===== Container principal ===== */
+
 .container-membros {
   width: 100%;
   height: 100%;
@@ -7,68 +7,74 @@
   align-items: center;
 }
 
-/* ===== Título ===== */
+
 .membros__titulo {
-  width: 75%;
+  width: 80%;
   height: 15%;
   display: flex;
   justify-content: start;
   text-align: center;
   font-family: var(--fonte-titulo);
-  font-size: 3rem;
+  font-size: 2rem;
   color: black;
   letter-spacing: 2px;
 }
 
-/* ===== Galeria ===== */
+
 .membros__galeria {
   width: 80%;
   height: 80%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
+  gap: 10px;
 }
 
-/* ===== Item da galeria ===== */
+
 .galeria__item {
-  width: 80%;
-  margin-bottom: 12%;
+  width: 95%;
+  margin-bottom: 5%;
   display: flex;
   align-items: center;
-  gap: 1%;
+  gap: 5px;
   height: max-content;
-  border-radius: 10px;
+  border-radius: 8px;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== Foto do membro ===== */
 .item__foto-membro-ativo {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 5%;
   object-fit: cover;
+  border: 2px solid #f0f0f0;
 }
 
-/* ===== Info do membro ===== */
+
 .item__info {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-/* ===== Nome ===== */
 .info__nome {
-  margin-left: 10%;
-  margin-bottom: 10%;
+  margin-left: 2%; 
+  margin-bottom: 3%;
   font-family: var(--fonte-corpo);
-  font-size: 1.1rem;
-  letter-spacing: 1px;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
-/* ===== Ícones de redes ===== */
+
 .info__icones--redes {
   display: flex;
-  gap: 5%;
-  margin-left: 15%;
+  gap: 6px;
+  margin-left: 2%; 
 }
 
 .redes__link--github {
@@ -81,79 +87,217 @@
 
 .redes__link--linkedin,
 .redes__link--github {
-  transition: transform 0.4s;
+  transition: transform 0.3s ease;
 }
 
 .redes__link--linkedin:hover,
 .redes__link--github:hover {
-  transform: translateY(2px);
+  transform: translateY(1px);
 }
 
-/* ================== MEDIA QUERIES ================== */
 
-/* ===== Telas até 540px (mobile) ===== */
+.linkdin__icone,
+.github__icone {
+  width: 16px;
+  height: 16px;
+}
+
+
 @media (max-width: 540px) {
   .membros__titulo {
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    height: 10%;
   }
 
   .membros__galeria {
-    width: 85%;
-    height: 80%;
+    width: 90%; 
+    height: 85%;
     display: flex;
     flex-direction: column;
+    gap: 8px;
+    align-items: center; 
   }
 
   .galeria__item {
-    width: 100%;
-    margin-bottom: 12%;
-    display: flex;
-    align-items: center;
-    gap: 1%;
-    height: max-content;
-    border-radius: 10px;
+    width: 100%; 
+    max-width: 300px; 
+    margin-bottom: 3%;
+    gap: 8px;
+    padding: 8px;
+    
+    justify-content: flex-start; 
   }
 
   .item__foto-membro-ativo {
-    width: 100px;
-    height: 100px;
-    border-radius: 10%;
-    object-fit: cover;
-
+    width: 45px;
+    height: 45px;
   }
 
   .info__nome {
-    font-size: 1.4rem;
-    margin-left: 10%;
-    font-weight: 700;
+    font-size: 0.75rem;
+    margin-left: 10%; 
+    font-weight: 600;
+    text-align: left; 
   }
 
   .info__icones--redes {
-  display: flex;
-  gap: 5%;
-  margin-left: 15%;
-}
+    gap: 8px;
+    margin-left: 15%; 
+    justify-content: flex-start; 
+  }
+  
+  .linkdin__icone,
+  .github__icone {
+    width: 14px;
+    height: 14px;
+  }
 }
 
-/* ===== Telas entre 541px e 1024px (tablet) ===== */
-@media (min-width: 541px) and (max-width: 1024px) {
+
+@media (min-width: 541px) and (max-width: 768px) {
   .membros__titulo {
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    height: 12%;
   }
 
   .membros__galeria {
-    width: 90%;
+    width: 98%;
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
   .galeria__item {
-    width: 100%;
+    width: 80%;
+    margin-bottom: 4%;
+  }
+
+  .item__foto-membro-ativo {
+    width: 48px;
+    height: 48px;
   }
 
   .info__nome {
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 10%;
+  }
+  
+  .linkdin__icone,
+  .github__icone {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .membros__titulo {
+    justify-content: center;
+    font-size: 1rem;
+    height: 12%;
+  }
+
+  .membros__galeria {
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .galeria__item {
+    width: 98%;
+    margin-bottom: 4%;
+  }
+
+  .item__foto-membro-ativo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .info__nome {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 10%;
+  }
+  
+  .linkdin__icone,
+  .github__icone {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+  .membros__galeria {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+  .galeria__item {
+    width: 90%;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .membros__galeria {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    max-width: 1400px;
+  }
+  
+  .galeria__item {
+    width: 95%;
+  }
+  
+  .item__foto-membro-ativo {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .info__nome {
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .membros__titulo {
+    font-size: 1.3rem;
+  }
+  
+  .membros__galeria {
+    width: 80%;
+  }
+  
+  .galeria__item {
+    width: 100%;
+    max-width: 280px;
+    padding: 6px;
+    gap: 6px;
+  }
+  
+  .item__foto-membro-ativo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .info__nome {
+    font-size: 0.7rem;
+    margin-left: 10%;
+    text-align: left;
+  }
+  
+  .info__icones--redes {
+    margin-left: 15%;
+    justify-content: flex-start;
+  }
+  
+  .linkdin__icone,
+  .github__icone {
+    width: 12px;
+    height: 12px;
   }
 }

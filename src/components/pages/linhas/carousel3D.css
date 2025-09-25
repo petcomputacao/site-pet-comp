@@ -14,22 +14,23 @@
 
 /* Estilo base dos slides */
 .slide {
-  height: 300px;             /* Altura fixa */
-  padding: 20px;             /* Espaçamento interno */
+  height: 250px;             /* menor altura */
   border-radius: 16px;       /* Bordas arredondadas */
   transition: all 0.3s ease; /* Animação suave */
   text-align: center;        /* Texto centralizado */
   display: flex;             /* Alinhamento vertical */
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
 }
 
 /* Slide que está no centro (ativo) */
 .slide.active {
-  background-color: white;                     /* Fundo branco */
-  transform: scale(0.95);                      /* Levemente maior */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);  /* Sombra forte */
-  border: 1px solid black;                             
+  background-color: white;
+  transform: scale(0.95);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  padding: 2%;
 }
 
 /* Slides laterais (não ativos) */
@@ -37,11 +38,12 @@
   background-color: #f3f5fc;                    /* Cinza claro */
   transform: scale(0.85);                       /* Menor */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);     /* Sombra leve */
+  padding: 2%;
 }
 
 /* Título do slide */
 .slide-title {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #000000;
   margin-bottom: 3%;
   font-family: var(--fonte-titulo);
@@ -50,7 +52,7 @@
 
 /* Texto do corpo do slide */
 .slide-body {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #000000;
   font-family: var(--fonte-corpo);
   letter-spacing: 1px;
@@ -62,11 +64,11 @@
 
   /* Estilo base dos slides */
   .slide {
-    height: 400px;             /* Altura fixa */
-    width: 220px;
-    padding: 20px;             /* Espaçamento interno */
-    border-radius: 8px;       /* Bordas arredondadas */
-    transition: all 0.3s ease; /* Animação suave */
+    height: auto;            /* ajusta automaticamente */
+    width: 80%;              /* ocupa 80% da largura disponível */
+    max-width: 300px;        /* mas nunca maior que 300px */
+    margin: 0 auto;          /* centraliza de verdade */
+    padding: 15px;
   }
 
   /* Slide que está no centro (ativo) */
@@ -99,11 +101,11 @@
 
 @media (max-width: 380px) {
   /* Estilo base dos slides */
-  .slide {
-    height: 350px;             /* Altura fixa */
-    padding: 5px;             /* Espaçamento interno */
+   .slide {
+    width: 90%;              /* 🔹 ocupa mais em telas pequenas */
+    max-width: 260px;
+    padding: 10px;
   }
-
 
   /* Título do slide */
   .slide-title {

@@ -2,48 +2,63 @@ import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 interface Props {
-  children: React.ReactNode;
+  children: React.ReactNode; 
+  width?: "fit-content" | "100%";
+  delay?: number;
+  duration?: number;
+  yOffset?: number;
 }
 
-export const Reveal = ({ children }: Props) => {
+export const Reveal = ({ 
+  children, 
+  width = "fit-content", 
+  delay = 0.1,
+  duration = 0.6,
+  yOffset = 30
+}: Props) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const mainControls = useAnimation();
-  const slideControls = useAnimation();
+  const isInView = useInView(ref, { 
+    once: true,
+    // threshold: 0.1
+  });
+  const controls = useAnimation();
 
   useEffect(() => {
     if (isInView) {
-      mainControls.start("visible");
-      slideControls.start("visible");
+      controls.start("visible");
     }
-  }, [isInView, mainControls, slideControls]);
+  }, [controls, isInView]);
 
   return (
-    <div ref={ref} style={{ position: "relative", display: "inline-block" }}>
-      {/* Container do conteúdo - sem alterações de layout */}
-      <div style={{ position: "relative", zIndex: 10 }}>
-        {children}
-      </div>
-      
-      {/* Efeito de slide (absoluto para não afetar o layout) */}
-      <motion.div
-        variants={{
-          hidden: { left: 0 },
-          visible: { left: "100%" },
-        }}
-        initial="hidden"
-        animate={slideControls}
-        transition={{ duration: 0.7, ease: "easeIn" }}
-        style={{
-          position: "absolute",
-          top: 0,
-          bottom: 0,
-          left: 0,
-          right: 0,
-          background: "#0c1a99",
-          zIndex: 20,
-        }}
-      />
-    </div>
+    <motion.div
+      ref={ref}
+      style={{ width }}
+      variants={{
+        hidden: { 
+          opacity: 0, 
+          y: yOffset,
+          scale: 0.98 // Leve escala para efeito mais suave
+        },
+        visible: { 
+          opacity: 1, 
+          y: 0,
+          scale: 1
+        }
+      }}
+      initial="hidden"
+      animate={controls}
+      transition={{ 
+        duration: duration,
+        delay: delay,
+        ease: [0.25, 0.46, 0.45, 0.94], // Curva de easing suave
+        scale: {
+          type: "spring",
+          damping: 15,
+          stiffness: 300
+        }
+      }}
+    >
+      {children}
+    </motion.div>
   );
 };

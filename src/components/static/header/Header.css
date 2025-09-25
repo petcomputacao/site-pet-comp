@@ -71,14 +71,10 @@
 
 .navbar-link:hover {
   color: #bdbdbd;
-  transform: translateY(-2px);
-  font-size: 1rem;
 }
 
 .navbar-link.active {
-  font-size: 1rem;
-  transform: translateY(-2px);
-
+  font-size: 1.05rem;
 }
 
 /*parte DIREITA da navbar*/
@@ -107,18 +103,10 @@
   transition: all 0.3s ease;
 }
 
-.social-link:hover {
-  transform: translateY(-2px);
-}
-
 .social-icon {
   width: 25px;
   height: 25px;
   transition: transform 0.3s ease;
-}
-
-.social-link:hover .social-icon {
-  transform: scale(1.1);
 }
 
 .social-link.icon-only {
@@ -183,7 +171,7 @@
   }
   
   .navbar-link {
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: 6px 8px;
     letter-spacing: 1px;
   }
@@ -208,59 +196,60 @@
   .navbar-container {
     height: 8vh;
     padding: 0 0px;
-}
+  }
 
-.image-navbar-container {
+  .image-navbar-container {
     width: 35%;
     margin-left: 10px;
-}
+  }
 
-/* parte CENTRAL da navbar */
-.buttons-navbar-container {
-  margin-left: 1%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  width: 55%; 
-}
+  /* parte CENTRAL da navbar */
+  .buttons-navbar-container {
+    margin-left: 1%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 55%; 
+  }
 
-.buttons-navbar {
-  padding: 0 0px;
-}
+  .buttons-navbar {
+    padding: 0 0px;
+  }
 
-.navbar-list {
-  display: flex;
-  gap: 5px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: space-around; 
-  flex-wrap: wrap; 
-}
+  .navbar-list {
+    display: flex;
+    gap: 3px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+  }
 
-.navbar-item {
-  display: flex;
-  align-items: center;
-}
+  .navbar-item {
+    display: flex;
+    align-items: center;
+  }
 
-.navbar-link {
-  font-size: 0.9rem;
-  padding: 5px 10px;
-}
+  .navbar-link {
+    font-size: 0.5rem;
+    padding: 3px 6px;
+    letter-spacing: 0.3px;
+  }
 
-/*parte DIREITA da navbar*/
-.redeSocial-navbar-container {
+  /*parte DIREITA da navbar*/
+  .redeSocial-navbar-container {
     right: 2%; 
-}
+  }
 
-.redeSocial-navbar {
+  .redeSocial-navbar {
     right: 10px; 
-}
+  }
 
-.social-icon {
-  width: 35px;
-  height: 35px;
-}
+  .social-icon {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -278,7 +267,7 @@
 }
 
 .navbar-link {
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   padding: 4px 10px;
   letter-spacing: 1px;
 }

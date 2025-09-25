@@ -6,8 +6,6 @@ import { CgMail } from "react-icons/cg";
 import { IoLogoGithub } from "react-icons/io";
 
 
-
-
 function Footer() {
   return (
     <footer className="container-footer">

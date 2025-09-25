@@ -5,7 +5,6 @@ import { useState } from 'react'
 function Header() {
   // eslint-disable-next-line no-unused-vars
   const [_function, setActiveSection] = useState('home');
-  // eslint-disable-next-line no-unused-vars
   
   const navigate = useNavigate();
   const location = useLocation();
