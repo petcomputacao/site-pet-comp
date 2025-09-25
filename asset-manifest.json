@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/site-pet-comp/static/css/main.c63e17d5.css",
+    "main.js": "/site-pet-comp/static/js/main.d9742884.js",
+    "index.html": "/site-pet-comp/index.html",
+    "main.c63e17d5.css.map": "/site-pet-comp/static/css/main.c63e17d5.css.map",
+    "main.d9742884.js.map": "/site-pet-comp/static/js/main.d9742884.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c63e17d5.css",
+    "static/js/main.d9742884.js"
+  ]
+}
