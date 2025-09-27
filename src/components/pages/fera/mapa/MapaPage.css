@@ -1,30 +1,32 @@
-/* Container principal da página */
 .mapa-campus-container {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   align-items: center;
 }
 
 /* Título centralizado */
 .titulo-mapa {
-  width: 100%;
-  font-size: 24px;
+  width: 80%;
+  font: var(--title-paragraph-font);
   text-align: left;
   margin-bottom: 2rem;
   color: #222;
-  font-family: 'Playfair Display', serif;
   letter-spacing: 2px;
 }
 
 .box-mapa-FERA {
   display: flex;
   background: rgb(240, 240, 240);
-  width: 80%;
+  width: 50%;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.box-mapa-FERA:hover {
+  transform: scale(1rem);
 }
 
 .alerta-mapbox-card {
@@ -33,7 +35,6 @@
   justify-content: center;
   border-radius: 10px;
 }
-
 
 /* Imagem genérica no lugar do Mapbox */
 .imagem-mapa {
@@ -48,11 +49,8 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* sombra suave */
 }
 
-/* Link */
-a {
-  color: #0066cc;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+@media (max-width: 768px) {
+  .box-mapa-FERA {
+    width: 80%;
+  }
 }

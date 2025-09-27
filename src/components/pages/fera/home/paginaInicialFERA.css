@@ -23,9 +23,9 @@
 
 /* Estilo do título principal */
 .titulo-FERA-paginaInicial {
-    font-size: 2.9rem;
+    font: var(--title-font);
+    font-weight: bold;
     color: #000835;
-    font-family: 'Playfair Display', serif;
     letter-spacing: 2px;
 }
 
@@ -40,14 +40,6 @@
     margin-top: 10%;
 }
 
-.titulo-paginaInicial-FERA{
-    font-size: 0.7rem;
-    color: #000835;
-    text-align: justify;
-    letter-spacing: 2px;
-    font-family: 'Playfair Display', serif;
-}
-
 .sobre-paginaInicial-FERA-container{
     padding: 2px 10px;
 }
@@ -58,11 +50,10 @@
 }
 
 .sobre-paginaInicial-FERA-titulo{
-    font-size: 0.5rem;
+    font: var(--title-paragraph-font);
     color: #000835;
     text-align: justify;
     letter-spacing: 2px;
-    font-family: 'Playfair Display', serif;
     text-decoration: underline;
     text-underline-offset: 5px;
 
@@ -76,13 +67,12 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.sobre-paginaInicial-FERA-corpo{
-    font-size: 0.4rem;
+.sobre-paginaInicial-FERA-corpo {
+    font: var(--paragraph-font);
     color: #000000;
     text-align:start;
     line-height: 1.4;
     letter-spacing: 1px;
-    font-family: "Lato", sans-serif;
 }
 
 .paginaInicial-FERA-images {

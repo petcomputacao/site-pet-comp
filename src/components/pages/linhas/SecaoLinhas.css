@@ -18,9 +18,8 @@
 
 /* Estilo do título */
 .titulo-vertentes h1 {
-  font-size: 2.2rem;
+  font: var(--title-font);
   color: rgb(40, 40, 104);
-  font-family: var(--fonte-titulo);
   letter-spacing: 2px;
 }
 
@@ -42,14 +41,8 @@
 }
 
 @media (max-width: 768px) {
-.titulo-vertentes-container {
-  width: 90%;
-  margin-top: 3%;
-}
-}
-
-@media (max-width: 380px) {
-  .titulo-vertentes h1 {
-  font-size: 1.7rem;
-}
+  .titulo-vertentes-container {
+    width: 90%;
+    margin-top: 3%;
+  }
 }

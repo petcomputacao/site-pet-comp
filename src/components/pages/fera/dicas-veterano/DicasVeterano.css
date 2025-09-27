@@ -6,15 +6,13 @@
 }
 
 .dicas-header {
-  margin-bottom: 30px;
-  text-align: center;
+  width: 100%;
 }
 
 .dicas-header h1 {
-  font-size: 2rem;
+  font: var(--title-paragraph-font);
   margin-bottom: 1rem;
   color: #000;
-  font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
 }
 
@@ -24,21 +22,20 @@
 }
 
 .dicas-intro {
+  width: 100%;
+  font: var(--other-font);
+  text-align: justify;
+  letter-spacing: 1px;
   line-height: 1.4;
   color: #464646;
-  max-width: 60%;
   margin: 0 auto;
-  font-size: 0.9rem;
-  font-family: "Lato", sans-serif;
-  letter-spacing: 1px;
 }
 
-.dicas-content h2 {
-  font-size: 24px;
+.dicas-content__titulo {
+  font: var(--paragraph-font);
   margin-bottom: 15px;
   color: #000;
   text-align: left;
-  font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
 }
 
@@ -60,24 +57,32 @@
   transform: translateY(-5px);
 }
 
-.dica-icon {
-  font-size: 22px;
-  color: #000769;
-  margin-bottom: 5px;
+.dica-card__cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.dica-card h3 {
-  font-size: 18px;
+.dica-card__cabecalho--icon {
+  font-size: var(--paragraph-font-size);
+}
+
+.dica-card__cabecalho--titulo {
+  font: var(--paragraph-font);
   color: #000769;
-  margin-bottom: 10px;
-  font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
 }
 
-.dica-card p {
+.dica-card__paragrafo {
   font-size: 15px;
   line-height: 1.4;
   color: #555;
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
+}
+
+@media (max-width: 1259px) {
+  .dicas-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

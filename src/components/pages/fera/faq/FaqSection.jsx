@@ -1,12 +1,14 @@
 import './FaqSection.css';
 import FAQForm from './FAQForm';
 import Accordion from '../../../static/Accordion'
+import { Reveal } from '../../../static/Reveal.tsx'
+
 
 const FaqSection = () => {
   return (
     <div className="faq-container">
+      <Reveal width='100%'>
       <h1 className="faq-title">Perguntas Frequentes</h1>
-
       <div className='accordeon-wrapper'>
         <Accordion />
       </div>
@@ -22,6 +24,7 @@ const FaqSection = () => {
             <FAQForm />
         </div>
       </div>
+      </Reveal>
     </div>
   );
 };

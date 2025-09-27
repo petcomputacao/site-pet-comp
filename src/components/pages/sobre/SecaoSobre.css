@@ -10,10 +10,15 @@
 .container-sobre__pilares {
   margin-top: 2rem;
   width: 80%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
+}
+
+.container-sobre__pilares > * {
+  height: 100%;
 }
 
 .pesquisa-logo,
@@ -31,112 +36,62 @@
 .pilares__pesquisa,
 .pilares__ensino,
 .pilares__tutoria {
+  font: var(--paragraph-font);
   border: 1px solid #000;
   border-radius: 8px;
   padding: 1rem;
   flex: 1 1 280px;
-  max-width: 320px;
-  font-size: clamp(0.7rem, 0.9vw, 1rem);
   line-height: 1.5;
   color: rgb(0, 0, 0);
   text-align: justify;
   letter-spacing: 0.5px;
-  font-family: var(--fonte-corpo);
-  transition: transform 0.3s ease;
 }
 
 .pesquisa__titulo,
 .ensino__titulo,
 .tutoria__titulo {
   text-align: center;
-  font-family: var(--fonte-titulo);
-  font-size: clamp(1.2rem, 1vw + 0.5rem, 1.5rem);
+  font: var(--title-paragraph-font);
   margin-bottom: 0.5rem;
 }
 
-/* vai da esquerda pra direita*/
-.pilares__pesquisa:hover {
-    transform: translate(3px, -1px) scale(1.05);
-}
+@media (max-width: 1220px) {
+  .container-sobre__pilares {
+      margin-top: 2rem;
+      width: 80%;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      align-content: center;
+      gap: 2.5rem;
+  }
 
-/*vai pra cima*/
-.pilares__ensino:hover {
-    transform: translateY(-1px) scale(1.05);
-}
+  .pesquisa-logo,
+  .ensino-logo,
+  .tutoria-logo {
+    width: 3rem; 
+    height: 3rem; 
+    display: block;
+    background: #000dc9;
+    border-radius: 8px;
+  }
 
-/*vai da direita pra esqierda*/
-.pilares__tutoria:hover {
-    transform: translate(-3px, -1px) scale(1.05);
-}
+  .pilares__pesquisa,
+  .pilares__ensino,
+  .pilares__tutoria {
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 1rem 1rem;
+    width: 85%;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    box-sizing: border-box;
+  }
 
-
-@media (max-width: 768px) {
-
-
-.container-sobre__pilares {
-  margin-top: 0px; 
-  width: 100%;
-  flex-direction: column; /* Empilha os itens verticalmente */
-  align-items: center; /* Centraliza os itens */
-  gap: 35px; /* Espaço maior entre os itens */
-  z-index: 10;
-}
-
-.pesquisa-logo,
-.ensino-logo,
-.tutoria-logo {
-  width: 3rem; 
-  height: 3rem; 
-  display: block;
-  margin: -2.5rem auto 0 auto; /* Ajuste proporcional */
-  background: #000dc9;
-  padding: 0px 40px; /* Padding reduzido */
-  border-radius: 8px;
-}
-
-.pilares__pesquisa,
-.pilares__ensino,
-.pilares__tutoria {
-  border: 1px solid #000;
-  border-radius: 8px;
-  padding: 1rem 1rem; /* Padding ajustado */
-  width: 85%; /* Ocupa maior largura */
-  font-size: 0.9rem; /* Fonte ligeiramente menor */
-  line-height: 1.6;
-  color: rgb(0, 0, 0);
-  text-align: left; /* Alinhamento esquerdo para melhor leitura */
-  letter-spacing: 1px; /* Espaçamento reduzido */
-  transition: transform 0.3s ease;
-  box-sizing: border-box;
-}
-
-.pesquisa__titulo,
-.ensino__titulo,
-.tutoria__titulo {
-  text-align: center;
-  font-family: var(--fonte-titulo);
-  font-size: 1.4rem; /* Tamanho ajustado */
-}
-
-.pilares__pesquisa:hover,
-.pilares__ensino:hover,
-.pilares__tutoria:hover {
-  transform: translateY(-3px) scale(1.03); /* Efeito unificado */
-}
-}
-
-@media (max-width: 380px) {
-
-.pilares__pesquisa,
-.pilares__ensino,
-.pilares__tutoria {
-  padding: 0.5rem 0.5rem; /* Padding ajustado */
-  font-size: 0.75rem; /* Fonte ligeiramente menor */
-}
-
-.pesquisa__titulo,
-.ensino__titulo,
-.tutoria__titulo {
-  font-size: 1.3rem; /* Tamanho ajustado */
-}
+  .pesquisa__titulo,
+  .ensino__titulo,
+  .tutoria__titulo {
+    text-align: center;
+  }
 }

@@ -10,7 +10,7 @@ import SecaoPetCompAcao from './components/pages/pet-comp-acao/SecaoPetCompAcao'
 import SecaoTutor       from './components/pages/membros/tutor/SecaoTutor'
 import SecaoMembros     from './components/pages/membros/membros-ativos/SecaoMembros'
 import Footer           from './components/static/footer/Footer';
-import FeraPage         from './components/pages/fera/FERApage';
+import FeraPage         from './components/pages/fera/FeraPage';
 
 
 function App() {

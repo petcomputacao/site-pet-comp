@@ -17,11 +17,10 @@
     width: 80%;
     display: flex;
     justify-content: center;
-    font-size: 2.5rem;
+    font: var(--title-font);
     color: black;
     font-weight: 700;
     text-align: center;
-    font-family: var(--fonte-titulo);
     letter-spacing: 1px;
 }
 
@@ -40,7 +39,6 @@
 
     .superior__titulo {
         width: 100%;
-        font-size: 1.3rem;
     }
 
     .superior__carrossel-instagram {
@@ -54,7 +52,6 @@
 
     .superior__titulo {
         width: 100%;
-        font-size: 1.3rem;
     }
 
     .superior__carrossel-instagram {
@@ -75,7 +72,6 @@
 
     .superior__titulo {
         width: 100%;
-        font-size: 2.3rem;
     }
 
     .superior__carrossel-instagram {
@@ -86,5 +82,4 @@
     .container-producoes__inferior {
         height: min-content;
     }
-
 }

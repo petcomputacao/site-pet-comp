@@ -2,13 +2,12 @@ import './SecaoHome.css';
 import { Reveal } from '../../static/Reveal.tsx';
 
 
-
 export default function SecaoHome () {
     return(
         <div className='paginaInicial-container'>          
             <div className='imagemFundo-container'>
                 <img
-                    src={process.env.PUBLIC_URL + "/images/logos/logo-pet.png"}
+                    src={process.env.PUBLIC_URL + "/images/logos/logo_pet_fundo_removido.png"}
                     alt="Imagem fundo pagina inicial"
                     className="imagemFundo-paginaInicial"
                 />

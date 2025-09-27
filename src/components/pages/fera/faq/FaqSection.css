@@ -5,22 +5,16 @@
 }
 
 .faq-title {
-  font-size: 24px;
+  width: 100%;
+  font: var(--title-paragraph-font);
   margin-bottom: 35px;
   color: #000;
   text-align: left;
-  font-family: 'Playfair Display', serif;
   letter-spacing: 1px;
 }
 
 .accordeon-wrapper {
   margin-bottom: 2%;
-}
-
-.divider {
-  height: 1px;
-  background-color: #e0e0e0;
-  margin: 0;
 }
 
 .faq-pet-fera-container {
@@ -37,20 +31,18 @@
 }
 
 .faq-title-fera {
-  font-size: 1.8rem;
+  font-size: var(--title-paragraph-font-size);
   color: #000000;
   line-height: 1.4;
   margin-bottom: 0.5rem;
-  font-family: 'Playfair Display', serif;
-}
-
-.faq-subtitle-fera{
-  font-size: 1.1rem;
-  color: #444444;
-  font-family: "Lato", sans-serif;
 }
 
 .pet-azul {
   color: #1a1de8;
   font-weight: 700;
+}
+
+.faq-subtitle-fera {
+  font: var(--paragraph-font);
+  color: #444444;
 }

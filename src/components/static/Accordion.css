@@ -1,7 +1,6 @@
 .accordion {
   display: flex;
   flex-direction: column;
-  font-family: "Lato", sans-serif;
   width: 100%;
   gap: 25px;
 }
@@ -20,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1%;
+  gap: 2%;
   padding: 15px 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -32,21 +31,21 @@
 }
 
 .accordion-icon {
-  font-size: 20px;
+  font-size: var(--paragraph-font-size);
   color: #1a1de8;
 }
 
 .accordion-question {
   flex: 1;
-  font-size: larger;
-  color: #000769;
+  font-size: var(--paragraph-font-size);
+  color: black;
   margin: 0;
 }
 
 .accordion-arrow {
-  font-size: 16px;
+  font-size: var(--other-font-size);
   transition: transform 0.3s ease;
-  color: #0077ff;
+  color: #1a1de8;
 }
 
 .accordion-arrow.rotate {
@@ -59,7 +58,7 @@
   padding: 0 20px;
   transition: max-height 0.3s ease, padding 0.3s ease;
   background-color: #f9f9fb;
-  font-size: large;
+  font-size: var(--paragraph-font-size);
 }
 
 .accordion-item.open .accordion-body {
