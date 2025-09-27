@@ -55,3 +55,34 @@
   cursor: not-allowed;
   color: #666;
 }
+
+.erro-validacao {
+  color: #d32f2f;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.erro-input {
+  border-color: #d32f2f !important;
+  background-color: #fff5f5;
+}
+
+.faq-form input,
+.faq-form textarea {
+  transition: border-color 0.3s ease;
+}
+
+.erro {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.sucesso {
+  color: #2e7d32;
+  background-color: #e8f5e9;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
