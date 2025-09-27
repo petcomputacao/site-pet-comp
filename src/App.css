@@ -2,8 +2,17 @@
 
 
 :root {
-  --fonte-titulo: 'Playfair Display', serif;
-  --fonte-corpo: "Lato", sans-serif;
+  --title-font-family:         'Playfair Display', serif;
+  --title-font-size:           clamp(18px, 3rem, 60px);
+  --title-paragraph-font-size: clamp(15px, 2.1rem, 50px);
+  --paragraph-font-family:     "Lato", sans-serif;
+  --paragraph-font-size:       clamp(15px, 1.3rem, 40px);
+  --other-font-size:           clamp(13px, 1.1rem, 26px);
+
+  --title-font:           var(--title-font-size) var(--title-font-family);
+  --title-paragraph-font: var(--title-paragraph-font-size) var(--title-font-family);
+  --paragraph-font:       var(--paragraph-font-size) var(--paragraph-font-family);
+  --other-font:           var(--other-font-size) var(--paragraph-font-family);
 }
 
 html, body {

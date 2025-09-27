@@ -1,6 +1,6 @@
+import "./Accordion.css";
 import { useState } from "react";
 import { FaClipboardList, FaBookOpen, FaUserFriends, FaEnvelope } from "react-icons/fa";
-import "./accordion.css";
 
 const faqs = [
   {

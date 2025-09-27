@@ -1,4 +1,4 @@
-import './autoplay.css';
+import './Autoplay.css';
 
 function AutoPlay() {
     return(

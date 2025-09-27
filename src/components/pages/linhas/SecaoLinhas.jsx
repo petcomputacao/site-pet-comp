@@ -1,6 +1,6 @@
 import './SecaoLinhas.css';
 
-import Carousel3D from './Carousel3D.jsx';
+import Carousel from './Carousel.jsx';
 import { Reveal } from '../../static/Reveal.tsx';
 
 
@@ -19,7 +19,7 @@ export default function SecaoLinhas() {
                     <Reveal>
                     <div className="foto-pet">
                         <img 
-                        src={process.env.PUBLIC_URL + "/images/logos/logo-pet.png"} 
+                        src={process.env.PUBLIC_URL + "/images/logos/logo_pet_fundo_removido.png"} 
                         alt="logo-pet" 
                         className="logo-pet-linhas"
                         />
@@ -28,7 +28,7 @@ export default function SecaoLinhas() {
                     
                 </div>
                 <div className='linhasAtuação-container'>
-                    <Carousel3D />
+                    <Carousel />
                 </div>
         </div>
     )
