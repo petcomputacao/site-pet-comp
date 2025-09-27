@@ -1,10 +1,63 @@
 .paginaInicial-FERA-container {
     width: 100%;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
+/* CARROSSEL COMO FUNDO */
+.embla-background-container {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.embla-viewport {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.embla__container {
+    display: flex;
+    height: 100%;
+}
+
+.embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+    height: 100%;
+}
+
+.embla__slide__inner {
+    width: 100%;
+    height: 100%;
+}
+
+.embla__slide__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6); /* Escurecido para melhor contraste */
+}
+
+/* CONTEÚDO SOBREPOSTO */
+.paginaInicial-FERA-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+/* MANTENHA SEUS ESTILOS ORIGINAIS (apenas ajustes de cores para contraste) */
 .paginaInicial-FERA-conteudo {
     display: flex;
     justify-content: center;
@@ -18,74 +71,50 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
 }
 
-/* Estilo do título principal */
 .titulo-FERA-paginaInicial {
     font: var(--title-font);
     font-weight: bold;
-    color: #000835;
+    color: #ffffff; /* Branco para contraste */
     letter-spacing: 2px;
-}
-
-.box-paginaInicial-container{
-    display: flex;
-    align-items: center;
-    width: 50%;
-    flex-direction: column;
-}
-
-.titulo-paginaInicial-FERA-container{
-    margin-top: 10%;
-}
-
-.sobre-paginaInicial-FERA-container{
-    padding: 2px 10px;
-}
-
-.sobre-paginaInicial-FERA-titulo-container{
-    width: 35%;
-    border-radius:15px;
-}
-
-.sobre-paginaInicial-FERA-titulo{
-    font: var(--title-paragraph-font);
-    color: #000835;
-    text-align: justify;
-    letter-spacing: 2px;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-
-}
-
-.sobre-paginaInicial-FERA-corpo-container{
-    background: #ffffff;
-    width: 95%;
-    border-radius: 15px;
-    padding: 1px 15px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.sobre-paginaInicial-FERA-corpo {
-    font: var(--paragraph-font);
-    color: #000000;
-    text-align:start;
-    line-height: 1.4;
-    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .paginaInicial-FERA-images {
-  margin-right: 2%;
-  width: 80%;
-  display: flex;               
-  justify-content: center;    
-  align-items: center;         
-  gap: 3rem;                   
-  margin-top: 3rem;            
+    margin-right: 2%;
+    width: 80%;
+    display: flex;               
+    justify-content: center;    
+    align-items: center;         
+    gap: 3rem;                   
+    margin-top: 3rem;            
 }
 
 .paginaInicial-FERA-images img {
-  width: 40px;                
-  height: auto;
+    width: 80px;              
+    height: auto;
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.8));
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .titulo-FERA-paginaInicial {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+    
+    .paginaInicial-FERA-images {
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    .paginaInicial-FERA-images img {
+        width: 60px;
+    }
+    
+    .paginaInicial-FERA-content {
+        padding: 1rem 0;
+    }
 }

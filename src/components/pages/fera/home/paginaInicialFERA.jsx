@@ -1,39 +1,44 @@
 import './paginaInicialFERA.css'
 import { Reveal } from '../../../static/Reveal.tsx';
-
+import EmblaCarousel from './EmblaCarousel';
 
 const PaginaInicialFERA = () => {
   return (
     <div className='paginaInicial-FERA-container'>
+      {/* Carrossel como fundo - SEM conteúdo dentro */}
+      <EmblaCarousel />
+      
+      {/* Conteúdo sobreposto - SEPARADO do carrossel */}
+      <div className="paginaInicial-FERA-content">
         <Reveal width='100%'>
-        <div className="paginaInicial-FERA-conteudo">
+          <div className="paginaInicial-FERA-conteudo">
             <div className='titulo-FERA-container'>
-                <h1 className="titulo-FERA-paginaInicial">Bem vindo a Página do Fera - Computação!</h1>
+              <h1 className="titulo-FERA-paginaInicial">Bem vindo a Página do Fera - Computação!</h1>
             </div>
-        </div>
+          </div>
         </Reveal>
         
-        
         <div className='paginaInicial-FERA-images'>
-            <Reveal>
+          <Reveal>
             <img
-                src={process.env.PUBLIC_URL + "/images/logos/logo_pet_fundo_removido.png"}
-                alt="Logo PET pagina inicial FERA"
+              src={process.env.PUBLIC_URL + "/images/logos/logo_pet_fundo_removido.png"}
+              alt="Logo PET pagina inicial FERA"
             />
-            </Reveal>
-            <Reveal>
+          </Reveal>
+          <Reveal>
             <img
-                src={process.env.PUBLIC_URL + "/images/logos/logo-ufcg.png"}
-                alt="Logo ufcg pagina inicial FERA"
+              src={process.env.PUBLIC_URL + "/images/logos/logo-ufcg.png"}
+              alt="Logo ufcg pagina inicial FERA"
             />
-            </Reveal>
-            <Reveal>
+          </Reveal>
+          <Reveal>
             <img
-                src={process.env.PUBLIC_URL + "/images/logos/logo-computacao.png"}
-                alt="Logo computacao pagina inicial FERA"
+              src={process.env.PUBLIC_URL + "/images/logos/logo-computacao.png"}
+              alt="Logo computacao pagina inicial FERA"
             />
-            </Reveal>
+          </Reveal>
         </div>
+      </div>
     </div>
   );
 };
