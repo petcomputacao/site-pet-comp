@@ -2,7 +2,7 @@ import './CardCarrousel.css';
 import { useEffect, useState } from 'react';
 
 
-const URL = 'https://instagram-api-gamma.vercel.app/';
+const URL = process.env.REACT_APP_META_API_ACCESS;
 
 async function Fetch() {
     const resp = await fetch(URL);

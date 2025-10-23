@@ -16,7 +16,15 @@
   letter-spacing: 2px;
 }
 
-.box-mapa-FERA {
+.mapa-campus-container__mapa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 70vh;
+}
+
+.container-mapa-FERA {
   display: flex;
   background: rgb(240, 240, 240);
   width: 50%;
@@ -25,32 +33,12 @@
   box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
-.box-mapa-FERA:hover {
+.container-mapa-FERA:hover {
   transform: scale(1rem);
 }
 
-.alerta-mapbox-card {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-}
-
-/* Imagem genérica no lugar do Mapbox */
-.imagem-mapa {
-  width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer; /* mostra a mãozinha ao passar o mouse */
-}
-
-.imagem-mapa:hover {
-  transform: scale(1.01); /* leve aumento ao passar o mouse */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* sombra suave */
-}
-
 @media (max-width: 768px) {
-  .box-mapa-FERA {
+  .container-mapa-FERA {
     width: 80%;
   }
 }

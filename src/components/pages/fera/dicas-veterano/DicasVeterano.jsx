@@ -13,16 +13,25 @@ const dicas = [
   {
     icon: FaWhatsapp,
     title: "Grupos de WhatsApp",
-    text: "Participe dos grupos de sua turma e do curso para ficar por dentro de avisos importantes e se conectar com os colegas."
+    text: "Participe dos grupos de sua turma e do curso para ficar por dentro de avisos importantes e se conectar com os colegas. Entrem em contato com o CAESI para saber mais: caesi@ccc.ufcg.edu.br"
   },
   {
     icon: FaBook,
     title: "Locais de Estudo",
-    text: "Conheça a biblioteca central, salas de estudo do LCC e outros espaços para estudar no campus."
+    text: "Conheça a biblioteca central, salas de estudo do Ed. Camilo de Lélis (bloco CP) e outros espaços para estudar no campus."
   },
   {
     icon: FaLaptop,
-    title: "Como acessar o SIGAA",
+    title: (
+      <>
+      Como acessar o {" "}
+        <a
+          href="https://sigaa.ufcg.edu.br/sigaa/verTelaLogin.do"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SIGAA
+        </a></>),
     text: "Sistema acadêmico da UFCG onde você consulta notas, se matricula em disciplinas e acessa informações do curso."
   }
 ]

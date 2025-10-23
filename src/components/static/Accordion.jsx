@@ -6,12 +6,37 @@ const faqs = [
   {
     icon: <FaClipboardList />,
     question: "1. Como me matricular nas disciplinas?",
-    answer: "Acesse o SIGAA, vá em Portal do (Discente/Ensino/Matrícula Online/Realizar Matricula). Preste atenção nos pré-requisitos e horários."
+    answer: (
+      <>
+        Acesse o{" "}
+        <a
+          href="https://sigaa.ufcg.edu.br/sigaa/verTelaLogin.do"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SIGAA
+        </a>
+        , navegue em Ensino &gt; Matrícula Online &gt; Realizar Matrícula. Preste
+        atenção nos pré-requisitos e horários.
+      </>
+    )
   },
   {
     icon: <FaBookOpen />,
     question: "2. Onde encontro o material das aulas?",
-    answer: "Os professores disponibilizam no SIGAA (Portal do Discente/Componente Curricular) ou em plataformas específicas como Google Classroom."
+    answer: (
+      <>
+        Os professores disponibilizam no{" "}
+        <a
+          href="https://sigaa.ufcg.edu.br/sigaa/verTelaLogin.do"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          SIGAA
+        </a>{" "}
+        (em suas respectivas turmas) ou em plataformas específicas como Google Classroom.
+      </>
+    )
   },
   {
     icon: <FaUserFriends />,

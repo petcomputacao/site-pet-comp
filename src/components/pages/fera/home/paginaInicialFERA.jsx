@@ -13,7 +13,7 @@ const PaginaInicialFERA = () => {
         <Reveal width='100%'>
           <div className="paginaInicial-FERA-conteudo">
             <div className='titulo-FERA-container'>
-              <h1 className="titulo-FERA-paginaInicial">Bem vindo a Página do Fera - Computação!</h1>
+              <h1 className="titulo-FERA-paginaInicial">Bem-vindos ao Guia do Fera</h1>
             </div>
           </div>
         </Reveal>

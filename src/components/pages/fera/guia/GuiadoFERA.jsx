@@ -9,11 +9,6 @@ const GuiadoFERA = () => {
       {/* Título e descrição */}
       <Reveal>
       <div className='titulo-descricao-guia-FERA-container'>
-        <div className='titulo-guia-FERA'>
-          <h1>
-            GUIA DO <span className='destaque-FERA'>FERA</span>
-          </h1>
-        </div>
         <div className='descricao-guia-FERA'>
           <p>
             Tudo que você precisa saber para navegar pelo campus da UFCG e aproveitar ao máximo sua experiência universitária desde o primeiro dia!
