@@ -3,14 +3,14 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 
 import Header           from './components/static/header/Header';
-import SecaoHome        from './components/pages/home/SecaoHome'
-import SecaoSobre       from './components/pages/sobre/SecaoSobre';
-import SecaoLinhas      from './components/pages/linhas/SecaoLinhas';
-import SecaoPetCompAcao from './components/pages/pet-comp-acao/SecaoPetCompAcao';
-import SecaoTutor       from './components/pages/membros/tutor/SecaoTutor'
-import SecaoMembros     from './components/pages/membros/membros-ativos/SecaoMembros'
+import SecaoHome        from './pages/pet/home/SecaoHome'
+import SecaoSobre       from './pages/pet/sobre/SecaoSobre';
+import SecaoLinhas      from './pages/pet/linhas/SecaoLinhas';
+import SecaoPetCompAcao from './pages/pet/pet-comp-acao/SecaoPetCompAcao';
+import SecaoTutor       from './pages/pet/membros/tutor/SecaoTutor'
+import SecaoMembros     from './pages/pet/membros/membros-ativos/SecaoMembros'
 import Footer           from './components/static/footer/Footer';
-import FeraPage         from './components/pages/fera/FeraPage';
+import FeraPage         from './pages/fera/FeraPage';
 
 
 function App() {

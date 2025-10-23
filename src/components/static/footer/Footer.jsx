@@ -1,6 +1,6 @@
 import './Footer.css';
 
-import MapsLocation from '../MapsLocation';
+import MapsLocation from '../../maps/MapsLocation';
 import { FaYoutube, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
 import { IoLogoGithub } from "react-icons/io";
