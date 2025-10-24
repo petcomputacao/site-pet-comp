@@ -38,16 +38,31 @@ export default function CampusMapsMaptiler() {
             };
 
             // poligonos
-            maptilersdk.helpers.addPolygon(map.current, {
-                data: polygons,
-                fillColor: "#0f0a5bff",
-                outline: true,
-                outlineWidth: 2,
-                outlineColor: "#0f0a5bab",
-                outlineDashArray: "_ ",
-                fillOpacity: 0.7,                
-            });
+            maptilersdk.helpers.addPolygon(
+                map.current, 
+                {
+                    data: polygons,
+                    fillColor: "#000a96",
+                    outline: true,
+                    outlineWidth: 0.1,
+                    outlineColor: "#0f0a5bab",
+                    fillOpacity: 0.7,                
+                    layout: {
+                        'text-field': ['get', 'Name'],
+                        'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
+                        'text-size': 14,
+                        'text-offset': [0, 0],
+                        'text-anchor': 'center'
+                    },
+                    paint: {
+                        'text-color': '#000000',
+                        'text-halo-color': '#ffffff',
+                        'text-halo-width': 1.5
+                    }
+                }
+            );
             
+            // pontos pra usar como referencia pros markers
             map.current.addSource('points', {
                 'type': 'geojson',
                 'data': points
@@ -59,11 +74,11 @@ export default function CampusMapsMaptiler() {
                 source: 'points',
                 layout: {
                     'icon-image': 'marker',
-                    'icon-size': 1.8,
-                    'icon-padding': 15,
+                    'icon-size': 1.5,
+                    'icon-padding': 0,
                 },
                 paint: {
-                    'icon-color': '#18727eff',
+                    'icon-color': '#ff0000ff',
                 }
             });
 
@@ -72,7 +87,7 @@ export default function CampusMapsMaptiler() {
                 closeOnClick: true
             });
 
-            map.current.on('mouseenter', 'point-layer', (e) => {
+            function showPopup(e) {
                 const coordinates = e.features[0].geometry.coordinates.slice();
                 const props = e.features[0].properties;
 
@@ -96,9 +111,14 @@ export default function CampusMapsMaptiler() {
                 popup.setLngLat(coordinates)
                     .setHTML(description)
                     .addTo(map.current);
-            });
+            };
 
-            map.current.on('mouseleave', 'point-layer', () => {
+            // adicionei pra ter suporte pra mobile
+            map.current.on('click', 'point-layer', showPopup);
+
+            map.current.on('mouseenter', 'point-layer', showPopup);
+
+            map.current.on('mouseout', 'point-layer', () => {
                 // popup.remove(); // depois alterar o layer pq ele retem apenas os pontos, e o usuário não consegue copiar as mensagens dos popups
             });
         })
