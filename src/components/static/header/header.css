@@ -1,0 +1,87 @@
+.navbar-container {
+  width: 100%;
+  height: 9vh;
+  position: fixed; 
+  top: 0;
+  left: 0;          
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  background:#000a96;
+}
+
+.image-navbar-container, 
+.redeSocial-navbar-container {
+  width: min-content;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoPET-image-navbar {
+  width: var(--title-font-size);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  font-size: var(--title-paragraph-font-size);
+  transition: all 0.3s ease;
+}
+
+.social-icon {
+  transition: transform 0.3s ease;
+}
+
+.social-link.icon-only {
+  justify-content: center;
+}
+
+/* parte CENTRAL da navbar */
+.buttons-navbar-container {
+  width: auto;
+}
+
+.navbar-list {
+  display: flex;
+  padding: 0;
+  gap: 10px;
+}
+
+.navbar-item {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  background: none;
+  border: none;
+  color: gray;
+  font: var(--other-font);
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar-link:hover {
+  color: #bdbdbd;
+}
+
+.navbar-link.active {
+  transform: scale(110%);
+  color: whitesmoke;
+}
+
+@media (max-width: 512px) {
+  .navbar-list {
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+}

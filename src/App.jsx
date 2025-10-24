@@ -2,75 +2,39 @@ import './App.css';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 
-import Header           from './components/static/header/Header';
-import SecaoHome        from './pages/pet/home/SecaoHome'
-import SecaoSobre       from './pages/pet/sobre/SecaoSobre';
-import SecaoLinhas      from './pages/pet/linhas/SecaoLinhas';
-import SecaoPetCompAcao from './pages/pet/pet-comp-acao/SecaoPetCompAcao';
-import SecaoTutor       from './pages/pet/membros/tutor/SecaoTutor'
-import SecaoMembros     from './pages/pet/membros/membros-ativos/SecaoMembros'
-import Footer           from './components/static/footer/Footer';
-import FeraPage         from './pages/fera/FeraPage';
-
+import Header   from './components/static/header/header.jsx';
+import PetPage  from './pages/pet/pet_page.jsx';
+import FeraPage from './pages/fera/fera_page';
+import Footer   from './components/static/footer/footer.jsx';
 
 function App() {
   return (
-    <Router basename='site-pet-comp'>
+    <Router basename='/'>
       <div className="App">
-        <div className="header">
+        <header className="header">
           <Header />
-        </div>
+        </header>
 
         <main>
           <Routes>
-            {/* Rota da Página Principal */}
-            <Route path="/" element={
-              <>
-                <section id="PaginaInicial-PET" className="paginaInicial">
-                  <SecaoHome />
-                </section>
+            <Route 
+              path="/" 
+              element={<PetPage />} 
+              />
 
-                <section className="Sobre">
-                  <SecaoSobre />
-                </section>
-
-                <section className="Projetos">
-                  <SecaoLinhas />
-                </section>
-
-                <div>
-                  <section id="Projetos" className='Producoes'>
-                    <SecaoPetCompAcao />
-                  </section>
-                </div>
-
-                <div className='blockpage'>
-                  <section className="PaginaTutor">
-                    <SecaoTutor/>
-                  </section>
-                </div>
-
-                <div className='blockpage'>
-                  <section id="Membros" className="PaginaMembros">
-                    <SecaoMembros />
-                  </section>
-                </div>
-              </>
-            } />
-
-            {/* Rota da Página Fera */}
-            <Route path="/fera" element={<FeraPage />} />
+            <Route 
+              path="/fera" 
+              element={<FeraPage />} 
+              />
           </Routes>
         </main>
-
-        {/* Rodapé da pagina */}
-        <footer className='Footer'>
-          <div className='Footer__logo-computacao-ufcg'>
+        <footer className='footer'>
+          <div className='footer__logo-computacao-ufcg'>
             <img src={process.env.PUBLIC_URL + "/images/logos/computacaoufcg_sem_fundo.png"} alt='logo-computacao-ufcg' className='logo-computacao-ufcg'/>
             <img src={process.env.PUBLIC_URL + "/images/logos/logo-ufcg.png"} alt="logo-ufcg" className='logo-ufcg' />
           </div>
           <Footer />
-      </footer>
+        </footer>
       </div>
     </Router>
   );

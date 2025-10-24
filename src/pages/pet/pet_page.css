@@ -1,0 +1,75 @@
+/*===========================================================*/
+
+/* seção Página Inicial */
+.paginaInicial{
+  height: min-content;
+  width: 100vw;
+  margin-top: auto;
+}
+
+/*===========================================================*/
+
+/* seção Sobre */
+.Sobre {
+  height: min-content;
+  width: 100vw;
+}
+
+/*===========================================================*/
+
+/* seção Projetos */
+.Projetos {
+  height: min-content;
+  width: 100vw;
+  margin-bottom: 5vh;
+}
+
+/*===========================================================*/
+
+/* seção Produções*/
+.Producoes {
+  height: min-content;
+  width: 100vw;
+  margin-bottom: 1vh;
+}
+
+
+/*===========================================================*/
+
+/* Pagina do Tutor */
+.PaginaTutor {
+  height: min-content;
+  width: 100vw;
+}
+
+/*===========================================================*/
+
+/* Pagina dos Membros */
+.PaginaMembros {
+  height: min-content;
+  width: 100vw;
+}
+
+/*===========================================================*/
+
+@media (max-width: 768px) {
+  .paginaInicial{
+    height: min-content;
+  }
+
+  .Sobre {
+    height: min-content;
+  }
+
+  .Projetos {
+    height: min-content;
+  }
+
+  .Producoes {
+    height: min-content;
+  }
+
+  .PaginaTutor {
+    height: min-content;
+  }
+}

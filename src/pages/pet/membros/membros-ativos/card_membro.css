@@ -1,0 +1,101 @@
+.galeria__item {
+  width: 95%;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: max-content;
+  border-radius: 8px;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item__foto-membro-ativo {
+  width: 60px;
+  aspect-ratio: 3/4;
+  border-radius: 5%;
+  object-fit: cover;
+  border: 2px solid #f0f0f0;
+}
+
+.item__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info__nome {
+  margin-left: 2%; 
+  margin-bottom: 3%;
+  font: var(--paragraph-font);
+  letter-spacing: 0.3px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.info__icones--redes {
+  display: flex;
+  gap: 2px;
+  margin-left: 2%; 
+}
+
+.redes__link--github {
+  color: black;
+}
+
+.redes__link--linkedin {
+  color: #0c7fbd;
+}
+
+.redes__link--linkedin,
+.redes__link--github {
+  transition: transform 0.3s ease;
+}
+
+.redes__link--linkedin:hover,
+.redes__link--github:hover {
+  transform: translateY(1px);
+}
+
+.linkedin__icone,
+.github__icone {
+  font-size: var(--paragraph-font-size);
+}
+
+@media (max-width: 540px) {
+    .galeria__item {
+        width: 100%;
+        margin-bottom: 3%;
+        gap: 8px;
+        justify-content: flex-start; 
+    }
+}
+
+@media (min-width: 541px) and (max-width: 768px) {
+    .galeria__item {
+        width: 80%;
+        margin-bottom: 4%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .galeria__item {
+        width: 98%;
+        margin-bottom: 4%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .galeria__item {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1440px) {
+  .galeria__item {
+    width: 95%;
+  }
+}

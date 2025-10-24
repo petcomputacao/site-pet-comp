@@ -1,0 +1,42 @@
+.ContainerPAGINAFERA{
+    background: rgb(250, 250, 255);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.mapa-FERA,
+.dicasdeVeterano-FERA,
+.perguntasFrequentes-FERA,
+.contatosImportantes-FERA,
+.guiaAcademico-FERA {
+    margin-top: 5%;
+}
+
+.paginaincial-FERA{
+    height:100vh;
+}
+
+.guia-FERA{
+    height: min-content;
+}
+
+.mapa-FERA{
+    height: min-content;
+}
+
+.dicasdeVeterano-FERA{
+    height: min-content;
+}
+
+.perguntasFrequentes-FERA{
+    height: min-content;
+}
+
+.contatosImportantes-FERA{
+    height: min-content;
+}
+
+.guiaAcademico-FERA{
+    height: min-content;
+}
+
