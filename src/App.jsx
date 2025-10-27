@@ -9,7 +9,7 @@ import Footer   from './components/static/footer/footer.jsx';
 
 function App() {
   return (
-    <Router basename='/'>
+    <Router basename='site-pet-comp'>
       <div className="App">
         <header className="header">
           <Header />
