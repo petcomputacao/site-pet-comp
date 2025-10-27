@@ -1,0 +1,116 @@
+.feras-guide-container {
+  width: 85%;
+  margin: 0 auto;
+  color: #333;
+  line-height: 1.6;
+}
+
+.feras-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feras-main-title {
+  width: 100%;
+  font: var(--title-font);
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.feras-introduction {
+  width: 100%;
+  font: var(--paragraph-font);
+  line-height: 1.4;
+  color: #464646;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+
+.disciplinas-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.disciplina-card {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+}
+
+.disciplina-titulo {
+  font: var(--paragraph-font);
+  letter-spacing: 1px;
+  color:  #000ece;
+  margin-bottom: 0px;
+}
+
+.disciplina-metadata {
+  font: var(--other-font);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 0px;
+  color: #555;
+}
+
+.disciplina-metadata__creditos {
+  display: flex;
+  gap: 5px;
+}
+.disciplina-info,
+.disciplina-principais-topicos,
+.disciplina-dicas-veterano {
+  font: var(--other-font);
+  flex: 1;
+  margin-bottom: 0px;
+  color: #444;
+}
+
+.topicos-titulo, 
+.dicas-titulo {
+  font: var(--paragraph-font);
+  letter-spacing: 1px;
+  color:  #000ece;
+  margin-bottom: 0px;
+}
+
+.topicos-lista, 
+.dicas-lista {
+  font: var(--other-font);
+  padding-left: 20px;
+  margin-bottom: 0px;
+}
+
+.topicos-lista li, 
+.dicas-lista li {
+  margin-bottom: 1px;
+}
+
+@media (max-width: 768px) {
+  .disciplina-card {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .disciplina-info,
+  .disciplina-principais-topicos,
+  .disciplina-dicas-veterano {
+    width: 100%;
+    flex: none;
+  }
+  
+  .disciplina-metadata {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

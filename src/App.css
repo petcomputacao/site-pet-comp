@@ -25,66 +25,12 @@ html, body {
   width: 75vw;
   margin: 0 auto;
 }
-/*===========================================================*/
 
-/* seção Página Inicial */
-.paginaInicial{
-  height: min-content;
-  width: 100vw;
-  margin-top: auto;
-}
-
-/*===========================================================*/
-
-/* seção Sobre */
-.Sobre {
-  height: min-content;
-  width: 100vw;
-}
-
-/*===========================================================*/
-
-/* seção Projetos */
-.Projetos {
-  height: min-content;
-  width: 100vw;
-  margin-bottom: 5vh;
-}
-
-/*===========================================================*/
-
-/* seção Produções*/
-.Producoes {
-  height: min-content;
-  width: 100vw;
-  margin-bottom: 1vh;
-}
-
-
-/*===========================================================*/
-
-/* Pagina do Tutor */
-.PaginaTutor {
-  height: min-content;
-  width: 100vw;
-}
-
-/*===========================================================*/
-
-/* Pagina dos Membros */
-.PaginaMembros {
-  height: min-content;
-  width: 100vw;
-}
-
-/*===========================================================*/
-
-.Footer {
+.footer {
   height: 65vh;
   width: 100vw;
   overflow-y: hidden;
 }
-/*===========================================================*/
 
 /* Responsividade MOBILE */
 @media (max-width: 768px) {
@@ -92,27 +38,7 @@ html, body {
     width: 100%;
   }
 
-  .paginaInicial{
-    height: min-content;
-  }
-
-  .Sobre {
-    height: min-content;
-  }
-
-  .Projetos {
-    height: min-content;
-  }
-
-  .Producoes {
-    height: min-content;
-  }
-
-  .PaginaTutor {
-    height: min-content;
-  }
-
-  .Footer {
+  .footer {
     height: min-content;
   }
 } 

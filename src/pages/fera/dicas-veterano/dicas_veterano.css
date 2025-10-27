@@ -1,0 +1,88 @@
+.dicas-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 5px;
+  color: #333;
+}
+
+.dicas-header {
+  width: 100%;
+}
+
+.dicas-header h1 {
+  font: var(--title-paragraph-font);
+  margin-bottom: 1rem;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.veterano-text {
+  color: #000769;
+  font-weight: bold;
+}
+
+.dicas-intro {
+  width: 100%;
+  font: var(--other-font);
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  color: #464646;
+  margin: 0 auto;
+}
+
+.dicas-content__titulo {
+  font: var(--paragraph-font);
+  margin-bottom: 15px;
+  color: #000;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.dicas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.dica-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.dica-card:hover {
+  transform: translateY(-5px);
+}
+
+.dica-card__cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dica-card__cabecalho--icon {
+  font-size: var(--paragraph-font-size);
+}
+
+.dica-card__cabecalho--titulo {
+  font: var(--paragraph-font);
+  color: #000769;
+  letter-spacing: 1px;
+}
+
+.dica-card__paragrafo {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #555;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1259px) {
+  .dicas-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

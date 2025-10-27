@@ -1,0 +1,48 @@
+.faq-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.faq-title {
+  width: 100%;
+  font: var(--title-paragraph-font);
+  margin-bottom: 35px;
+  color: #000;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.accordeon-wrapper {
+  margin-bottom: 2%;
+}
+
+.faq-pet-fera-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-header-fera {
+  text-align: center;
+}
+
+.faq-title-fera {
+  font-size: var(--title-paragraph-font-size);
+  color: #000000;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.pet-azul {
+  color: #1a1de8;
+  font-weight: 700;
+}
+
+.faq-subtitle-fera {
+  font: var(--paragraph-font);
+  color: #444444;
+}

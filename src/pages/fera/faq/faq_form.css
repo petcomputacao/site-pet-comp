@@ -1,0 +1,88 @@
+.faq-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+  margin: auto;
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.faq-form label {
+  font-weight: bold;
+}
+
+.faq-form input,
+.faq-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.faq-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.faq-form .erro {
+  color: red;
+  font-size: 14px;
+}
+
+.faq-form .sucesso {
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.faq-form button {
+  background: #0077ff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.faq-form button:hover {
+  background: #0054bb;
+}
+
+.faq-form button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  color: #666;
+}
+
+.erro-validacao {
+  color: #d32f2f;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.erro-input {
+  border-color: #d32f2f !important;
+  background-color: #fff5f5;
+}
+
+.faq-form input,
+.faq-form textarea {
+  transition: border-color 0.3s ease;
+}
+
+.erro {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.sucesso {
+  color: #2e7d32;
+  background-color: #e8f5e9;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
