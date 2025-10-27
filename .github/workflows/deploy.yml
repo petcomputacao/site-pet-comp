@@ -1,8 +1,11 @@
-name: Deploy React App
+name: Deploy React App to GitHub Pages
 
 on:
   push:
-    branches: ["main"]  # branch que dispara o deploy
+    branches: ["main"]
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -18,15 +21,15 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
-      - name: Create .env from secrets
+      - name: Create .env from GitHub Secrets
         run: |
-          echo "REACT_APP_MAPTILER_API_KEY=${{ secrets.REACT_APP_MAPTILER_API_KEY }}" >> .env
-          echo "REACT_APP_MAPTILER_DATASET_ID=${{ secrets.REACT_APP_MAPTILER_DATASET_ID }}" >> .env
-          echo "REACT_APP_META_API_ACCESS=${{ secrets.META_REACT_APP_META_API_ACCESSAPP_ID }}" >> .env
+          echo "REACT_APP_MAPTILER_KEY=${{ secrets.MAPTILER_KEY }}" >> .env
+          echo "REACT_APP_GRAPH_API_TOKEN=${{ secrets.GRAPH_API_TOKEN }}" >> .env
+          echo "REACT_APP_META_APP_ID=${{ secrets.META_APP_ID }}" >> .env
 
-      - name: Build
+      - name: Build project
         run: npm run build
 
       - name: Deploy to GitHub Pages
@@ -34,3 +37,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+          publish_branch: gh-pages
