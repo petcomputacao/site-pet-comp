@@ -7,7 +7,7 @@ export default function CampusMapsMaptiler() {
     const mapContainer = useRef(null);
     const map = useRef(null);
     const ufcg = { lng: -35.908225, lat: -7.214407 };
-    const zoom = 17;
+    const zoom = 16;
     const geoData = process.env.REACT_APP_MAPTILER_DATASET_ID;
     maptilersdk.config.apiKey = process.env.REACT_APP_MAPTILER_API_KEY;
 
