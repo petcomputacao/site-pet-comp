@@ -32,7 +32,7 @@ Para saber como ter acesso às APIs, verifique o drive do PET.
 
 - **Meta Graph API** – Acesso e manipulação de dados de páginas e perfis do Facebook/Instagram. [Repositório da API](https://github.com/petcomputacao/instagram-api).
 
-- **Google Scripts** – Integração com perguntas preenchidas pelo forms. Automaticamente adiciona na tabela e envia a notificação ao email.
+- **Google Apps Scripts** – Integração com perguntas preenchidas pelo forms. Automaticamente adiciona na tabela e envia a notificação ao email.
 
 
 ### Ferramentas de Build e Deploy
