@@ -3,6 +3,12 @@ import * as maptilersdk from '@maptiler/sdk';
 import "@maptiler/sdk/dist/maptiler-sdk.css";
 import './campus_maps_maptiler.css';
 
+
+/**
+ * Componente de mapa interativo do campus utilizando MapTiler SDK.
+ * Utiliza dados GeoJSON para exibir polígonos e pontos de interesse.
+ * Os dados vêm do data set criado na plataforma MapTiler na conta do PET.
+ */
 export default function CampusMapsMaptiler() {
     const mapContainer = useRef(null);
     const map = useRef(null);

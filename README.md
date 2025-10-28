@@ -7,7 +7,7 @@
 
 ---
 
-🔗 **Acesse o site:** [petcomputacao.github.io/site-pet-comp](https://petcomputacao.github.io/site-pet-comp/)
+🔗 **Acesse o site:** <a href="https://petcomputacao.github.io/site-pet-comp/" target="_blank" rel="noopener noreferrer">petcomputacao.github.io/site-pet-comp</a>
 
 ---
 
@@ -27,17 +27,23 @@ O site reúne informações sobre o grupo, projetos, membros e oferece uma forma
 
 
 ### APIs e Integrações
-Para saber como ter acesso às APIs, verifique o drive do PET.
-- **Maptiler API** – Renderização de mapas customizados e interação geográfica.
+Para saber como ter acesso às chaves das APIs, verifique o drive do PET.
 
-- **Meta Graph API** – Acesso e manipulação de dados de páginas e perfis do Facebook/Instagram. [Repositório da API](https://github.com/petcomputacao/instagram-api).
+- **Maptiler API** – Renderização de mapas customizados e interação geográfica. <a href="https://cloud.maptiler.com/maps/" target="_blank" rel="noopener noreferrer">Faça login na plataforma</a> e veja o dataset criado.
 
-- **Google Apps Scripts** – Integração com perguntas preenchidas pelo forms. Automaticamente adiciona na tabela e envia a notificação ao email.
+    - Aqui, recomendo fortemente a leitura da <a href="https://docs.maptiler.com/sdk-js/api/" target="_blank" rel="noopener noreferrer">documentação oficial</a>.
+
+- **Meta Graph API** – Acesso e manipulação de dados de páginas e perfis do Facebook/Instagram. <a href="https://github.com/petcomputacao/instagram-api" target="_blank" rel="noopener noreferrer">Repositório da API</a>.
+
+    - Aqui, recomendo esse <a href="https://youtu.be/BuF9g9_QC04?si=dlHJ3E0bcugTLgVW" target="_blank" rel="noopener noreferrer">tutorial do youtube</a>.
+
+- **Google Apps Scripts** – Integração com perguntas preenchidas pelo forms. Automaticamente adiciona na tabela e envia a notificação ao email. <a href="https://script.google.com/home" target="_blank" rel="noopener noreferrer">Faça login na plataforma</a>.
 
 
 ### Ferramentas de Build e Deploy
 - **React Scripts (Create React App)** – Estrutura base do projeto.
-- **GH Pages** – Publicação do projeto diretamente no GitHub Pages.
+- **Github Actions** – Pipeline automatizada de deploy.
+- **GH Pages** – Hospedagem do projeto diretamente no GitHub Pages.
 
 ---
 
@@ -88,7 +94,9 @@ npm start
 
 ### Deploy automatizado via Github Actions!
 
-Dê uma olhada no [arquivo de configuração](./.github/workflows/deploy.yml).
+Basta realizar **`push`** na **`branch main`** e, _**caso obtenha sucesso**_, deploy realizado!
+
+Dê uma olhada no <a href="./.github/workflows/deploy.yml" target="_blank" rel="noopener noreferrer">arquivo de configuração</a>.
 
 ---
 
