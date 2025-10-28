@@ -18,17 +18,14 @@ export default function FAQForm() {
   function validarFormulario() {
     const novosErros = {};
 
-    // Validação do email
     if (!regexEmail.test(email)) {
       novosErros.email = "Email deve ser no formato: usuario@ccc.ufcg.edu.br ou usuario@computacao.ufcg.edu.br";
     }
 
-    // Validação da matrícula
     if (!regexMatricula.test(matricula)) {
       novosErros.matricula = "Matrícula deve conter exatamente 9 dígitos numéricos";
     }
 
-    // Validação da pergunta
     if (pergunta.trim().length === 0) {
       novosErros.pergunta = "Dúvida não pode ser vazia";
     }

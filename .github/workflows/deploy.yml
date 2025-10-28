@@ -23,6 +23,21 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Validate secrets
+        run: |
+          if [ -z "${{ secrets.MAPTILER_API_KEY }}" ]; then
+            echo "Erro: MAPTILER_API_KEY não definido."
+            exit 1
+          fi
+          if [ -z "${{ secrets.MAPTILER_DATASET_ID }}" ]; then
+            echo "Erro: MAPTILER_DATASET_ID não definido."
+            exit 1
+          fi
+          if [ -z "${{ secrets.META_API_ACCESS }}" ]; then
+            echo "Erro: META_API_ACCESS não definido."
+            exit 1
+          fi
+
       - name: Create .env from GitHub Secrets
         run: |
           echo REACT_APP_MAPTILER_API_KEY="${{ secrets.MAPTILER_API_KEY }}" >> .env
@@ -33,6 +48,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
+        if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
