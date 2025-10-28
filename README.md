@@ -13,6 +13,7 @@
 
 Repositório oficial do **site do PET Computação – UFCG**, desenvolvido para divulgar o Programa de Educação Tutorial em Ciência da Computação da Universidade Federal de Campina Grande.  
 O site reúne informações sobre o grupo, projetos, membros e oferece uma forma dinâmica e fácil de manutenção.
+
 ---
 
 ## ⚙️ Tecnologias e Ferramentas
@@ -24,11 +25,14 @@ O site reúne informações sobre o grupo, projetos, membros e oferece uma forma
 - **Lucide React / React Icons / React Feather** – Ícones vetoriais otimizados.
 - **Swiper / Embla Carousel** – Implementação de carrosséis e sliders interativos.
 
+
 ### APIs e Integrações
 Para saber como ter acesso às APIs, verifique o drive do PET.
 - **Maptiler API** – Renderização de mapas customizados e interação geográfica.
 
 - **Meta Graph API** – Acesso e manipulação de dados de páginas e perfis do Facebook/Instagram. [Repositório da API](https://github.com/petcomputacao/instagram-api).
+
+- **Google Scripts** – Integração com perguntas preenchidas pelo forms. Automaticamente adiciona na tabela e envia a notificação ao email.
 
 
 ### Ferramentas de Build e Deploy
@@ -82,17 +86,9 @@ npm start
 
 ## Deploy
 
-#### Garanta que a versão de deploy estejam na `branch main`
+### Deploy automatizado via Github Actions!
 
-```bash
-# instale as dependências usando o seu gerenciador de pacotes
-npm install gh-pages --save-dev
-
-# hora o deploy
-npm run deploy
-```
-
-Isso fará com que o deploy se associe a branch `gh-pages` que é criada automáticamente. Mais detalhes em package.json
+Dê uma olhada no [arquivo de configuração](./.github/workflows/deploy.yml).
 
 ---
 
