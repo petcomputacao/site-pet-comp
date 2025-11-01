@@ -33,7 +33,7 @@ Para saber como ter acesso às chaves das APIs, verifique o drive do PET.
 
     - Aqui, recomendo fortemente a leitura da <a href="https://docs.maptiler.com/sdk-js/api/" target="_blank" rel="noopener noreferrer">documentação oficial</a>.
 
-- **Meta Graph API** – Acesso e manipulação de dados de páginas e perfis do Facebook/Instagram. <a href="https://github.com/petcomputacao/instagram-api" target="_blank" rel="noopener noreferrer">Repositório da API</a>.
+- **Meta Graph API** – Acesso e manipulação de dados de páginas e perfis do Facebook/Instagram. <a href="https://github.com/petcomputacao/meta-graph-api" target="_blank" rel="noopener noreferrer">Repositório da API</a>.
 
     - Aqui, recomendo esse <a href="https://youtu.be/BuF9g9_QC04?si=dlHJ3E0bcugTLgVW" target="_blank" rel="noopener noreferrer">tutorial do youtube</a>.
 
