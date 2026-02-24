@@ -1,7 +1,7 @@
 .carousel {
   position: relative;
   width: 100%;
-  height: 400px;
+  min-height: 400px; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,8 @@
 /* Slides base - ATUALIZADO */
 .swiper-slide {
   width: 70%; /* Aumentado de 60% para 70% */
-  height: 80%;
+  height: auto;
+  min-height: 80%;
   background: white;
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);

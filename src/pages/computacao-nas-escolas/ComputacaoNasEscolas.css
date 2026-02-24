@@ -81,3 +81,33 @@
 .page-section {
   margin-bottom: 2.5rem;
 }
+
+@media (max-width: 768px) {
+
+  .page-container {
+    width: 95%;
+    padding: 1.5rem 0;
+  }
+
+  .hero-wrapper {
+    flex-direction: column;   /* empilha no mobile */
+    gap: 1.5rem;
+  }
+
+  .hero-banner {
+    width: 100%;              /* ocupa largura da tela */
+    max-width: 100%;
+    height: auto;
+  }
+
+  .page-title {
+    font-size: 1.8rem;        /* reduz título */
+    max-width: 100%;
+  }
+
+  .download-link {
+    width: 100%;              /* botão ocupa largura toda */
+    text-align: center;
+  }
+
+}
