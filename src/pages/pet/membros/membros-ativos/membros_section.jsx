@@ -52,7 +52,7 @@ export default function MembrosSection() {
             linkGithub: "https://github.com/AugustoBritoLopes"
         },
         {
-            imagem: "/images/membros/lorena-nascimentoã-carvalho-gama.png",
+            imagem: "/images/membros/lorena-nascimento-carvalho-gama.png",
             nome: "Lorena Nascimento",
             linkLinkedin: null,
             linkGithub: "https://github.com/lorenacarvalho"
