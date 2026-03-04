@@ -17,10 +17,9 @@ export default function MembrosSection() {
             linkGithub: "https://github.com/CarlosArturr"
         },
         {
-            imagem: "/images/membros/denilson-deivid-lima-silva.png",
-            nome: "Denilson Deivid",
-            linkLinkedin: "https://www.linkedin.com/in/denilson-silva-75b170206/",
-            linkGithub: "https://github.com/denilsondeivid"
+            imagem: "/images/membros/pedro-leal-e-lima.png",
+            nome: "Pedro Leal",
+            linkGithub: "https://github.com/pedroleal02"
         },
         {
             imagem: "/images/membros/fabiana-simplicio-da-silva.png",
@@ -35,34 +34,34 @@ export default function MembrosSection() {
             linkGithub: "https://github.com/GabrielRodrigues-42"
         },
         {
-            imagem: "/images/membros/julia-cruz-de-araujo-andrade.png",
-            nome: "Júlia Cruz",
-            linkLinkedin: "https://www.linkedin.com/in/j%C3%BAlia-cruz-1699262b4/",
-            linkGithub: "https://github.com/juliacruzandrade"
+            imagem: "/images/membros/luiz-anselmo-medeiros-lima.png",
+            nome: "Luiz Anselmo",
+            linkLinkedin: "https://www.linkedin.com/in/luiz-anselmo-medeiros-lima",
+            linkGithub: "https://github.com/luizmlima"
         },
         {
-            imagem: "/images/membros/rafael-antonio-de-lucena-serey.png",
-            nome: "Rafael Serey",
-            linkLinkedin: null,
-            linkGithub: "https://github.com/rafaelserey"
+            imagem: "/images/membros/marina-morais-lacerda.png",
+            nome: "Marina Lacerda",
+            linkLinkedin: "https://www.linkedin.com/in/marina-lacerda-a7b38b333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+            linkGithub: "https://github.com/marinamoraisml"
         },
         {
-            imagem: "/images/membros/erik-luan-rodrigues-florencio.png",
-            nome: "Erik Luan",
-            linkLinkedin: "https://www.linkedin.com/in/erik-luan/",
-            linkGithub: "https://github.com/Smilke"
+            imagem: "/images/membros/augusto-de-brito-lopes.png",
+            nome: "Augusto Lopes",
+            linkLinkedin: "https://www.linkedin.com/in/augusto-lopes-7a6399264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkGithub: "https://github.com/AugustoBritoLopes"
         },
         {
-            imagem: "/images/membros/lorena-nascimento-carvalho-gama.png",
+            imagem: "/images/membros/lorena-nascimentoã-carvalho-gama.png",
             nome: "Lorena Nascimento",
             linkLinkedin: null,
             linkGithub: "https://github.com/lorenacarvalho"
         },
         {
-            imagem: "/images/membros/ryan-vinnicius-tielles-almeida-da-silva.png",
-            nome: "Ryan Vinnícius",
-            linkLinkedin: "https://www.linkedin.com/in/ryanvinnicius/",
-            linkGithub: "https://github.com/ryanvinn"
+            imagem: "/images/membros/gleydson-fabricio-rodrigues-de-moura.png",
+            nome: "Gleydson Fabrício",
+            linkLinkedin: null,
+            linkGithub: "https://github.com/gleydsonfabricio"
         }
     ];
 

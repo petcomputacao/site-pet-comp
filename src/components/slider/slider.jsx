@@ -25,28 +25,28 @@ const SliderImages = () => {
       }}>
         <div className="slide">
           <img
-            src={process.env.PUBLIC_URL + "/images/logo-pet-branco.png"}
+            src={process.env.PUBLIC_URL + "/images/logos/logo-pet-branco.png"}
             alt="Logo da UFCG"
             className="slide-image"
           />
         </div>
         <div className="slide">
           <img
-            src={process.env.PUBLIC_URL + "/images/logo-pet-branco.png"}
+            src={process.env.PUBLIC_URL + "/images/logos/logo-pet-branco.png"}
             alt="Logo da UFCG"
             className="slide-image"
           />
         </div>
         <div className="slide">
           <img
-            src={process.env.PUBLIC_URL + "/images/logo-pet-branco.png"}
+            src={process.env.PUBLIC_URL + "/images/logos/logo-pet-branco.png"}
             alt="Logo da UFCG"
             className="slide-image"
           />
         </div>
         <div className="slide">
           <img
-            src={process.env.PUBLIC_URL + "/images/logo-pet-branco.png"}
+            src={process.env.PUBLIC_URL + "/images/logos/logo-pet-branco.png"}
             alt="Logo da UFCG"
             className="slide-image"
           />
