@@ -1,6 +1,6 @@
 import React from "react";
-import "./ComputacaoNasEscolas.css"; // estilos específicos da página
-import "../../App.css"; // estilos globais (fontes)
+import "./ComputacaoNasEscolas.css";
+import "../../App.css";
 
 export default function ComputacaoNasEscolas() {
   const pdfUrl = `${process.env.PUBLIC_URL || ""}/pdfs/computacao-nas-escolas.pdf`;
@@ -8,8 +8,6 @@ export default function ComputacaoNasEscolas() {
 
   return (
     <div className="page-container">
-
-      {/* IMAGEM + TÍTULO LADO A LADO */}
       <div className="hero-wrapper">
 
         <img
