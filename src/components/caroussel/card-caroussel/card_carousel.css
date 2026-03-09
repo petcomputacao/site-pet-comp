@@ -25,13 +25,14 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   opacity: 0.6;
   transform: scale(0.9);
   transition: transform 0.6s ease, opacity 0.6s ease;
   cursor: grab;
   margin: 0 auto; /* Centralização adicional */
+  overflow-y: auto;
 }
 
 /* Slide ativo (centro) - MELHORADO */
@@ -65,6 +66,15 @@
   line-height: 1.4;
 }
 
+.slide-link {
+  margin-top: auto;
+  display: inline-block;
+  font-weight: 700;
+  color: #023d8b;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 /* NOVO: Container para centralização adicional */
 .swiper-wrapper {
   display: flex;
@@ -79,11 +89,22 @@
 
   .swiper-slide {
     width: 85%; /* Aumentado para mobile */
-    height: 85%;
+    height: 88%;
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .slide-title {
+    font-size: 1.4rem;
+    line-height: 1.2;
   }
 
   .slide-body {
-    line-height: 1.2;
+    line-height: 1.35;
+  }
+
+  .slide-link {
+    font-size: 0.95rem;
   }
   
   .carousel-track {
