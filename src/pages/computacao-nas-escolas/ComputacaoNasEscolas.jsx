@@ -77,16 +77,14 @@ export default function ComputacaoNasEscolas() {
         </p>
       </section>
 
-      <section className="page-section">
-        <a
-          href="/pdfs/computacao-nas-escolas.pdf"
-          className="download-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ⬇️ Baixar PDF completo
-        </a>
-      </section>
+      <a
+        href="/site-pet-comp/pdfs/computacao-nas-escolas.pdf"
+        className="download-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ⬇️ Baixar PDF completo
+      </a>
 
     </div>
   );
