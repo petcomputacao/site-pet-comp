@@ -80,8 +80,9 @@ export default function ComputacaoNasEscolas() {
       <section className="page-section">
         <a
           href="/pdfs/computacao-nas-escolas.pdf"
-          download="computacao-nas-escolas.pdf"
           className="download-link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           ⬇️ Baixar PDF completo
         </a>
