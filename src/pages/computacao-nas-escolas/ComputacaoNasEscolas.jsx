@@ -4,6 +4,7 @@ import "../../App.css"; // estilos globais (fontes)
 
 export default function ComputacaoNasEscolas() {
   const pdfUrl = `${process.env.PUBLIC_URL || ""}/pdfs/computacao-nas-escolas.pdf`;
+  const heroImageUrl = `${process.env.PUBLIC_URL || ""}/images/computacao-nas-escolas/computacao-nas-escolas.jpg`;
 
   return (
     <div className="page-container">
@@ -12,7 +13,7 @@ export default function ComputacaoNasEscolas() {
       <div className="hero-wrapper">
 
         <img
-          src="./images/computacao-nas-escolas/computacao-nas-escolas.jpg"
+          src={heroImageUrl}
           alt="Computação nas Escolas"
           className="hero-banner"
         />
