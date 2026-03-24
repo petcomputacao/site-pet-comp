@@ -1,16 +1,17 @@
 import React from "react";
-import "./ComputacaoNasEscolas.css"; // estilos específicos da página
-import "../../App.css"; // estilos globais (fontes)
+import "./ComputacaoNasEscolas.css";
+import "../../App.css";
 
 export default function ComputacaoNasEscolas() {
+  const pdfUrl = `${process.env.PUBLIC_URL || ""}/pdfs/computacao-nas-escolas.pdf`;
+  const heroImageUrl = `${process.env.PUBLIC_URL || ""}/images/computacao-nas-escolas/computacao-nas-escolas.jpg`;
+
   return (
     <div className="page-container">
-
-      {/* IMAGEM + TÍTULO LADO A LADO */}
       <div className="hero-wrapper">
 
         <img
-          src="./images/computacao-nas-escolas/computacao-nas-escolas.jpg"
+          src={heroImageUrl}
           alt="Computação nas Escolas"
           className="hero-banner"
         />
@@ -26,8 +27,6 @@ export default function ComputacaoNasEscolas() {
           A presença da tecnologia no cotidiano de crianças e jovens torna essencial que as escolas abordem não só habilidades técnicas, mas também o uso responsável e consciente das ferramentas digitais. Por isso, é fundamental discutir ética, segurança, participação e respeito nas interações on-line.
           Dentro dessa perspectiva, o <b>Pet Computação - UFCG</b> desenvolve a linha <b>Computação nas Escolas</b>, que tem como objetivo promover a <b>cidadania digital</b> no ambiente escolar. As nossas iniciativas buscam incentivar o ensino da cidadania digital, realizar pesquisas sobre o tema, produzir sequências didáticas alinhadas à BNCC de Computação (2022) e promover ações de extensão que aproximem universidade e escola.
         </p>
-
-
       </section>
 
       <section className="page-section">
@@ -47,7 +46,7 @@ export default function ComputacaoNasEscolas() {
         <h2 className="section-title">Sequências Didáticas</h2>
 
         <p className="paragraph">
-          A sequência didática (SD) é uma forma de organização pedagógica que visa à construção progressiva e intencional do conhecimento. Trata-se de um conjunto articulado de atividades, organizadas em torno de um objetivo de aprendizagem claro e situado, que promove o desenvolvimento de habilidades de forma gradual, sistemática e signifi cativa.
+          A sequência didática (SD) é uma forma de organização pedagógica que visa à construção progressiva e intencional do conhecimento. Trata-se de um conjunto articulado de atividades, organizadas em torno de um objetivo de aprendizagem claro e situado, que promove o desenvolvimento de habilidades de forma gradual, sistemática e significativa.
           Seguindo essa proposta, produzimos SDs baseadas na BNCC de Computação e adotamos as seguintes etapas no planejamento das aulas:
         </p>
 
@@ -69,22 +68,23 @@ export default function ComputacaoNasEscolas() {
       </section>
 
       <section className="page-section">
-        <h2 className="section-title">Faça o Download do PDF com as Sequências Didáticas</h2>
+        <h2 className="section-title">
+          Faça o Download do PDF com as Sequências Didáticas
+        </h2>
 
         <p className="paragraph">
           Nossas Sequências Didáticas foram elaboradas especialmente para apoiar professores do Ensino Fundamental I que desejam trabalhar temas de Cidadania Digital em suas aulas.
           O material pode ser utilizado diretamente em sala ou servir como inspiração para planejar atividades alinhadas à BNCC. Com essas propostas, você pode incorporar a Cidadania Digital ao cotidiano escolar, promovendo práticas seguras, éticas e colaborativas no ambiente online, e, principalmente, poderá preparar seus alunos para um mundo cada vez mais conectado.
         </p>
-      </section>
 
-      <section className="page-section">
         <a
-          href="/pdfs/computacao-nas-escolas.pdf"
-          download="computacao-nas-escolas.pdf"
+          href={pdfUrl}
           className="download-link"
+          download="computacao-nas-escolas.pdf"
         >
           ⬇️ Baixar PDF completo
         </a>
+
       </section>
 
     </div>
