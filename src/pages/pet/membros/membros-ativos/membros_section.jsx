@@ -22,10 +22,10 @@ export default function MembrosSection() {
             linkGithub: "https://github.com/pedroleal02"
         },
         {
-            imagem: "/images/membros/fabiana-simplicio-da-silva.png",
-            nome: "Fabiana Simplício",
-            linkLinkedin: "https://www.linkedin.com/in/fabiana-simpl%C3%ADcio-a83b922b0/",
-            linkGithub: "https://github.com/fabisimplicio"
+            imagem: "/images/membros/ana_paula_soares_torres_cassimiro.png",
+            nome: "Ana Paula Cassimiro",
+            linkLinkedin: null,
+            linkGithub: "https://github.com/ana-paula-soares"
         },
         {
             imagem: "/images/membros/gabriel-oliveira-rodrigues.png",
