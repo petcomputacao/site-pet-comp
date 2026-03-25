@@ -15,13 +15,15 @@ export default function HomeSection () {
             <div className='texto-overlay-container'>
                 <div className='texto-box'>
                     <Reveal width="100%">
-                        <h1 className='titulo-texto-paginaInicial'>Você já conhece o PET Computação?</h1>
+                        <h1 className='titulo-texto-paginaInicial'>PET Computação UFCG</h1>
                     </Reveal>
                     
                     <Reveal width="100%">
-                        <div className='corpo-texto-paginaInicial'>
-                            <p>Somos um grupo de estudantes de Ciência da Computação da UFCG que, junto ao tutor, desenvolve projetos de ensino, pesquisa e extensão para transformar o nosso ambiente acadêmico e contribuir com a sociedade.</p>
-                        </div>
+                        <p className='corpo-texto-paginaInicial'>
+                            O PET Computação da Universidade Federal de Campina Grande (UFCG)
+                            é um grupo de estudantes que desenvolve projetos de ensino, pesquisa e extensão
+                            na área de computação.
+                        </p>
                     </Reveal>
                     
                     <Reveal width="100%">
