@@ -28,10 +28,10 @@ export default function MembrosSection() {
             linkGithub: "https://github.com/ana-paula-soares"
         },
         {
-            imagem: "/images/membros/gabriel-oliveira-rodrigues.png",
-            nome: "Gabriel Oliveira",
-            linkLinkedin: "https://www.linkedin.com/in/gabrieloliveira42/",
-            linkGithub: "https://github.com/GabrielRodrigues-42"
+            imagem: "/images/membros/lucas-farias-bezerra-de-lima.png",
+            nome: "Lucas Lima",
+            linkLinkedin: null,
+            linkGithub: "https://github.com/lucasfariasbl"
         },
         {
             imagem: "/images/membros/luiz-anselmo-medeiros-lima.png",
@@ -48,7 +48,7 @@ export default function MembrosSection() {
         {
             imagem: "/images/membros/augusto-de-brito-lopes.png",
             nome: "Augusto Lopes",
-            linkLinkedin: "https://www.linkedin.com/in/augusto-lopes-7a6399264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            linkLinkedin: "https://www.linkedin.com/in/augusto-lopes-7a6399264?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_appã",
             linkGithub: "https://github.com/AugustoBritoLopes"
         },
         {
@@ -62,6 +62,12 @@ export default function MembrosSection() {
             nome: "Gleydson Fabrício",
             linkLinkedin: null,
             linkGithub: "https://github.com/gleydsonfabricio"
+        },
+        {
+            imagem: "/images/membros/maria-eduarda-ramos-lucena-maia.png",
+            nome: "Eduarda Maia",
+            linkLinkedin: "https://www.linkedin.com/in/maria-eduarda-ramos-317350357",
+            linkGithub: "https://github.com/eduardarlmaia"
         }
     ];
 
