@@ -68,6 +68,12 @@ export default function MembrosSection() {
             nome: "Eduarda Maia",
             linkLinkedin: "https://www.linkedin.com/in/maria-eduarda-ramos-317350357",
             linkGithub: "https://github.com/eduardarlmaia"
+        },
+        {
+            imagem: "/images/membros/artur-catao-de-sousa-agra-do-o.png",
+            nome: "Artur Catão",
+            linkLinkedin: null,
+            linkGithub: "https://github.com/arturcatao"
         }
     ];
 
