@@ -9,7 +9,6 @@ export default function ComputacaoNasEscolas() {
   return (
     <div className="page-container">
       <div className="hero-wrapper">
-
         <img
           src={heroImageUrl}
           alt="Computação nas Escolas"
@@ -67,6 +66,58 @@ export default function ComputacaoNasEscolas() {
         </p>
       </section>
 
+      {/* --- NOVA SEÇÃO ADICIONADA --- */}
+      <section className="page-section">
+        <h2 className="section-title">Iniciativas e Registros</h2>
+        
+        <div style={{ marginBottom: '20px' }}>
+          <h3>Clubinho Digital (IPEN - Casinha de Brinquedo)</h3>
+          <p className="paragraph">
+            Projeto executado continuamente desde 2021, levando conceitos de tecnologia e cidadania para os pequenos.
+          </p>
+          <ul className="section-list">
+            <li>
+              <a href="https://www.youtube.com/watch?v=Ap3X6peFp-A" target="_blank" rel="noopener noreferrer">
+                🎥 Assista ao vídeo do Clubinho Digital 2025
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Computação nas Escolas (Associação São Domingos Sávio)</h3>
+          
+          <p className="paragraph"><strong>Edição 2024:</strong></p>
+          <ul className="section-list">
+            <li>
+              <a href="https://www.instagram.com/p/DDzburAgDwK/" target="_blank" rel="noopener noreferrer">
+                📸 Registro de divulgação da Associação
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/reels/DEnBLGZuRJ2/" target="_blank" rel="noopener noreferrer">
+                🎬 Reel de divulgação da UFCG
+              </a>
+            </li>
+          </ul>
+
+          <p className="paragraph"><strong>Edição 2025:</strong></p>
+          <ul className="section-list">
+            <li>
+              <a href="https://drive.google.com/file/d/1WADD6u_rfn7QZpc9LRZEjkbU1uBPaRbp/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                📁 Atividades com Crianças
+              </a>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1x-vz528VjhA-5UK7yFkzskM0rsz_uI9i/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                📁 Atividades com Adolescentes
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      {/* ---------------------------- */}
+
       <section className="page-section">
         <h2 className="section-title">
           Faça o Download do PDF com as Sequências Didáticas
@@ -84,9 +135,7 @@ export default function ComputacaoNasEscolas() {
         >
           ⬇️ Baixar PDF completo
         </a>
-
       </section>
-
     </div>
   );
 }
