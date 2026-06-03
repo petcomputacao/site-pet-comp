@@ -28,10 +28,10 @@ export default function MembrosSection() {
             linkGithub: "https://github.com/ana-paula-soares"
         },
         {
-            imagem: "/images/membros/lucas-farias-bezerra-de-lima.png",
-            nome: "Lucas Lima",
-            linkLinkedin: null,
-            linkGithub: "https://github.com/lucasfariasbl"
+            imagem: "/images/membros/andre-victor-cirino-alves.png",
+            nome: "André Victor",
+            linkLinkedin: "https://www.linkedin.com/in/andré-alves-139741283?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+            linkGithub: "https://github.com/AndreAllves/"
         },
         {
             imagem: "/images/membros/luiz-anselmo-medeiros-lima.png",
@@ -52,10 +52,10 @@ export default function MembrosSection() {
             linkGithub: "https://github.com/AugustoBritoLopes"
         },
         {
-            imagem: "/images/membros/lorena-nascimento-carvalho-gama.png",
-            nome: "Lorena Nascimento",
-            linkLinkedin: null,
-            linkGithub: "https://github.com/lorenacarvalho"
+            imagem: "/images/membros/ariany-da-silva-de-macena.png",
+            nome: "Ariany Macena",
+            linkLinkedin: "https://www.linkedin.com/in/arianymacena",
+            linkGithub: "https://github.com/ArianyMacena"
         },
         {
             imagem: "/images/membros/gleydson-fabricio-rodrigues-de-moura.png",
