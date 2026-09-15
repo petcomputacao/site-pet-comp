@@ -66,6 +66,7 @@ export default function ComputacaoNasEscolas() {
         </p>
       </section>
 
+      {/* ---ALTERA;'AO FEITA POR ARTHUR --- */}
       {/* --- NOVA SEÇÃO ADICIONADA --- */}
       <section className="page-section">
         <h2 className="section-title">Iniciativas e Registros</h2>
