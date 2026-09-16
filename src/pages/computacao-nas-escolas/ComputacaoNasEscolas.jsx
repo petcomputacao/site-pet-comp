@@ -180,11 +180,17 @@ export default function ComputacaoNasEscolas() {
               ⬇️ Baixar PDF completo
             </a>
           </div>
-          <img
-            src={`${process.env.PUBLIC_URL || ""}/images/computacao-nas-escolas/sequencias_didaticas.png`}
-            alt={"Sequencias Didáticas"}
-            className="initiative-image-sequencias"
-          />
+          <a
+            href={pdfUrl}
+            download="computacao-nas-escolas.pdf"
+            className="download-sequencias"
+          >
+            <img
+              src={`${process.env.PUBLIC_URL || ""}/images/computacao-nas-escolas/sequencias_didaticas.png`}
+              alt="Sequências Didáticas"
+              className="initiative-image-sequencias"
+            />
+          </a>
         </div>
       </section>
 
