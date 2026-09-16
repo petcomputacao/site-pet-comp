@@ -97,6 +97,24 @@
   }
 }
 
+@media (max-width: 700px) { 
+
+  .initiative-card { 
+    flex-direction: column; 
+    align-items: stretch; } 
+  
+  .initiative-image { 
+    width: 100%; 
+    height: auto; 
+    max-height: 300px; } 
+    
+  .initiative-links { 
+    flex-direction: column; } 
+  
+  .initiative-link { 
+    text-align: center; } 
+}
+
 @media (max-width: 600px) {
   .page-container {
     width: 92%;
@@ -122,3 +140,95 @@
     text-align: center;
   }
 }
+
+.initiatives-container { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 2rem; 
+} 
+  
+.initiative-card { 
+  display: flex; 
+  align-items: center; 
+  gap: 2rem; 
+  padding: 1.5rem; 
+  background-color: #f5f5f5; 
+  border-radius: 16px; 
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); 
+  transition: transform 0.2s ease, 
+  box-shadow 0.2s ease; 
+} 
+  
+.initiative-card:hover { 
+  transform: translateY(-3px); 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12); 
+} 
+
+.initiative-image { 
+  width: 300px; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 12px; 
+  flex-shrink: 0; 
+} 
+
+.initiative-image-sequencias { 
+  width: 300px; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 12px; 
+  flex-shrink: 0; 
+  margin-top: 3%;
+} 
+  
+.initiative-content { 
+  flex: 1; 
+} 
+
+.initiative-content h3 { 
+  margin-top: 0; 
+  margin-bottom: 1rem; 
+  font: var(--title-paragraph-font); 
+  color: #111; 
+} 
+  
+.initiative-content h4 { 
+  margin-top: 1.2rem; 
+  margin-bottom: 0.6rem; 
+  font: var(--other-font); 
+  font-weight: bold; color: #222; 
+} 
+  
+.initiative-links { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 1rem;
+} 
+  
+.initiative-link { 
+  display: flex; 
+  padding: 8px 10px; 
+  gap: 20px;
+  border-radius: 8px; 
+  background-color: #023d8b; 
+  color: white; 
+  text-decoration: none; 
+  font: var(--other-font); 
+  margin: 5px;
+} 
+
+.initiative-link:hover { 
+  background-color: #012f6b;
+} 
+
+.sequencias-didaticas-container{
+  display: inline-block; 
+  gap: 3rem;
+}
+
+.text-container{
+  display: flex;
+  float: left;
+  gap: 0.7rem;
+}
+
