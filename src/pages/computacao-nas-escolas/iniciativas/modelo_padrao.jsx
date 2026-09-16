@@ -24,3 +24,5 @@ function InitiativeCard({ image, title, description, children }) {
     </div>
   );
 }
+
+export default InitiativeCard;

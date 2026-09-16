@@ -2,25 +2,17 @@ import React from "react";
 import InitiativeCard from "./iniciativas/modelo_padrao"
 import "./ComputacaoNasEscolas.css";
 import "../../App.css";
+import PaginaInicialCNE from "./home/home_computacao_nas_escolas";
 
 
 export default function ComputacaoNasEscolas() {
   const pdfUrl = `${process.env.PUBLIC_URL || ""}/pdfs/computacao-nas-escolas.pdf`;
-  const heroImageUrl = `${process.env.PUBLIC_URL || ""}/images/computacao-nas-escolas/computacao-nas-escolas.jpg`;
 
   return (
     <div className="page-container">
-      <div className="hero-wrapper">
-        <img
-          src={heroImageUrl}
-          alt="Computação nas Escolas"
-          className="hero-banner"
-        />
-
-        <h1 className="page-title">
-          Computação nas Escolas: promovendo a cidadania digital
-        </h1>
-      </div>
+      <section id='paginaInicia-CNE' className='paginaincial-CNE'>
+        <PaginaInicialCNE />
+      </section>
 
       <section className="page-section">
         <h2 className="section-title">Contexto e Objetivos</h2>
@@ -80,7 +72,7 @@ export default function ComputacaoNasEscolas() {
 
           {/* Clubinho Digital */}
           <InitiativeCard
-            image={`${process.env.PUBLIC_URL || ""}/images/computacao-nas-escolas/clubinho-digital.jpg`}
+            image={`${process.env.PUBLIC_URL || ""}/images/computacao-nas-escolas/clubinho_digital.png`}
             title="Clubinho Digital (IPEN - Casinha de Brinquedo)"
             description="Projeto executado continuamente desde 2021, levando conceitos de tecnologia e cidadania para os pequenos."
           >
@@ -97,8 +89,8 @@ export default function ComputacaoNasEscolas() {
 
           {/* Computação nas Escolas */}
           <InitiativeCard
-            image={`${process.env.PUBLIC_URL || ""}/images/computacao-nas-escolas/computacao-escolas.jpg`}
-            title="Computação nas Escolas (Associação São Domingos Sávio)"
+            image={`${process.env.PUBLIC_URL || ""}/images/computacao-nas-escolas/sds.png`}
+            title="Clubinho Digital (Associação São Domingos Sávio)"
             description="Iniciativa voltada à promoção da Computação e da Cidadania Digital no ambiente escolar."
           >
 
@@ -149,9 +141,15 @@ export default function ComputacaoNasEscolas() {
 
           </InitiativeCard>
 
+          <InitiativeCard
+            image={`${process.env.PUBLIC_URL || ""}/images/computacao-nas-escolas/feira_profissoes.jpg`}
+            title="Feira de Profissões"
+            description="Participação em feiras de profissões, com o intuito de promover a visão da comunidade de computação para a comunidade externa."
+          >
+          </InitiativeCard>
+
         </div>
       </section>
-
 
       {/* DOWNLOAD DO PDF */}
 
@@ -159,36 +157,37 @@ export default function ComputacaoNasEscolas() {
         <h2 className="section-title">
           Faça o Download do PDF com as Sequências Didáticas
         </h2>
+        <div className="text-container">
+          <div className="sequencias-didaticas-container">
+            <p className="paragraph">
+              Nossas Sequências Didáticas foram elaboradas especialmente para
+              apoiar professores do Ensino Fundamental I que desejam trabalhar
+              temas de Cidadania Digital em suas aulas.
 
-        <p className="paragraph">
-          Nossas Sequências Didáticas foram elaboradas especialmente para
-          apoiar professores do Ensino Fundamental I que desejam trabalhar
-          temas de Cidadania Digital em suas aulas.
+              O material pode ser utilizado diretamente em sala ou servir como
+              inspiração para planejar atividades alinhadas à BNCC. Com essas
+              propostas, você pode incorporar a Cidadania Digital ao cotidiano
+              escolar, promovendo práticas seguras, éticas e colaborativas no
+              ambiente online, e, principalmente, poderá preparar seus alunos
+              para um mundo cada vez mais conectado.
+            </p>
 
-          O material pode ser utilizado diretamente em sala ou servir como
-          inspiração para planejar atividades alinhadas à BNCC. Com essas
-          propostas, você pode incorporar a Cidadania Digital ao cotidiano
-          escolar, promovendo práticas seguras, éticas e colaborativas no
-          ambiente online, e, principalmente, poderá preparar seus alunos
-          para um mundo cada vez mais conectado.
-        </p>
-
-        <a
-          href={pdfUrl}
-          className="download-link"
-          download="computacao-nas-escolas.pdf"
-        >
-          ⬇️ Baixar PDF completo
-        </a>
+            <a
+              href={pdfUrl}
+              className="download-link"
+              download="computacao-nas-escolas.pdf"
+            >
+              ⬇️ Baixar PDF completo
+            </a>
+          </div>
+          <img
+            src={`${process.env.PUBLIC_URL || ""}/images/computacao-nas-escolas/sequencias_didaticas.png`}
+            alt={"Sequencias Didáticas"}
+            className="initiative-image-sequencias"
+          />
+        </div>
       </section>
 
     </div>
   );
 }
-
-
-
-
-
-      
-
